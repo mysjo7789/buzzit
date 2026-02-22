@@ -66,8 +66,25 @@ const siteStyles: Record<string, string> = {
   '82cook': 'bg-violet-100 text-violet-700',
 }
 
+const VISITED_KEY = 'buzzit_visited'
+const getVisitedSet = (): Set<string> => {
+  try {
+    const raw = localStorage.getItem(VISITED_KEY)
+    return raw ? new Set(JSON.parse(raw)) : new Set()
+  } catch { return new Set() }
+}
+const markVisited = (url: string) => {
+  const visited = getVisitedSet()
+  visited.add(url)
+  // 최근 500개만 유지
+  const arr = [...visited]
+  if (arr.length > 500) arr.splice(0, arr.length - 500)
+  localStorage.setItem(VISITED_KEY, JSON.stringify(arr))
+}
+
 const PostCard = ({ post, rank }: PostCardProps) => {
   const [imgError, setImgError] = useState(false)
+  const [visited, setVisited] = useState(() => getVisitedSet().has(post.url))
 
   const formatNumber = (num: number | null | undefined) => {
     if (num === null || num === undefined) return null
@@ -98,7 +115,8 @@ const PostCard = ({ post, rank }: PostCardProps) => {
     <a
       href={post.url}
       rel="noopener noreferrer"
-      className="flex items-center gap-2.5 px-4 py-2.5 bg-white hover:bg-gray-50 transition-colors duration-100 border-b border-gray-100 group"
+      onClick={() => { markVisited(post.url); setVisited(true) }}
+      className={`flex items-center gap-2.5 px-4 py-2.5 hover:bg-gray-50 transition-colors duration-100 border-b border-gray-100 group ${visited ? 'bg-gray-50/80' : 'bg-white'}`}
     >
       {/* 순위 */}
       <span className="text-sm font-semibold text-gray-400 w-5 text-right flex-shrink-0">
@@ -134,7 +152,7 @@ const PostCard = ({ post, rank }: PostCardProps) => {
           <span className={`inline-flex items-center px-1 py-0.5 rounded text-[10px] font-medium flex-shrink-0 leading-none ${badgeClass}`}>
             {siteName}
           </span>
-          <h3 className="text-sm text-gray-900 group-hover:text-primary-600 transition-colors line-clamp-1 leading-snug">
+          <h3 className={`text-sm transition-colors line-clamp-1 leading-snug ${visited ? 'text-gray-400' : 'text-gray-900 group-hover:text-primary-600'}`}>
             {post.title}
           </h3>
         </div>

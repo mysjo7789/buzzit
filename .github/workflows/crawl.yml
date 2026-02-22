@@ -2,7 +2,7 @@ name: Crawl and Deploy
 
 on:
   schedule:
-    - cron: '0 * * * *'  # 매 1시간
+    - cron: '*/15 * * * *'  # 매 15분
   workflow_dispatch:       # 수동 실행
 
 permissions:

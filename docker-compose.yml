@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: buzzit-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: buzzit
+      POSTGRES_USER: buzzit
+      POSTGRES_PASSWORD: buzzit1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - buzzit_pgdata:/var/lib/postgresql/data
+
+volumes:
+  buzzit_pgdata:

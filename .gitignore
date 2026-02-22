@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+.mypy_cache/
+node_modules/
+dist/
+*.egg-info/
+log
+buzzit_posts.json
+output/

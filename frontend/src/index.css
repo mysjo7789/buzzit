@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Pretendard', 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-gray-100 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-150 text-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-700 font-medium py-2 px-4 rounded-lg border border-gray-300 transition-colors duration-150 text-sm;
+  }
+
+  .filter-chip {
+    @apply px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-150 cursor-pointer whitespace-nowrap border;
+  }
+
+  .filter-chip-active {
+    @apply bg-primary-600 text-white border-primary-600;
+  }
+
+  .filter-chip-inactive {
+    @apply bg-white text-gray-600 border-gray-300 hover:border-primary-400 hover:text-primary-600;
+  }
+
+  .sort-tab {
+    @apply px-3 py-1.5 text-sm font-medium transition-colors duration-150 cursor-pointer rounded-md;
+  }
+
+  .sort-tab-active {
+    @apply text-primary-700 bg-primary-50 font-semibold;
+  }
+
+  .sort-tab-inactive {
+    @apply text-gray-500 hover:text-gray-700 hover:bg-gray-100;
+  }
+
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* 스크롤바 숨기기 (필터 영역) */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

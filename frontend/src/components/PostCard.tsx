@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { Eye, Heart, MessageCircle } from 'lucide-react'
 import { Post } from '../types'
-import { formatDistanceToNow } from 'date-fns'
-import { ko } from 'date-fns/locale'
 
 interface PostCardProps {
   post: Post
@@ -93,15 +91,6 @@ const PostCard = ({ post, rank }: PostCardProps) => {
     return num.toString()
   }
 
-  const formatTime = (dateString: string) => {
-    try {
-      const date = new Date(dateString)
-      return formatDistanceToNow(date, { addSuffix: false, locale: ko })
-    } catch {
-      return ''
-    }
-  }
-
   const badgeClass = siteStyles[post.site] || 'bg-gray-100 text-gray-700'
   const siteName = siteNames[post.site] || post.site
 
@@ -177,9 +166,6 @@ const PostCard = ({ post, rank }: PostCardProps) => {
               {formattedComments}
             </span>
           )}
-          <span className="ml-auto">
-            {formatTime(post.collected_at)}
-          </span>
         </div>
       </div>
     </a>

@@ -93,6 +93,14 @@ const PostDetailPage = () => {
     )
   }
 
+  useEffect(() => {
+    if (post) {
+      const name = siteNames[post.site] || post.site
+      document.title = `${post.title} - ${name} | Buzzit`
+    }
+    return () => { document.title = 'Buzzit - 커뮤니티 인기글 모아보기' }
+  }, [post])
+
   const siteName = siteNames[post.site] || post.site
   const badgeClass = siteStyles[post.site] || 'bg-gray-100 text-gray-700'
   const formattedViews = formatNumber(post.views)

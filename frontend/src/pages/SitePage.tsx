@@ -131,6 +131,13 @@ const SitePage = () => {
   const siteName = siteNames[siteCode || ''] || siteCode || ''
   const siteUrl = siteUrls[siteCode || ''] || ''
 
+  useEffect(() => {
+    if (siteName) {
+      document.title = `${siteName} 인기글 - Buzzit`
+    }
+    return () => { document.title = 'Buzzit - 커뮤니티 인기글 모아보기' }
+  }, [siteName])
+
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-[60vh]">

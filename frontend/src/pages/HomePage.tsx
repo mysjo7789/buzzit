@@ -56,9 +56,11 @@ const interleaveBySite = (posts: Post[]): Post[] => {
   return result
 }
 
-// 인기도 점수 계산: 사이트별 min-max 정규화 후 가중합
-// 같은 커뮤니티 내에서 정규화하여 사이트 간 스케일 차이를 보정
-const calcPerSitePopularityScores = (posts: Post[]): Map<Post, number> => {
+// 사이트별 min-max 정규화: 각 사이트 내에서 0~1로 정규화하여 스케일 차이 보정
+const normalizePerSite = (
+  posts: Post[],
+  getValue: (p: Post) => number
+): Map<Post, number> => {
   const groups: Record<string, Post[]> = {}
   posts.forEach(p => {
     if (!groups[p.site]) groups[p.site] = []
@@ -68,27 +70,34 @@ const calcPerSitePopularityScores = (posts: Post[]): Map<Post, number> => {
   const scores = new Map<Post, number>()
 
   for (const sitePosts of Object.values(groups)) {
-    const views = sitePosts.map(p => p.views || 0)
-    const likes = sitePosts.map(p => p.likes || 0)
-    const comments = sitePosts.map(p => p.comments || 0)
-
-    const minV = Math.min(...views), maxV = Math.max(...views)
-    const minL = Math.min(...likes), maxL = Math.max(...likes)
-    const minC = Math.min(...comments), maxC = Math.max(...comments)
-
-    const rangeV = maxV - minV || 1
-    const rangeL = maxL - minL || 1
-    const rangeC = maxC - minC || 1
+    const values = sitePosts.map(getValue)
+    const min = Math.min(...values)
+    const max = Math.max(...values)
+    const range = max - min || 1
 
     for (const p of sitePosts) {
-      const normV = ((p.views || 0) - minV) / rangeV
-      const normL = ((p.likes || 0) - minL) / rangeL
-      const normC = ((p.comments || 0) - minC) / rangeC
-      // 조회(30%) + 추천(50%) + 댓글(20%)
-      scores.set(p, normV * 0.3 + normL * 0.5 + normC * 0.2)
+      scores.set(p, (getValue(p) - min) / range)
     }
   }
 
+  return scores
+}
+
+// 인기도 점수 계산: 사이트별 min-max 정규화 후 가중합
+const calcPerSitePopularityScores = (posts: Post[]): Map<Post, number> => {
+  const viewScores = normalizePerSite(posts, p => p.views || 0)
+  const likeScores = normalizePerSite(posts, p => p.likes || 0)
+  const commentScores = normalizePerSite(posts, p => p.comments || 0)
+
+  const scores = new Map<Post, number>()
+  for (const p of posts) {
+    // 조회(30%) + 추천(50%) + 댓글(20%)
+    scores.set(p,
+      (viewScores.get(p) || 0) * 0.3 +
+      (likeScores.get(p) || 0) * 0.5 +
+      (commentScores.get(p) || 0) * 0.2
+    )
+  }
   return scores
 }
 
@@ -148,12 +157,16 @@ const HomePage = () => {
         posts.sort((a, b) => (scores.get(b) || 0) - (scores.get(a) || 0))
         break
       }
-      case 'likes':
-        posts.sort((a, b) => (b.likes || 0) - (a.likes || 0))
+      case 'likes': {
+        const likeScores = normalizePerSite(posts, p => p.likes || 0)
+        posts.sort((a, b) => (likeScores.get(b) || 0) - (likeScores.get(a) || 0))
         break
-      case 'comments':
-        posts.sort((a, b) => (b.comments || 0) - (a.comments || 0))
+      }
+      case 'comments': {
+        const commentScores = normalizePerSite(posts, p => p.comments || 0)
+        posts.sort((a, b) => (commentScores.get(b) || 0) - (commentScores.get(a) || 0))
         break
+      }
       default:
         // latest - collected_at 기준
         posts.sort((a, b) => (b.collected_at || '').localeCompare(a.collected_at || ''))

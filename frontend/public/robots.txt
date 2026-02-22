@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /api/
 
-Sitemap: https://buzzit.kr/sitemap.xml
+Sitemap: https://bzibzi.com/sitemap.xml

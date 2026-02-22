@@ -24,7 +24,7 @@
   }
 
   .filter-chip {
-    @apply px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-150 cursor-pointer whitespace-nowrap border;
+    @apply px-2.5 py-1 rounded-full text-xs font-medium transition-all duration-150 cursor-pointer whitespace-nowrap border;
   }
 
   .filter-chip-active {

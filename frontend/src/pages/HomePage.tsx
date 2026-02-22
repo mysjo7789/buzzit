@@ -241,21 +241,20 @@ const HomePage = () => {
       </div>
 
       {/* 커뮤니티 필터 */}
-      <div className="flex gap-1.5 overflow-x-auto hide-scrollbar pb-1">
+      <div className="flex flex-wrap gap-1.5 pb-1">
         <button
           onClick={() => handleSiteChange('all')}
           className={`filter-chip ${activeSite === 'all' ? 'filter-chip-active' : 'filter-chip-inactive'}`}
         >
           전체
         </button>
-        {availableSites.map(({ code, count }) => (
+        {availableSites.map(({ code }) => (
           <button
             key={code}
             onClick={() => handleSiteChange(code)}
             className={`filter-chip ${activeSite === code ? 'filter-chip-active' : 'filter-chip-inactive'}`}
           >
             {SITE_LABELS[code] || code}
-            <span className="ml-1 opacity-60">{count}</span>
           </button>
         ))}
       </div>

@@ -1,15 +1,16 @@
 {
   "metadata": {
-    "total_posts": 210,
-    "collected_at": "2026-02-22T21:40:17.969027",
+    "total_posts": 240,
+    "collected_at": "2026-02-22T21:57:54.065982",
     "sites": [
-      "bobaedream",
-      "clien",
-      "humoruniv",
-      "ruliweb",
-      "ppomppu",
       "mlbpark",
-      "ddanzi"
+      "clien",
+      "ddanzi",
+      "ppomppu",
+      "ruliweb",
+      "humoruniv",
+      "bobaedream",
+      "inven"
     ]
   },
   "posts": [
@@ -19,10 +20,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400956",
       "author": null,
       "timestamp": null,
-      "views": 41964,
-      "likes": 719,
+      "views": 42565,
+      "likes": 724,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.153985",
+      "collected_at": "2026-02-22T21:57:52.333883",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_sdb88da001_31f03d6ed07d71329fe3c4f91b6d458e80b45d16.jpg?SIZE=80x60"
     },
     {
@@ -31,11 +32,23 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400994",
       "author": null,
       "timestamp": null,
-      "views": 40939,
-      "likes": 729,
+      "views": 41716,
+      "likes": 735,
       "comments": 3,
-      "collected_at": "2026-02-22T21:40:16.153991",
+      "collected_at": "2026-02-22T21:57:52.333901",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s7f2700001_f73be6870438d206c1b28f61fab0c88960f56b6c.jpg?SIZE=80x60"
+    },
+    {
+      "site": "humoruniv",
+      "title": "세금 형평성이 없는 국세청",
+      "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400997",
+      "author": null,
+      "timestamp": null,
+      "views": 32654,
+      "likes": 651,
+      "comments": 0,
+      "collected_at": "2026-02-22T21:57:52.333904",
+      "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s4e32c2001_9a3de9541211174ce16079cb869404cb1de7e8a5.jpg?SIZE=80x60"
     },
     {
       "site": "humoruniv",
@@ -43,10 +56,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400944",
       "author": null,
       "timestamp": null,
-      "views": 45199,
-      "likes": 639,
+      "views": 45675,
+      "likes": 645,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.153993",
+      "collected_at": "2026-02-22T21:57:52.333906",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s5ca2bd001_31f03d6ed07d71329fe3c4f91b6d458e80b45d16.jpg?SIZE=80x60"
     },
     {
@@ -55,23 +68,11 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400941",
       "author": null,
       "timestamp": null,
-      "views": 51288,
-      "likes": 640,
+      "views": 51927,
+      "likes": 646,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:16.153995",
+      "collected_at": "2026-02-22T21:57:52.333907",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_sd6031c001_222b2722f900cc1b9782daf46a361b686c1e6211.jpg?SIZE=80x60"
-    },
-    {
-      "site": "humoruniv",
-      "title": "세금 형평성이 없는 국세청",
-      "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400997",
-      "author": null,
-      "timestamp": null,
-      "views": 31786,
-      "likes": 632,
-      "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.153996",
-      "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s4e32c2001_9a3de9541211174ce16079cb869404cb1de7e8a5.jpg?SIZE=80x60"
     },
     {
       "site": "humoruniv",
@@ -79,10 +80,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400972",
       "author": null,
       "timestamp": null,
-      "views": 43995,
-      "likes": 609,
+      "views": 44488,
+      "likes": 613,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.153998",
+      "collected_at": "2026-02-22T21:57:52.333909",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_w3d84db001_49e227436c06568d8fbb5e194f92c09cc999fa0b.jpg?SIZE=80x60"
     },
     {
@@ -91,10 +92,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400937",
       "author": null,
       "timestamp": null,
-      "views": 34034,
-      "likes": 616,
+      "views": 34483,
+      "likes": 618,
       "comments": 6,
-      "collected_at": "2026-02-22T21:40:16.153999",
+      "collected_at": "2026-02-22T21:57:52.333910",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_wcdb367001_538ae2a41169561c616346ad5ebbd2657e69548e.jpg?SIZE=80x60"
     },
     {
@@ -103,10 +104,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400962",
       "author": null,
       "timestamp": null,
-      "views": 42833,
-      "likes": 580,
+      "views": 43179,
+      "likes": 583,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:16.154001",
+      "collected_at": "2026-02-22T21:57:52.333912",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s974427001_16c6abdda00b6824320b84374cd091ad8626abe7.jpg?SIZE=80x60"
     },
     {
@@ -115,10 +116,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400963",
       "author": null,
       "timestamp": null,
-      "views": 40075,
-      "likes": 568,
+      "views": 40397,
+      "likes": 569,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:16.154002",
+      "collected_at": "2026-02-22T21:57:52.333914",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s542abc001_16e44a6498fcbcb2c00fb51af31d3d7bd1c652d9.jpg?SIZE=80x60"
     },
     {
@@ -127,10 +128,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400961",
       "author": null,
       "timestamp": null,
-      "views": 38838,
-      "likes": 538,
+      "views": 39359,
+      "likes": 541,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:16.154004",
+      "collected_at": "2026-02-22T21:57:52.333915",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s23d033001_27507a0b7d3839d3389b3b14bd85adeb78e98b38.jpg?SIZE=80x60"
     },
     {
@@ -139,10 +140,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400987",
       "author": null,
       "timestamp": null,
-      "views": 23115,
-      "likes": 498,
+      "views": 23709,
+      "likes": 504,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154005",
+      "collected_at": "2026-02-22T21:57:52.333916",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s388c02001_b6fcf4a5bcb28fd3d038bae7765c45de4c58640c.png?SIZE=80x60"
     },
     {
@@ -151,10 +152,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400973",
       "author": null,
       "timestamp": null,
-      "views": 24435,
-      "likes": 488,
+      "views": 24584,
+      "likes": 491,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:16.154007",
+      "collected_at": "2026-02-22T21:57:52.333943",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_sc02a28001_e5fd3d8d600b0ecc221363b068e3a327ccedd6be.jpg?SIZE=80x60"
     },
     {
@@ -163,23 +164,11 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400928",
       "author": null,
       "timestamp": null,
-      "views": 31872,
-      "likes": 480,
+      "views": 32231,
+      "likes": 484,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154012",
+      "collected_at": "2026-02-22T21:57:52.333945",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s3bd6ff001_a6efe946b4f632fc0e46f8cc3bbbf0a85acf8487.jpg?SIZE=80x60"
-    },
-    {
-      "site": "humoruniv",
-      "title": "박민영이 남자 꼬실때 하는 포즈",
-      "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400925",
-      "author": null,
-      "timestamp": null,
-      "views": 49519,
-      "likes": 472,
-      "comments": 2,
-      "collected_at": "2026-02-22T21:40:16.154014",
-      "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_w9f275d001_29a293267476b6bac50f309f41ec08e7e0b55333.mp4?SIZE=80x60"
     },
     {
       "site": "humoruniv",
@@ -187,10 +176,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1401011",
       "author": null,
       "timestamp": null,
-      "views": 25546,
-      "likes": 446,
+      "views": 26236,
+      "likes": 456,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154015",
+      "collected_at": "2026-02-22T21:57:52.333947",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s823def001_f881168704a7220b66bf459a9f8ec9a58f9a0cb8.jpg?SIZE=80x60"
     },
     {
@@ -199,10 +188,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400949",
       "author": null,
       "timestamp": null,
-      "views": 35826,
-      "likes": 447,
+      "views": 36137,
+      "likes": 448,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:16.154017",
+      "collected_at": "2026-02-22T21:57:52.333948",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_wfd6e36001_1bb356425dffe60a7117885b890c2cf18013fdee.jpg?SIZE=80x60"
     },
     {
@@ -211,10 +200,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1401001",
       "author": null,
       "timestamp": null,
-      "views": 24050,
-      "likes": 432,
+      "views": 24535,
+      "likes": 437,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154018",
+      "collected_at": "2026-02-22T21:57:52.333950",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s0c8ffe001_7bcc8ac1dda5fb74f2a7c7a01bbf1e91d564de01.png?SIZE=80x60"
     },
     {
@@ -223,10 +212,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400930",
       "author": null,
       "timestamp": null,
-      "views": 25685,
-      "likes": 431,
+      "views": 25792,
+      "likes": 432,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154020",
+      "collected_at": "2026-02-22T21:57:52.333951",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_se67889001_a42b15b8c87f19c7318fd0da9d85b92f4b7ccfb0.png?SIZE=80x60"
     },
     {
@@ -235,10 +224,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400998",
       "author": null,
       "timestamp": null,
-      "views": 21979,
-      "likes": 427,
+      "views": 22267,
+      "likes": 432,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154021",
+      "collected_at": "2026-02-22T21:57:52.333953",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_wf55bf6001_d927e2e80c41edf1b9c3d63d6f5daa4d5edc41f3.png?SIZE=80x60"
     },
     {
@@ -247,11 +236,23 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400952",
       "author": null,
       "timestamp": null,
-      "views": 26988,
-      "likes": 418,
+      "views": 27121,
+      "likes": 420,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154023",
+      "collected_at": "2026-02-22T21:57:52.333954",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s4d25c9001_4b7d7f34d8f5fd79b2e560ee2ba5b4372c1ef409.png?SIZE=80x60"
+    },
+    {
+      "site": "humoruniv",
+      "title": "이분ㅋㅋㅋㅋㅋ 팬을 진짜 딸 대하듯 대하시는데",
+      "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=0&number=1400982",
+      "author": null,
+      "timestamp": null,
+      "views": 34619,
+      "likes": 420,
+      "comments": 0,
+      "collected_at": "2026-02-22T21:57:52.333956",
+      "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_w83e83f001_b55743cad4ab3db06a053431a4af5a30cde4f088.jpg?SIZE=80x60"
     },
     {
       "site": "humoruniv",
@@ -259,10 +260,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1400965",
       "author": null,
       "timestamp": null,
-      "views": 26130,
+      "views": 26330,
       "likes": 354,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154024",
+      "collected_at": "2026-02-22T21:57:52.333958",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://timg.humoruniv.com/thumb_video_rect.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s40d4fe001_1c2a0e5802487c7f2741b447436ca0063933a10c.mp4?SIZE=200x200?OPT=PLAY?SIZE=80x60"
     },
     {
@@ -271,10 +272,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1400969",
       "author": null,
       "timestamp": null,
-      "views": 27559,
+      "views": 27687,
       "likes": 354,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154025",
+      "collected_at": "2026-02-22T21:57:52.333959",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_scd54c4001_c9884727415178db226b83aa7121c0a6884a68be.jpg?SIZE=80x60"
     },
     {
@@ -283,10 +284,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1400932",
       "author": null,
       "timestamp": null,
-      "views": 22725,
+      "views": 22785,
       "likes": 368,
       "comments": 3,
-      "collected_at": "2026-02-22T21:40:16.154027",
+      "collected_at": "2026-02-22T21:57:52.333961",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_w722dac001_e0574ac33afccf256ef7db4b7bce72a4e5309b83.png?SIZE=80x60"
     },
     {
@@ -295,10 +296,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1400988",
       "author": null,
       "timestamp": null,
-      "views": 27640,
-      "likes": 350,
+      "views": 27880,
+      "likes": 351,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154028",
+      "collected_at": "2026-02-22T21:57:52.333962",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_w439e29001_6c50b741cca3534ac1eca26752bbc3e2ac5e97f8.jpg?SIZE=80x60"
     },
     {
@@ -307,10 +308,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1400948",
       "author": null,
       "timestamp": null,
-      "views": 28495,
-      "likes": 349,
+      "views": 28657,
+      "likes": 350,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154030",
+      "collected_at": "2026-02-22T21:57:52.333963",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s36940e001_31f03d6ed07d71329fe3c4f91b6d458e80b45d16.jpg?SIZE=80x60"
     },
     {
@@ -319,10 +320,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1400981",
       "author": null,
       "timestamp": null,
-      "views": 19907,
-      "likes": 345,
+      "views": 20019,
+      "likes": 347,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154033",
+      "collected_at": "2026-02-22T21:57:52.333965",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_w858b70001_3d9f2ceeecd9c2479fa45f791585816850c21ee6.jpg?SIZE=80x60"
     },
     {
@@ -331,10 +332,10 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1401020",
       "author": null,
       "timestamp": null,
-      "views": 17946,
-      "likes": 338,
+      "views": 18702,
+      "likes": 345,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154034",
+      "collected_at": "2026-02-22T21:57:52.333966",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_sc7b26b001_799a2314903fbda89d83d7c6f43c38310fb3175e.jpg?SIZE=80x60"
     },
     {
@@ -343,23 +344,11 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1400974",
       "author": null,
       "timestamp": null,
-      "views": 17378,
-      "likes": 334,
+      "views": 17457,
+      "likes": 335,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154036",
+      "collected_at": "2026-02-22T21:57:52.333968",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_we978c0001_3407e8b63cd5cde995a88a69f6d60ad77fbc77b5.jpg?SIZE=80x60"
-    },
-    {
-      "site": "humoruniv",
-      "title": "링이 ㄹㅇ 자켄을 잘 따르는 이유",
-      "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1400991",
-      "author": null,
-      "timestamp": null,
-      "views": 16472,
-      "likes": 327,
-      "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154037",
-      "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_w0dd89e001_de65158ec12a98ce321052b3ce6d158bdf347c86.png?SIZE=80x60"
     },
     {
       "site": "humoruniv",
@@ -367,82 +356,298 @@
       "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1401018",
       "author": null,
       "timestamp": null,
-      "views": 17195,
-      "likes": 327,
+      "views": 17706,
+      "likes": 330,
       "comments": 0,
-      "collected_at": "2026-02-22T21:40:16.154039",
+      "collected_at": "2026-02-22T21:57:52.333969",
       "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com//hwiparambbs/data/editor/pdswait/e_s103d3a001_1126a7bd4b07429fbb4433e447409d810c5f3fff.jpg?SIZE=80x60"
     },
     {
-      "site": "ruliweb",
-      "title": "1클로드 Ai 해커톤 수상자 다섯명 근황 ㄷㄷ(40)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74202320?m=humor",
-      "author": "루리웹-5505018087",
-      "timestamp": "00:12",
-      "views": 8894,
-      "likes": 43,
-      "comments": 40,
-      "collected_at": "2026-02-22T21:40:15.454919",
-      "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c85e75748592b4f.webp"
+      "site": "humoruniv",
+      "title": "링이 ㄹㅇ 자켄을 잘 따르는 이유",
+      "url": "https://web.humoruniv.com/board/humor/read.html?table=pds&st=day&pg=2&number=1400991",
+      "author": null,
+      "timestamp": null,
+      "views": 16613,
+      "likes": 328,
+      "comments": 0,
+      "collected_at": "2026-02-22T21:57:52.333971",
+      "thumbnail": "https://timg.humoruniv.com/thumb_crop_resize.php?url=https://down.humoruniv.com/hwiparambbs/data/pds/a_w0dd89e001_de65158ec12a98ce321052b3ce6d158bdf347c86.png?SIZE=80x60"
     },
     {
       "site": "ruliweb",
-      "title": "2빌런역할에 대배우도 적당히 써야한다는 교훈을 얻은 영화(37)",
+      "title": "1빌런역할에 대배우도 적당히 써야한다는 교훈을 얻은 영화(37)",
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74202821?m=humor",
       "author": "롱파르페",
       "timestamp": "01:28",
       "views": 11589,
       "likes": 83,
       "comments": 37,
-      "collected_at": "2026-02-22T21:40:15.454926",
+      "collected_at": "2026-02-22T21:57:51.491601",
       "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c862d467b54c35a.webp"
     },
     {
       "site": "ruliweb",
-      "title": "3나한태 첫컴터 사가셨던 컴퓨터 매장 사장님 근황..(62)",
+      "title": "2나한태 첫컴터 사가셨던 컴퓨터 매장 사장님 근황..(62)",
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74203223?m=humor",
       "author": "中野梓(나카노아즈사)",
       "timestamp": "03:34",
       "views": 16914,
       "likes": 117,
       "comments": 62,
-      "collected_at": "2026-02-22T21:40:15.454928",
+      "collected_at": "2026-02-22T21:57:51.491614",
       "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c86a05096187d05.webp"
     },
     {
       "site": "ruliweb",
-      "title": "핫딜[네이버페이] 2월 네이버플러스 멤버십데이 (2/23)(1)",
-      "url": "https://bbs.ruliweb.com/market/board/1020/read/101905",
-      "author": "아타호-_-",
-      "timestamp": "00:07",
-      "views": 16583,
-      "likes": 19,
-      "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.454930",
-      "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c85e3ee9a1874ce.webp"
+      "title": "3대만 전쟁 나면 ㅈ되는 이유(68)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74202424?m=humor",
+      "author": "Cortana",
+      "timestamp": "00:25",
+      "views": 24039,
+      "likes": 131,
+      "comments": 68,
+      "collected_at": "2026-02-22T21:57:51.491616",
+      "thumbnail": "https://i1.ruliweb.com/cmt/26/02/22/19c84d51b63547de2.jpg"
     },
     {
       "site": "ruliweb",
-      "title": "제 아내임(8)",
+      "title": "핫딜[네이버페이] 제주항공 클릭 12원(3)",
+      "url": "https://bbs.ruliweb.com/market/board/1020/read/101902",
+      "author": "zzik1226",
+      "timestamp": "15:36",
+      "views": 20946,
+      "likes": 59,
+      "comments": 3,
+      "collected_at": "2026-02-22T21:57:51.491618",
+      "thumbnail": null
+    },
+    {
+      "site": "ruliweb",
+      "title": "트릭컬)건치걸 은근 상식인 포지션이라 놀람(3)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74202349?m=humor&t=now",
+      "author": "털ㅋ",
+      "timestamp": "00:15",
+      "views": 318,
+      "likes": 6,
+      "comments": 3,
+      "collected_at": "2026-02-22T21:57:51.491620",
+      "thumbnail": "https://i3.ruliweb.com/ori/26/02/23/19c85eacdc259d9e8.jpg"
+    },
+    {
+      "site": "ruliweb",
+      "title": "아빠엄마가 너무 러브러브해서 삼촌네 집에 온 조카(4)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203610?m=humor&t=now",
+      "author": "인류의悪 Empire",
+      "timestamp": "06:55",
+      "views": 464,
+      "likes": 10,
+      "comments": 4,
+      "collected_at": "2026-02-22T21:57:51.491621",
+      "thumbnail": "https://i1.ruliweb.com/img/26/02/23/19c8758e5404e3c78.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "트릭컬) 얼마 전 마트에서 에르핀이 충격적인 말을 했어요(1)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203195?m=humor&t=now",
+      "author": "노비양반",
+      "timestamp": "03:19",
+      "views": 316,
+      "likes": 6,
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.491623",
+      "thumbnail": "https://i1.ruliweb.com/cmt/26/02/18/19c6f3e23f65a0879.jpg"
+    },
+    {
+      "site": "ruliweb",
+      "title": "일본의 애니 공식 코스프레에서 차마 구현하지 못한 것(3)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203590?m=humor&t=now",
+      "author": "29250095088",
+      "timestamp": "06:49",
+      "views": 629,
+      "likes": 7,
+      "comments": 3,
+      "collected_at": "2026-02-22T21:57:51.491624",
+      "thumbnail": "https://i3.ruliweb.com/img/25/08/05/19876e1769755578f.jpg"
+    },
+    {
+      "site": "ruliweb",
+      "title": "푸틴 \"찰리 커크는 전통적 가치를 수호하다가 죽었다.\"(1)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203502?m=humor&t=now",
+      "author": "오버테크",
+      "timestamp": "06:14",
+      "views": 346,
+      "likes": 11,
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.491626",
+      "thumbnail": null
+    },
+    {
+      "site": "ruliweb",
+      "title": "현재 기술로도 1테라바이트 정도는 메일로 보낼수 있다(3)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203588?m=humor&t=now",
+      "author": "루리웹-719126279",
+      "timestamp": "06:48",
+      "views": 780,
+      "likes": 16,
+      "comments": 3,
+      "collected_at": "2026-02-22T21:57:51.491627",
+      "thumbnail": "https://i3.ruliweb.com/img/26/02/23/19c87526998432610.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "[젠레스] 이드하리 얼굴조형이 ㄹㅇ 잘된듯(4)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74202447?m=humor&t=now",
+      "author": "나스리우스",
+      "timestamp": "00:28",
+      "views": 303,
+      "likes": 6,
+      "comments": 4,
+      "collected_at": "2026-02-22T21:57:51.491629",
+      "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c85f72bbe50e764.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "산신령의 분노.jpg(1)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203537?m=humor&t=now",
+      "author": "김이다",
+      "timestamp": "06:27",
+      "views": 779,
+      "likes": 7,
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.491630",
+      "thumbnail": "https://i1.ruliweb.com/img/26/02/23/19c873e6e5115e447.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "조선시대 과거 시험 난이도 체감하기(4)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203586?m=humor&t=now",
+      "author": "사이버렉카기사협회대리",
+      "timestamp": "06:48",
+      "views": 1138,
+      "likes": 14,
+      "comments": 4,
+      "collected_at": "2026-02-22T21:57:51.491632",
+      "thumbnail": "https://i3.ruliweb.com/img/26/02/23/19c8752ee441307e9.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "유게 감성은 몇년이 지나도 적응안되(7)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203550?m=humor&t=now",
+      "author": "루리웹-8577837415",
+      "timestamp": "06:31",
+      "views": 611,
+      "likes": 8,
+      "comments": 7,
+      "collected_at": "2026-02-22T21:57:51.491633",
+      "thumbnail": null
+    },
+    {
+      "site": "ruliweb",
+      "title": "\"아즈텍의 여보좌관\"(2)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203555?m=humor&t=now",
+      "author": "RangiChorok",
+      "timestamp": "06:34",
+      "views": 881,
+      "likes": 8,
+      "comments": 2,
+      "collected_at": "2026-02-22T21:57:51.491634",
+      "thumbnail": "https://i3.ruliweb.com/img/26/02/23/19c8745e841577850.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "건담) 지쿠악스 세계관 미남 인증 마크(5)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203583?m=humor&t=now",
+      "author": "29250095088",
+      "timestamp": "06:46",
+      "views": 819,
+      "likes": 11,
+      "comments": 5,
+      "collected_at": "2026-02-22T21:57:51.491636",
+      "thumbnail": "https://i2.ruliweb.com/img/25/06/18/1977f09885d55578f.png"
+    },
+    {
+      "site": "ruliweb",
+      "title": "당뇨가 무서운 병인 이유(4)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203564?m=humor&t=now",
+      "author": "미쿠자쿠",
+      "timestamp": "06:38",
+      "views": 2158,
+      "likes": 12,
+      "comments": 4,
+      "collected_at": "2026-02-22T21:57:51.491640",
+      "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c87491419223b96.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "블루아카)세상이 무너진 히로미(3)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203574?m=humor&t=now",
+      "author": "2검",
+      "timestamp": "06:41",
+      "views": 1713,
+      "likes": 20,
+      "comments": 3,
+      "collected_at": "2026-02-22T21:57:51.491643",
+      "thumbnail": "https://i3.ruliweb.com/img/26/02/23/19c874b066759f7a0.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "나이먹고 소심해진 소꿉친구 메스가키 甲.jpg(9)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203568?m=humor&t=now",
+      "author": "Mario 64",
+      "timestamp": "06:39",
+      "views": 3172,
+      "likes": 16,
+      "comments": 9,
+      "collected_at": "2026-02-22T21:57:51.491644",
+      "thumbnail": "https://i1.ruliweb.com/img/26/02/23/19c874a0a106d7e.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "조수석에서 졸면 안되는 이유(15)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203575?m=humor&t=now",
+      "author": "사이버렉카기사협회대리",
+      "timestamp": "06:41",
+      "views": 5232,
+      "likes": 38,
+      "comments": 15,
+      "collected_at": "2026-02-22T21:57:51.491646",
+      "thumbnail": "https://i3.ruliweb.com/img/26/02/23/19c874d21701307e9.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "원신) 오늘은 코코미의 생일입니다(8)",
+      "url": "https://bbs.ruliweb.com/best/board/300143/read/74196548?m=humor&t=now",
+      "author": "ㄹㅇ이가",
+      "timestamp": "26.02.22",
+      "views": 377,
+      "likes": 6,
+      "comments": 8,
+      "collected_at": "2026-02-22T21:57:51.491647",
+      "thumbnail": "https://i2.ruliweb.com/img/26/02/22/19c8477b7f24f2912.webp"
+    },
+    {
+      "site": "ruliweb",
+      "title": "제 아내임(11)",
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74203554?m=humor&t=now",
       "author": "받는마법피해량증가",
       "timestamp": "06:33",
-      "views": 763,
-      "likes": 7,
-      "comments": 8,
-      "collected_at": "2026-02-22T21:40:15.454931",
+      "views": 4867,
+      "likes": 16,
+      "comments": 11,
+      "collected_at": "2026-02-22T21:57:51.491649",
       "thumbnail": "https://i1.ruliweb.com/img/26/02/23/19c87451d1a568e80.webp"
     },
     {
       "site": "ruliweb",
-      "title": "닌텐도: 경고했건만... 기어이 도전하는군...(1)",
+      "title": "닌텐도: 경고했건만... 기어이 도전하는군...(2)",
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74184096?m=humor&t=now",
       "author": "만화그리는 핫산",
       "timestamp": "26.02.21",
-      "views": 654,
-      "likes": 9,
-      "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.454933",
+      "views": 2087,
+      "likes": 13,
+      "comments": 2,
+      "collected_at": "2026-02-22T21:57:51.491650",
       "thumbnail": "https://i2.ruliweb.com/img/26/02/21/19c7ebe86171309bc.webp"
     },
     {
@@ -451,22 +656,22 @@
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74203553?m=humor&t=now",
       "author": "배가고파졌다",
       "timestamp": "06:32",
-      "views": 1826,
-      "likes": 20,
+      "views": 5392,
+      "likes": 35,
       "comments": 7,
-      "collected_at": "2026-02-22T21:40:15.454934",
+      "collected_at": "2026-02-22T21:57:51.491651",
       "thumbnail": "https://i3.ruliweb.com/img/26/02/23/19c87447c1c4bedb5.webp"
     },
     {
       "site": "ruliweb",
-      "title": "미 항모 중동 장기 항해에 해군 승조원 죽을맛(4)",
+      "title": "미 항모 중동 장기 항해에 해군 승조원 죽을맛(8)",
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74203529?m=humor&t=now",
       "author": "루리웹-7222436521",
       "timestamp": "06:22",
-      "views": 1360,
-      "likes": 18,
-      "comments": 4,
-      "collected_at": "2026-02-22T21:40:15.454935",
+      "views": 4545,
+      "likes": 34,
+      "comments": 8,
+      "collected_at": "2026-02-22T21:57:51.491653",
       "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c873b58fd51874a.webp"
     },
     {
@@ -475,10 +680,10 @@
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74203543?m=humor&t=now",
       "author": "익스터미나투스mk2",
       "timestamp": "06:30",
-      "views": 1713,
-      "likes": 24,
+      "views": 5209,
+      "likes": 41,
       "comments": 10,
-      "collected_at": "2026-02-22T21:40:15.454937",
+      "collected_at": "2026-02-22T21:57:51.491654",
       "thumbnail": "https://i3.ruliweb.com/img/26/02/23/19c874223cd588ca6.webp"
     },
     {
@@ -487,251 +692,407 @@
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74203535?m=humor&t=now",
       "author": "루리웹-3196247717",
       "timestamp": "06:26",
-      "views": 1488,
-      "likes": 17,
+      "views": 3826,
+      "likes": 22,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:15.454938",
+      "collected_at": "2026-02-22T21:57:51.491656",
       "thumbnail": "https://i3.ruliweb.com/img/26/02/23/19c873ed2504ff595.webp"
     },
     {
       "site": "ruliweb",
-      "title": "지인동생이 프로게이머한다고 부모랑 싸웠는데..(11)",
+      "title": "지인동생이 프로게이머한다고 부모랑 싸웠는데..(20)",
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74203514?m=humor&t=now",
       "author": "얼큰순두부찌개",
       "timestamp": "06:17",
-      "views": 1903,
-      "likes": 24,
-      "comments": 11,
-      "collected_at": "2026-02-22T21:40:15.454940",
+      "views": 4900,
+      "likes": 54,
+      "comments": 20,
+      "collected_at": "2026-02-22T21:57:51.491657",
       "thumbnail": null
     },
     {
       "site": "ruliweb",
-      "title": "도대체 어디가 남자화장실이냐고...(7)",
+      "title": "도대체 어디가 남자화장실이냐고...(9)",
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74203524?m=humor&t=now",
       "author": "음란한 크록시거메이드",
       "timestamp": "06:21",
-      "views": 1835,
-      "likes": 16,
-      "comments": 7,
-      "collected_at": "2026-02-22T21:40:15.454941",
+      "views": 5086,
+      "likes": 25,
+      "comments": 9,
+      "collected_at": "2026-02-22T21:57:51.491659",
       "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c8739f87958d9fd.webp"
     },
     {
       "site": "ruliweb",
-      "title": "막내 여동생의 핸드볼 팀이 그제 34:23의 11점차 스코어로 대승을 거뒀습니다.(8)",
+      "title": "막내 여동생의 핸드볼 팀이 그제 34:23의 11점차 스코어로 대승을 거뒀습니다.(12)",
       "url": "https://bbs.ruliweb.com/best/board/300143/read/74203527?m=humor&t=now",
       "author": "루리웹-725357510",
       "timestamp": "06:22",
-      "views": 1316,
-      "likes": 26,
-      "comments": 8,
-      "collected_at": "2026-02-22T21:40:15.454943",
+      "views": 3206,
+      "likes": 38,
+      "comments": 12,
+      "collected_at": "2026-02-22T21:57:51.491660",
       "thumbnail": "https://i1.ruliweb.com/img/26/02/22/19c856516ec5936e5.webp"
     },
     {
-      "site": "ruliweb",
-      "title": "맛있어지는 과정(12)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203533?m=humor&t=now",
-      "author": "익스터미나투스mk2",
-      "timestamp": "06:24",
-      "views": 2702,
-      "likes": 12,
-      "comments": 12,
-      "collected_at": "2026-02-22T21:40:15.454944",
-      "thumbnail": "https://i1.ruliweb.com/img/26/02/23/19c873d5cc3588ca6.webp"
+      "site": "inven",
+      "title": "남편이 콜라를 마시는게 못마땅한 아내",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618776?category=유머",
+      "author": "사실난라쿤",
+      "timestamp": null,
+      "views": 3993,
+      "likes": 0,
+      "comments": 5,
+      "collected_at": "2026-02-22T21:57:52.175469",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/23/bbs/thumb/s1374709436.png"
     },
     {
-      "site": "ruliweb",
-      "title": "좋아요 3000개 받은 비빔밥(14)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203520?m=humor&t=now",
-      "author": "사이버렉카기사협회대리",
-      "timestamp": "06:19",
-      "views": 3133,
-      "likes": 18,
-      "comments": 14,
-      "collected_at": "2026-02-22T21:40:15.454945",
-      "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c87380d411307e9.webp"
-    },
-    {
-      "site": "ruliweb",
-      "title": "메이플 단도 키웠던 사람들은 진짜 야수들이었다(25)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203530?m=humor&t=now",
-      "author": "지령이다",
-      "timestamp": "06:23",
-      "views": 3196,
-      "likes": 22,
-      "comments": 25,
-      "collected_at": "2026-02-22T21:40:15.454947",
-      "thumbnail": "https://i1.ruliweb.com/ori/26/02/23/19c873bb3a35a1c16.webp"
-    },
-    {
-      "site": "ruliweb",
-      "title": "개발 의욕이 폭발해버린 중국(6)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203517?m=humor&t=now",
-      "author": "29250095088",
-      "timestamp": "06:18",
-      "views": 4233,
-      "likes": 19,
-      "comments": 6,
-      "collected_at": "2026-02-22T21:40:15.454948",
-      "thumbnail": "https://i3.ruliweb.com/ori/26/02/23/19c87376db655578f.jpg"
-    },
-    {
-      "site": "ruliweb",
-      "title": "버튜버) 로제타 커버곡 정하기 트로트 월드컵 결과(1)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74200480?m=humor&t=now",
-      "author": "stuckybam",
-      "timestamp": "26.02.22",
-      "views": 447,
-      "likes": 8,
-      "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.454949",
-      "thumbnail": "https://i3.ruliweb.com/img/26/02/22/19c85567f58144a60.webp"
-    },
-    {
-      "site": "ruliweb",
-      "title": "일본 방송에서 한국음식 알못들한테 까이는 잘알 연예인(12)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203498?m=humor&t=now",
-      "author": "29250095088",
-      "timestamp": "06:13",
-      "views": 4956,
-      "likes": 44,
-      "comments": 12,
-      "collected_at": "2026-02-22T21:40:15.454951",
-      "thumbnail": "https://i1.ruliweb.com/img/26/02/23/19c8732b16555578f.webp"
-    },
-    {
-      "site": "ruliweb",
-      "title": "드럼통으로 통돼지 바베큐 해먹기 .gif(6)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203472?m=humor&t=now",
-      "author": "이사령",
-      "timestamp": "05:59",
-      "views": 3800,
-      "likes": 25,
-      "comments": 6,
-      "collected_at": "2026-02-22T21:40:15.454952",
-      "thumbnail": "https://i2.ruliweb.com/ori/26/02/23/19c8726160d36d213.jpg"
-    },
-    {
-      "site": "ruliweb",
-      "title": "산적들을 간단히 처리한 대장님.manga(4)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203128?m=humor&t=now",
-      "author": "고기해물우동",
-      "timestamp": "02:54",
-      "views": 2239,
+      "site": "inven",
+      "title": "아이스하키 선수의 팬서비스 수준",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618734?category=유머",
+      "author": "킹리적갓비자",
+      "timestamp": null,
+      "views": 4664,
       "likes": 10,
-      "comments": 4,
-      "collected_at": "2026-02-22T21:40:15.454953",
-      "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c867d49ad54873c.webp"
+      "comments": 5,
+      "collected_at": "2026-02-22T21:57:52.175482",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9795896425.jpg"
     },
     {
-      "site": "ruliweb",
-      "title": "사과 깎아주는 모드 근황(15)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203488?m=humor&t=now",
-      "author": "지령이다",
-      "timestamp": "06:05",
-      "views": 7637,
-      "likes": 41,
-      "comments": 15,
-      "collected_at": "2026-02-22T21:40:15.454955",
-      "thumbnail": "https://i3.ruliweb.com/ori/26/02/23/19c872b76025a1c16.webp"
+      "site": "inven",
+      "title": "조선시대 남자들이 빨리 결혼한 이유.jpg",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618726?category=유머",
+      "author": "파아랑망토",
+      "timestamp": null,
+      "views": 5714,
+      "likes": 1,
+      "comments": 16,
+      "collected_at": "2026-02-22T21:57:52.175484",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1844303495.jpg"
     },
     {
-      "site": "ruliweb",
-      "title": "책 많이 읽은 게 티가 나는 말투(24)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203401?m=humor&t=now",
-      "author": "사이버렉카기사협회대리",
-      "timestamp": "05:25",
-      "views": 6497,
-      "likes": 25,
-      "comments": 24,
-      "collected_at": "2026-02-22T21:40:15.454956",
-      "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c8706cbc91307e9.webp"
+      "site": "inven",
+      "title": "방수 키보드",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618720?category=유머",
+      "author": "파노키",
+      "timestamp": null,
+      "views": 3068,
+      "likes": 1,
+      "comments": 9,
+      "collected_at": "2026-02-22T21:57:52.175486",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9518663360.jpg"
     },
     {
-      "site": "ruliweb",
-      "title": "가끔 신이 재능 몰빵을 때리는 경우가 있음(8)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203407?m=humor&t=now",
-      "author": "사이버렉카기사협회대리",
-      "timestamp": "05:27",
-      "views": 6346,
-      "likes": 45,
+      "site": "inven",
+      "title": "약후)오십견 의사눈나에 무릎관절 강화운동",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618714?category=유머",
+      "author": "생줄리앵",
+      "timestamp": null,
+      "views": 3409,
+      "likes": 3,
       "comments": 8,
-      "collected_at": "2026-02-22T21:40:15.454958",
-      "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c87090b901307e9.webp"
+      "collected_at": "2026-02-22T21:57:52.175487",
+      "thumbnail": "https://img.youtube.com/vi/j1YVQ43F89c/mqdefault.jpg"
     },
     {
-      "site": "ruliweb",
-      "title": "9,999$나 하는 FHD 모니터(17)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203410?m=humor&t=now",
-      "author": "아민 템제리언",
-      "timestamp": "05:28",
-      "views": 6280,
-      "likes": 29,
-      "comments": 17,
-      "collected_at": "2026-02-22T21:40:15.454959",
-      "thumbnail": "https://i3.ruliweb.com/img/26/02/23/19c8709033c4e51f8.webp"
+      "site": "inven",
+      "title": "약후)동그란누나",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618713?category=유머",
+      "author": "너빨갱이지",
+      "timestamp": null,
+      "views": 6141,
+      "likes": 1,
+      "comments": 22,
+      "collected_at": "2026-02-22T21:57:52.175489",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9211225345.jpg"
     },
     {
-      "site": "ruliweb",
-      "title": "농사짓는 집에서 크다가 군대 갔을 때 느낀점(14)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203431?m=humor&t=now",
-      "author": "사이버렉카기사협회대리",
-      "timestamp": "05:36",
-      "views": 9128,
-      "likes": 42,
-      "comments": 14,
-      "collected_at": "2026-02-22T21:40:15.454960",
-      "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c8711a7171307e9.webp"
+      "site": "inven",
+      "title": "오늘자 당근마켓",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618705?category=유머",
+      "author": "말많은투덜이",
+      "timestamp": null,
+      "views": 3367,
+      "likes": 0,
+      "comments": 13,
+      "collected_at": "2026-02-22T21:57:52.175490",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1729194851.jpg"
     },
     {
-      "site": "ruliweb",
-      "title": "림버스/9장) 뤼상 인격스 이건 좀 소름돋았음(3)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74202539?m=humor&t=now",
-      "author": "증식의우라라덱",
-      "timestamp": "00:42",
-      "views": 667,
-      "likes": 8,
-      "comments": 3,
-      "collected_at": "2026-02-22T21:40:15.454962",
-      "thumbnail": "https://i1.ruliweb.com/img/26/02/23/19c85fe69b749677c.webp"
+      "site": "inven",
+      "title": "중국만 가능한 담력시험 다리",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618696?category=유머",
+      "author": "두부두꺼비",
+      "timestamp": null,
+      "views": 4363,
+      "likes": 3,
+      "comments": 13,
+      "collected_at": "2026-02-22T21:57:52.175492",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9965526279.jpg"
     },
     {
-      "site": "ruliweb",
-      "title": "블루아카] 그게 무슨 소리니 케이야(3)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74202281?m=humor&t=now",
-      "author": "simpsons012",
-      "timestamp": "00:07",
-      "views": 887,
-      "likes": 8,
-      "comments": 3,
-      "collected_at": "2026-02-22T21:40:15.454964",
-      "thumbnail": "https://i2.ruliweb.com/img/26/02/23/19c85e384b01494b0.webp"
+      "site": "inven",
+      "title": "홈런볼 ㅅㄲ들 야알못이네",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618692?category=유머",
+      "author": "드라고노브",
+      "timestamp": null,
+      "views": 4289,
+      "likes": 1,
+      "comments": 9,
+      "collected_at": "2026-02-22T21:57:52.175493",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1137670383.webp"
     },
     {
-      "site": "ruliweb",
-      "title": "요즘 배달음식 피싱 방법(21)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74203420?m=humor&t=now",
-      "author": "사이버렉카기사협회대리",
-      "timestamp": "05:32",
-      "views": 11112,
-      "likes": 103,
-      "comments": 21,
-      "collected_at": "2026-02-22T21:40:15.454965",
-      "thumbnail": "https://i3.ruliweb.com/img/26/02/23/19c870e12441307e9.webp"
+      "site": "inven",
+      "title": "너 지금 몇명이랑 썸 타고있어?",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618689?category=유머",
+      "author": "파아랑망토",
+      "timestamp": null,
+      "views": 5099,
+      "likes": 1,
+      "comments": 7,
+      "collected_at": "2026-02-22T21:57:52.175495",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1649166177.jpg"
     },
     {
-      "site": "ruliweb",
-      "title": "가면라이더) ??? : 어딜 가는거냐? 녹스으(4)",
-      "url": "https://bbs.ruliweb.com/best/board/300143/read/74199488?m=humor&t=now",
-      "author": "순규앓이",
-      "timestamp": "26.02.22",
-      "views": 1048,
-      "likes": 8,
+      "site": "inven",
+      "title": "ENA 풍향고 틀더니 지독해졌네",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618678?category=유머",
+      "author": "드라고노브",
+      "timestamp": null,
+      "views": 3808,
+      "likes": 0,
+      "comments": 5,
+      "collected_at": "2026-02-22T21:57:52.175496",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1370396498.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "TV조선이 트롯조선하는 이유가있네",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618670?category=유머",
+      "author": "드라고노브",
+      "timestamp": null,
+      "views": 3621,
+      "likes": 0,
+      "comments": 6,
+      "collected_at": "2026-02-22T21:57:52.175498",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1662697971.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "방문이 닫히지 않는 이유",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618668?category=유머",
+      "author": "파아랑망토",
+      "timestamp": null,
+      "views": 4035,
+      "likes": 0,
+      "comments": 2,
+      "collected_at": "2026-02-22T21:57:52.175499",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1874013541.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "스페인 국왕: 개판이네...",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618666?category=유머",
+      "author": "파노키",
+      "timestamp": null,
+      "views": 4743,
+      "likes": 0,
+      "comments": 6,
+      "collected_at": "2026-02-22T21:57:52.175501",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9730834979.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "소리On) 김준현 근황",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618661?category=유머",
+      "author": "풀소유",
+      "timestamp": null,
+      "views": 4010,
+      "likes": 1,
+      "comments": 7,
+      "collected_at": "2026-02-22T21:57:52.175502",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9551099574.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "요즘 게임 불법다운이 사라진 이유",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618654?category=유머",
+      "author": "풀소유",
+      "timestamp": null,
+      "views": 7245,
+      "likes": 1,
+      "comments": 32,
+      "collected_at": "2026-02-22T21:57:52.175504",
+      "thumbnail": "https://static.inven.co.kr/image_2011/board/common/gallery_no_image.png?v=210727"
+    },
+    {
+      "site": "inven",
+      "title": "호스트에게 10억 한방에 쏜 니뽄 싱글맘",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618649?category=유머",
+      "author": "풀소유",
+      "timestamp": null,
+      "views": 9085,
+      "likes": 0,
+      "comments": 20,
+      "collected_at": "2026-02-22T21:57:52.175505",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9471744208.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "진짜 ㅈ되는거 보여준다는 여친",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618648?category=유머",
+      "author": "풀소유",
+      "timestamp": null,
+      "views": 8840,
+      "likes": 0,
+      "comments": 16,
+      "collected_at": "2026-02-22T21:57:52.175507",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9111022910.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "어느 남성이 야동과 자위를 끊은 이유.",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618624?category=유머",
+      "author": "전자팔찌",
+      "timestamp": null,
+      "views": 14449,
+      "likes": 18,
+      "comments": 37,
+      "collected_at": "2026-02-22T21:57:52.175508",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1239032105.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "유리창 깨고 RTX5090 훔쳐간 도둑",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618613?category=유머",
+      "author": "Ew46f2i7",
+      "timestamp": null,
+      "views": 4269,
+      "likes": 0,
+      "comments": 11,
+      "collected_at": "2026-02-22T21:57:52.175509",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1828961343.webp"
+    },
+    {
+      "site": "inven",
+      "title": "ㅇㅎㅂ 니뽄 가면 꼭 헬스 해야되는 이유",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618587?category=유머",
+      "author": "풀소유",
+      "timestamp": null,
+      "views": 11753,
+      "likes": 3,
+      "comments": 25,
+      "collected_at": "2026-02-22T21:57:52.175511",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9351056584.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "담배 한갑에 6만원이 넘는 나라",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618575?category=유머",
+      "author": "풀소유",
+      "timestamp": null,
+      "views": 4410,
+      "likes": 4,
+      "comments": 30,
+      "collected_at": "2026-02-22T21:57:52.175512",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9923097003.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "유쾌한 서양부부",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618564?category=유머",
+      "author": "너빨갱이지",
+      "timestamp": null,
+      "views": 4650,
+      "likes": 0,
       "comments": 4,
-      "collected_at": "2026-02-22T21:40:15.454967",
-      "thumbnail": "https://i1.ruliweb.com/img/26/02/22/19c853807ffd187e.webp"
+      "collected_at": "2026-02-22T21:57:52.175513",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9520191629.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "독도가 한국땅이 맞는 이유",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618526?category=유머",
+      "author": "육감극대화",
+      "timestamp": null,
+      "views": 3253,
+      "likes": 5,
+      "comments": 4,
+      "collected_at": "2026-02-22T21:57:52.175515",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1706677957.webp"
+    },
+    {
+      "site": "inven",
+      "title": "대형 크루즈 선박 건조현장",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618517?category=유머",
+      "author": "육감극대화",
+      "timestamp": null,
+      "views": 3780,
+      "likes": 2,
+      "comments": 14,
+      "collected_at": "2026-02-22T21:57:52.175516",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1275244922.webp"
+    },
+    {
+      "site": "inven",
+      "title": "레버리지... 하지마세요",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618516?category=유머",
+      "author": "육감극대화",
+      "timestamp": null,
+      "views": 3538,
+      "likes": 0,
+      "comments": 9,
+      "collected_at": "2026-02-22T21:57:52.175517",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1469338327.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "40이 되서이 느끼는 사회생활의 진리",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618514?category=유머",
+      "author": "육감극대화",
+      "timestamp": null,
+      "views": 6713,
+      "likes": 4,
+      "comments": 27,
+      "collected_at": "2026-02-22T21:57:52.175519",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1307551243.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "한국 반도체를 앞질러서 복수한다는 국가",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618497?category=유머",
+      "author": "유키l",
+      "timestamp": null,
+      "views": 7848,
+      "likes": 3,
+      "comments": 35,
+      "collected_at": "2026-02-22T21:57:52.175525",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1990868232.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "ㅎㅂ)썬데이",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618491?category=유머",
+      "author": "아몬드봉봉",
+      "timestamp": null,
+      "views": 7552,
+      "likes": 3,
+      "comments": 23,
+      "collected_at": "2026-02-22T21:57:52.175527",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s9391986424.jpg"
+    },
+    {
+      "site": "inven",
+      "title": "3000원 기부 인증샷",
+      "url": "https://www.inven.co.kr/board/webzine/2097/2618469?category=유머",
+      "author": "말많은투덜이",
+      "timestamp": null,
+      "views": 3212,
+      "likes": 0,
+      "comments": 19,
+      "collected_at": "2026-02-22T21:57:52.175528",
+      "thumbnail": "https://upload3.inven.co.kr/upload/2026/02/22/bbs/thumb/s1862539409.jpg"
     },
     {
       "site": "clien",
@@ -739,10 +1100,10 @@
       "url": "https://www.clien.net/service/board/park/19148502?od=T31&po=0&category=0&groupCd=",
       "author": "Mr.Park",
       "timestamp": null,
-      "views": 144,
+      "views": 363,
       "likes": 0,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347807",
+      "collected_at": "2026-02-22T21:57:51.864979",
       "thumbnail": "https://edgio.clien.net/F01/2026/2/15673948/36c39ce0fa223f.jpg?scale=width:740"
     },
     {
@@ -751,10 +1112,10 @@
       "url": "https://www.clien.net/service/board/park/19148501?od=T31&po=0&category=0&groupCd=",
       "author": "언어분석",
       "timestamp": null,
-      "views": 174,
+      "views": 358,
       "likes": 0,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.347816",
+      "collected_at": "2026-02-22T21:57:51.864992",
       "thumbnail": "https://edgio.clien.net/F01/2026/2/15673950/82831e17fccf1.png?scale=width:740"
     },
     {
@@ -763,10 +1124,10 @@
       "url": "https://www.clien.net/service/board/park/19148500?od=T31&po=0&category=0&groupCd=",
       "author": "카르마2021",
       "timestamp": null,
-      "views": 196,
-      "likes": 0,
+      "views": 335,
+      "likes": 2,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347818",
+      "collected_at": "2026-02-22T21:57:51.864994",
       "thumbnail": null
     },
     {
@@ -775,10 +1136,10 @@
       "url": "https://www.clien.net/service/board/park/19148499?od=T31&po=0&category=0&groupCd=",
       "author": "언어분석",
       "timestamp": null,
-      "views": 257,
+      "views": 409,
       "likes": 1,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347820",
+      "collected_at": "2026-02-22T21:57:51.864996",
       "thumbnail": null
     },
     {
@@ -787,10 +1148,10 @@
       "url": "https://www.clien.net/service/board/park/19148498?od=T31&po=0&category=0&groupCd=",
       "author": "언어분석",
       "timestamp": null,
-      "views": 354,
+      "views": 564,
       "likes": 0,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347822",
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.864997",
       "thumbnail": null
     },
     {
@@ -799,10 +1160,10 @@
       "url": "https://www.clien.net/service/board/park/19148496?od=T31&po=0&category=0&groupCd=",
       "author": "4fifty5",
       "timestamp": null,
-      "views": 310,
+      "views": 445,
       "likes": 0,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347824",
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.864999",
       "thumbnail": "https://edgio.clien.net/F01/2026/2/15673938/36c19ff48a4d45.jpg?scale=width:740"
     },
     {
@@ -811,10 +1172,10 @@
       "url": "https://www.clien.net/service/board/park/19148495?od=T31&po=0&category=0&groupCd=",
       "author": "학습하는주린이",
       "timestamp": null,
-      "views": 222,
-      "likes": 0,
+      "views": 328,
+      "likes": 1,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.347825",
+      "collected_at": "2026-02-22T21:57:51.865000",
       "thumbnail": null
     },
     {
@@ -823,10 +1184,10 @@
       "url": "https://www.clien.net/service/board/park/19148494?od=T31&po=0&category=0&groupCd=",
       "author": "_딘_",
       "timestamp": null,
-      "views": 242,
+      "views": 328,
       "likes": 0,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347827",
+      "collected_at": "2026-02-22T21:57:51.865001",
       "thumbnail": null
     },
     {
@@ -835,10 +1196,10 @@
       "url": "https://www.clien.net/service/board/park/19148491?od=T31&po=0&category=0&groupCd=",
       "author": "학습하는주린이",
       "timestamp": null,
-      "views": 678,
+      "views": 897,
       "likes": 1,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.347828",
+      "collected_at": "2026-02-22T21:57:51.865003",
       "thumbnail": null
     },
     {
@@ -847,10 +1208,10 @@
       "url": "https://www.clien.net/service/board/park/19148488?od=T31&po=0&category=0&groupCd=",
       "author": "광주의아들",
       "timestamp": null,
-      "views": 939,
-      "likes": 1,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347829",
+      "views": 1363,
+      "likes": 4,
+      "comments": 2,
+      "collected_at": "2026-02-22T21:57:51.865004",
       "thumbnail": "https://edgio.clien.net/F01/2026/2/15673928/36c0eddb105e4f.jpg?scale=width:740"
     },
     {
@@ -859,10 +1220,10 @@
       "url": "https://www.clien.net/service/board/park/19148487?od=T31&po=0&category=0&groupCd=",
       "author": "설령",
       "timestamp": null,
-      "views": 277,
+      "views": 348,
       "likes": 0,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347831",
+      "collected_at": "2026-02-22T21:57:51.865011",
       "thumbnail": "https://img.youtube.com/vi/aVXPuzRvrhA/hqdefault.jpg"
     },
     {
@@ -871,10 +1232,10 @@
       "url": "https://www.clien.net/service/board/park/19148484?od=T31&po=0&category=0&groupCd=",
       "author": "언어분석",
       "timestamp": null,
-      "views": 337,
+      "views": 407,
       "likes": 0,
       "comments": 5,
-      "collected_at": "2026-02-22T21:40:15.347832",
+      "collected_at": "2026-02-22T21:57:51.865012",
       "thumbnail": null
     },
     {
@@ -883,10 +1244,10 @@
       "url": "https://www.clien.net/service/board/park/19148482?od=T31&po=0&category=0&groupCd=",
       "author": "mericrius",
       "timestamp": null,
-      "views": 411,
+      "views": 492,
       "likes": 0,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.347834",
+      "collected_at": "2026-02-22T21:57:51.865014",
       "thumbnail": "https://img.youtube.com/vi/IWxo6hrbp_Q/hqdefault.jpg"
     },
     {
@@ -895,10 +1256,10 @@
       "url": "https://www.clien.net/service/board/park/19148481?od=T31&po=0&category=0&groupCd=",
       "author": "설령",
       "timestamp": null,
-      "views": 1155,
+      "views": 1336,
       "likes": 0,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347835",
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.865015",
       "thumbnail": "https://img.youtube.com/vi/ypuMrVj-Kh8/hqdefault.jpg"
     },
     {
@@ -907,10 +1268,10 @@
       "url": "https://www.clien.net/service/board/park/19148479?od=T31&po=0&category=0&groupCd=",
       "author": "루다나리에",
       "timestamp": null,
-      "views": 1594,
-      "likes": 7,
+      "views": 1816,
+      "likes": 8,
       "comments": 3,
-      "collected_at": "2026-02-22T21:40:15.347837",
+      "collected_at": "2026-02-22T21:57:51.865017",
       "thumbnail": "https://edgio.clien.net/F01/2026/2/15673920/36baa328de3bbc.gif?scale=width:740"
     },
     {
@@ -919,10 +1280,10 @@
       "url": "https://www.clien.net/service/board/park/19148478?od=T31&po=0&category=0&groupCd=",
       "author": "가나다라마법사1",
       "timestamp": null,
-      "views": 1354,
+      "views": 1566,
       "likes": 0,
       "comments": 10,
-      "collected_at": "2026-02-22T21:40:15.347838",
+      "collected_at": "2026-02-22T21:57:51.865018",
       "thumbnail": null
     },
     {
@@ -931,10 +1292,10 @@
       "url": "https://www.clien.net/service/board/park/19148476?od=T31&po=0&category=0&groupCd=",
       "author": "Riverside",
       "timestamp": null,
-      "views": 942,
+      "views": 1054,
       "likes": 0,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347839",
+      "collected_at": "2026-02-22T21:57:51.865019",
       "thumbnail": null
     },
     {
@@ -943,10 +1304,10 @@
       "url": "https://www.clien.net/service/board/park/19148473?od=T31&po=0&category=0&groupCd=",
       "author": "_딘_",
       "timestamp": null,
-      "views": 1964,
+      "views": 2151,
       "likes": 1,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:15.347841",
+      "collected_at": "2026-02-22T21:57:51.865021",
       "thumbnail": "https://pbs.twimg.com/media/HBxVv-sa0AAuTOn?format=jpg&name=large"
     },
     {
@@ -955,10 +1316,10 @@
       "url": "https://www.clien.net/service/board/park/19148472?od=T31&po=0&category=0&groupCd=",
       "author": "Riverside",
       "timestamp": null,
-      "views": 511,
+      "views": 559,
       "likes": 0,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:15.347842",
+      "collected_at": "2026-02-22T21:57:51.865024",
       "thumbnail": null
     },
     {
@@ -967,10 +1328,10 @@
       "url": "https://www.clien.net/service/board/park/19148470?od=T31&po=0&category=0&groupCd=",
       "author": "다녀와",
       "timestamp": null,
-      "views": 1228,
+      "views": 1335,
       "likes": 0,
       "comments": 7,
-      "collected_at": "2026-02-22T21:40:15.347843",
+      "collected_at": "2026-02-22T21:57:51.865026",
       "thumbnail": null
     },
     {
@@ -979,10 +1340,10 @@
       "url": "https://www.clien.net/service/board/park/19148469?od=T31&po=0&category=0&groupCd=",
       "author": "racoooon",
       "timestamp": null,
-      "views": 870,
+      "views": 951,
       "likes": 0,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347847",
+      "collected_at": "2026-02-22T21:57:51.865027",
       "thumbnail": null
     },
     {
@@ -991,10 +1352,10 @@
       "url": "https://www.clien.net/service/board/park/19148468?od=T31&po=0&category=0&groupCd=",
       "author": "JarvisT",
       "timestamp": null,
-      "views": 2103,
+      "views": 2272,
       "likes": 2,
       "comments": 57,
-      "collected_at": "2026-02-22T21:40:15.347849",
+      "collected_at": "2026-02-22T21:57:51.865028",
       "thumbnail": null
     },
     {
@@ -1003,10 +1364,10 @@
       "url": "https://www.clien.net/service/board/park/19148467?od=T31&po=0&category=0&groupCd=",
       "author": "memberst",
       "timestamp": null,
-      "views": 819,
+      "views": 868,
       "likes": 0,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.347850",
+      "collected_at": "2026-02-22T21:57:51.865030",
       "thumbnail": null
     },
     {
@@ -1015,10 +1376,10 @@
       "url": "https://www.clien.net/service/board/park/19148466?od=T31&po=0&category=0&groupCd=",
       "author": "진혼곡",
       "timestamp": null,
-      "views": 1384,
+      "views": 1457,
       "likes": 0,
-      "comments": 3,
-      "collected_at": "2026-02-22T21:40:15.347851",
+      "comments": 4,
+      "collected_at": "2026-02-22T21:57:51.865031",
       "thumbnail": null
     },
     {
@@ -1027,10 +1388,10 @@
       "url": "https://www.clien.net/service/board/park/19148465?od=T31&po=0&category=0&groupCd=",
       "author": "재나무",
       "timestamp": null,
-      "views": 812,
+      "views": 859,
       "likes": 8,
       "comments": 5,
-      "collected_at": "2026-02-22T21:40:15.347853",
+      "collected_at": "2026-02-22T21:57:51.865033",
       "thumbnail": null
     },
     {
@@ -1039,10 +1400,10 @@
       "url": "https://www.clien.net/service/board/park/19148464?od=T31&po=0&category=0&groupCd=",
       "author": "뚜껑벗겨져라",
       "timestamp": null,
-      "views": 1775,
-      "likes": 11,
-      "comments": 19,
-      "collected_at": "2026-02-22T21:40:15.347854",
+      "views": 1922,
+      "likes": 13,
+      "comments": 20,
+      "collected_at": "2026-02-22T21:57:51.865034",
       "thumbnail": "https://edgio.clien.net/F01/2026/2/15673904/36b329aee1d7d7.jpg?scale=width:740"
     },
     {
@@ -1051,10 +1412,10 @@
       "url": "https://www.clien.net/service/board/park/19148461?od=T31&po=0&category=0&groupCd=",
       "author": "Wlfd",
       "timestamp": null,
-      "views": 1334,
+      "views": 1434,
       "likes": 1,
-      "comments": 9,
-      "collected_at": "2026-02-22T21:40:15.347856",
+      "comments": 10,
+      "collected_at": "2026-02-22T21:57:51.865035",
       "thumbnail": null
     },
     {
@@ -1063,10 +1424,10 @@
       "url": "https://www.clien.net/service/board/park/19148460?od=T31&po=0&category=0&groupCd=",
       "author": "만백성맞으라",
       "timestamp": null,
-      "views": 766,
+      "views": 807,
       "likes": 0,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.347857",
+      "collected_at": "2026-02-22T21:57:51.865037",
       "thumbnail": "https://img.youtube.com/vi/4bfe_vgnn6k/hqdefault.jpg"
     },
     {
@@ -1075,10 +1436,10 @@
       "url": "https://www.clien.net/service/board/park/19148457?od=T31&po=0&category=0&groupCd=",
       "author": "출근찍고퇴근",
       "timestamp": null,
-      "views": 1164,
+      "views": 1235,
       "likes": 0,
-      "comments": 12,
-      "collected_at": "2026-02-22T21:40:15.347859",
+      "comments": 13,
+      "collected_at": "2026-02-22T21:57:51.865038",
       "thumbnail": null
     },
     {
@@ -1087,10 +1448,82 @@
       "url": "https://www.clien.net/service/board/park/19148455?od=T31&po=0&category=0&groupCd=",
       "author": "dkfiengk",
       "timestamp": null,
-      "views": 993,
+      "views": 1059,
       "likes": 1,
       "comments": 12,
-      "collected_at": "2026-02-22T21:40:15.347860",
+      "collected_at": "2026-02-22T21:57:51.865040",
+      "thumbnail": null
+    },
+    {
+      "site": "mlbpark",
+      "title": "동계올림픽 wbc 월드컵 1번 올림픽은 13위로 선방했네요",
+      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581795&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
+      "author": "yeokoahn",
+      "timestamp": null,
+      "views": 0,
+      "likes": null,
+      "comments": null,
+      "collected_at": "2026-02-22T21:57:51.566940",
+      "thumbnail": null
+    },
+    {
+      "site": "mlbpark",
+      "title": "선녀 밈 유명한가요??",
+      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581792&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
+      "author": "공오삼공",
+      "timestamp": null,
+      "views": 25,
+      "likes": null,
+      "comments": null,
+      "collected_at": "2026-02-22T21:57:51.566952",
+      "thumbnail": null
+    },
+    {
+      "site": "mlbpark",
+      "title": "올림픽에서 혼자 금매달 6개딴 선수도 있네요 ㄷㄷ",
+      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581789&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
+      "author": "power!!!",
+      "timestamp": null,
+      "views": 62,
+      "likes": null,
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.566955",
+      "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/70/17717970573720.jpg"
+    },
+    {
+      "site": "mlbpark",
+      "title": "살면서 화낼일이 거의 없었다는 감독.gif",
+      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581786&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
+      "author": "노을리패",
+      "timestamp": null,
+      "views": 129,
+      "likes": null,
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.566956",
+      "thumbnail": null
+    },
+    {
+      "site": "mlbpark",
+      "title": "27일 오기나 할까요?jpg",
+      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581780&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=facebook.com",
+      "author": "둠발롬",
+      "timestamp": null,
+      "views": 208,
+      "likes": null,
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.566958",
+      "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/67/17717967523510.png"
+    },
+    {
+      "site": "mlbpark",
+      "title": "예전 @daum.net으로 로긴하려면",
+      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581774&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
+      "author": "중랑천06",
+      "timestamp": null,
+      "views": 88,
+      "likes": null,
+      "comments": null,
+      "collected_at": "2026-02-22T21:57:51.566960",
       "thumbnail": null
     },
     {
@@ -1099,10 +1532,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581771&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "와썹맨와썹",
       "timestamp": null,
-      "views": 7,
+      "views": 341,
       "likes": null,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.511336",
+      "comments": 7,
+      "collected_at": "2026-02-22T21:57:51.566961",
       "thumbnail": null
     },
     {
@@ -1111,10 +1544,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581768&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "교동이",
       "timestamp": null,
-      "views": 33,
+      "views": 330,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.511341",
+      "collected_at": "2026-02-22T21:57:51.566962",
       "thumbnail": null
     },
     {
@@ -1123,10 +1556,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581765&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "송아지",
       "timestamp": null,
-      "views": 56,
+      "views": 214,
       "likes": null,
-      "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.511343",
+      "comments": 3,
+      "collected_at": "2026-02-22T21:57:51.566964",
       "thumbnail": null
     },
     {
@@ -1135,22 +1568,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581762&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "휴햐혀",
       "timestamp": null,
-      "views": 32,
+      "views": 78,
       "likes": null,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.511345",
-      "thumbnail": null
-    },
-    {
-      "site": "mlbpark",
-      "title": "일본 알몸축제",
-      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581759&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
-      "author": "사딕",
-      "timestamp": null,
-      "views": 164,
-      "likes": null,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.511350",
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.566966",
       "thumbnail": null
     },
     {
@@ -1159,10 +1580,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581756&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "폭격기팩트",
       "timestamp": null,
-      "views": 121,
+      "views": 258,
       "likes": null,
-      "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.511351",
+      "comments": 2,
+      "collected_at": "2026-02-22T21:57:51.566967",
       "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/58/17717958285530.jpg"
     },
     {
@@ -1171,10 +1592,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581750&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "추하강",
       "timestamp": null,
-      "views": 184,
+      "views": 404,
       "likes": null,
-      "comments": 2,
-      "collected_at": "2026-02-22T21:40:15.511353",
+      "comments": 4,
+      "collected_at": "2026-02-22T21:57:51.566969",
       "thumbnail": null
     },
     {
@@ -1183,10 +1604,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581747&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "로보라이더",
       "timestamp": null,
-      "views": 65,
+      "views": 139,
       "likes": null,
-      "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.511354",
+      "comments": 2,
+      "collected_at": "2026-02-22T21:57:51.566970",
       "thumbnail": null
     },
     {
@@ -1195,10 +1616,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581741&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "maisondw",
       "timestamp": null,
-      "views": 173,
+      "views": 274,
       "likes": null,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.511355",
+      "comments": 1,
+      "collected_at": "2026-02-22T21:57:51.566972",
       "thumbnail": "https://img.youtube.com/vi/PVzzPuZjos0/hqdefault.jpg"
     },
     {
@@ -1207,10 +1628,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581738&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "RYU_99",
       "timestamp": null,
-      "views": 649,
+      "views": 1145,
       "likes": null,
-      "comments": 4,
-      "collected_at": "2026-02-22T21:40:15.511357",
+      "comments": 7,
+      "collected_at": "2026-02-22T21:57:51.566973",
       "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/52/17717952855610.jpg"
     },
     {
@@ -1219,10 +1640,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581735&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "롯데송재영",
       "timestamp": null,
-      "views": 362,
+      "views": 578,
       "likes": null,
-      "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.511359",
+      "comments": 3,
+      "collected_at": "2026-02-22T21:57:51.566975",
       "thumbnail": null
     },
     {
@@ -1231,10 +1652,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581732&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "메랍필데이",
       "timestamp": null,
-      "views": 166,
+      "views": 277,
       "likes": null,
       "comments": 3,
-      "collected_at": "2026-02-22T21:40:15.511360",
+      "collected_at": "2026-02-22T21:57:51.566976",
       "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/51/17717951508990.jpg"
     },
     {
@@ -1243,10 +1664,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581729&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "기아우승우",
       "timestamp": null,
-      "views": 124,
+      "views": 173,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.511361",
+      "collected_at": "2026-02-22T21:57:51.566977",
       "thumbnail": null
     },
     {
@@ -1255,10 +1676,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581726&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "메랍필데이",
       "timestamp": null,
-      "views": 180,
+      "views": 231,
       "likes": null,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:15.511363",
+      "collected_at": "2026-02-22T21:57:51.566979",
       "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/44/17717944430350.jpg"
     },
     {
@@ -1267,10 +1688,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581723&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "드러러렁",
       "timestamp": null,
-      "views": 716,
+      "views": 909,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.511364",
+      "collected_at": "2026-02-22T21:57:51.566980",
       "thumbnail": null
     },
     {
@@ -1279,10 +1700,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581720&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "돌돌이23",
       "timestamp": null,
-      "views": 1274,
+      "views": 1783,
       "likes": null,
-      "comments": 2,
-      "collected_at": "2026-02-22T21:40:15.511366",
+      "comments": 3,
+      "collected_at": "2026-02-22T21:57:51.566982",
       "thumbnail": null
     },
     {
@@ -1291,10 +1712,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581717&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "SWIMSUIT",
       "timestamp": null,
-      "views": 565,
+      "views": 734,
       "likes": null,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:15.511367",
+      "collected_at": "2026-02-22T21:57:51.566983",
       "thumbnail": null
     },
     {
@@ -1303,10 +1724,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581714&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "[섹시퀸]한승연",
       "timestamp": null,
-      "views": 126,
+      "views": 157,
       "likes": null,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.511368",
+      "collected_at": "2026-02-22T21:57:51.566985",
       "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/38/1771793845924.jpg"
     },
     {
@@ -1315,10 +1736,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581711&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "코아아트홀",
       "timestamp": null,
-      "views": 914,
+      "views": 1146,
       "likes": null,
-      "comments": 4,
-      "collected_at": "2026-02-22T21:40:15.511370",
+      "comments": 7,
+      "collected_at": "2026-02-22T21:57:51.566986",
       "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/36/17717936484790.jpg"
     },
     {
@@ -1327,10 +1748,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581708&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "몽고리리안",
       "timestamp": null,
-      "views": 517,
+      "views": 650,
       "likes": null,
       "comments": 3,
-      "collected_at": "2026-02-22T21:40:15.511371",
+      "collected_at": "2026-02-22T21:57:51.566987",
       "thumbnail": null
     },
     {
@@ -1339,10 +1760,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581705&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "curiousguy",
       "timestamp": null,
-      "views": 180,
+      "views": 237,
       "likes": null,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.511373",
+      "collected_at": "2026-02-22T21:57:51.566989",
       "thumbnail": null
     },
     {
@@ -1351,10 +1772,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581702&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=naver.com",
       "author": "kspkjp",
       "timestamp": null,
-      "views": 151,
+      "views": 188,
       "likes": null,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.511374",
+      "collected_at": "2026-02-22T21:57:51.566990",
       "thumbnail": null
     },
     {
@@ -1363,10 +1784,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581699&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "보송보송고",
       "timestamp": null,
-      "views": 2788,
+      "views": 4330,
       "likes": null,
-      "comments": 8,
-      "collected_at": "2026-02-22T21:40:15.511375",
+      "comments": 11,
+      "collected_at": "2026-02-22T21:57:51.566992",
       "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/31/17717931188570.jpeg"
     },
     {
@@ -1375,10 +1796,10 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581696&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "럽미주",
       "timestamp": null,
-      "views": 600,
+      "views": 727,
       "likes": null,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.511377",
+      "collected_at": "2026-02-22T21:57:51.566994",
       "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/32/17717932328580.jpg"
     },
     {
@@ -1387,70 +1808,46 @@
       "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581693&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
       "author": "그깟공놀2",
       "timestamp": null,
-      "views": 253,
+      "views": 300,
       "likes": null,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:15.511380",
+      "collected_at": "2026-02-22T21:57:51.566996",
       "thumbnail": null
     },
     {
-      "site": "mlbpark",
-      "title": "슈투트 막폴 여지없네요",
-      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581690&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
-      "author": "기아우승우",
+      "site": "ddanzi",
+      "title": "이건태, 이언주...",
+      "url": "https://www.ddanzi.com/free/873316807",
+      "author": "샘골남자",
       "timestamp": null,
-      "views": 71,
+      "views": 46,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.511382",
+      "collected_at": "2026-02-22T21:57:51.916990",
       "thumbnail": null
     },
     {
-      "site": "mlbpark",
-      "title": "ai발전이 무서운데 공무원들은 철밥통 유지할수 있을까요?",
-      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581687&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
-      "author": "공오삼공",
+      "site": "ddanzi",
+      "title": "남천동 여론조사는 ‘꼿꼿’이란 이름도 버렸군요",
+      "url": "https://www.ddanzi.com/free/873316680",
+      "author": "😺맑은☀️",
       "timestamp": null,
-      "views": 251,
-      "likes": null,
-      "comments": 4,
-      "collected_at": "2026-02-22T21:40:15.511383",
-      "thumbnail": null
-    },
-    {
-      "site": "mlbpark",
-      "title": "헐! 당연히 T1이 이긴 줄 알고 있었는데",
-      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581684&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
-      "author": "스타렉스",
-      "timestamp": null,
-      "views": 195,
-      "likes": null,
-      "comments": 1,
-      "collected_at": "2026-02-22T21:40:15.511385",
-      "thumbnail": null
-    },
-    {
-      "site": "mlbpark",
-      "title": "4세트 페이커 이해불가 노답 플레이",
-      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581678&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
-      "author": "이준석",
-      "timestamp": null,
-      "views": 325,
-      "likes": null,
-      "comments": 3,
-      "collected_at": "2026-02-22T21:40:15.511386",
-      "thumbnail": "https://simg.donga.com/ugc/MLBPARK/Board/17/71/79/21/17717921922790.jpg"
-    },
-    {
-      "site": "mlbpark",
-      "title": "이정후 스프링 트레이닝 안타",
-      "url": "https://mlbpark.donga.com/mp/b.php?id=202602230112581675&p=1&b=bullpen&m=view&select=&query=&subselect=&subquery=&user=&site=donga.com",
-      "author": "진욱성빈",
-      "timestamp": null,
-      "views": 269,
-      "likes": null,
+      "views": 247,
+      "likes": 2,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.511387",
+      "collected_at": "2026-02-22T21:57:51.917019",
+      "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/680/316/873/626630929cf18287d4849b094fdfa13a.jpeg"
+    },
+    {
+      "site": "ddanzi",
+      "title": "어제 민주당 정책의총, 검찰개혁법 관련 간단 정리",
+      "url": "https://www.ddanzi.com/free/873316512",
+      "author": "HopeAlways",
+      "timestamp": null,
+      "views": 326,
+      "likes": 1,
+      "comments": null,
+      "collected_at": "2026-02-22T21:57:51.917025",
       "thumbnail": null
     },
     {
@@ -1459,10 +1856,10 @@
       "url": "https://www.ddanzi.com/free/873316351",
       "author": "푸른무지개🌈😼😸😺🐶🏌",
       "timestamp": null,
-      "views": 96,
-      "likes": null,
+      "views": 534,
+      "likes": 1,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737597",
+      "collected_at": "2026-02-22T21:57:51.917029",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/351/316/873/cfe020c5a697bc8b7e8772de3600d39d.jpeg"
     },
     {
@@ -1471,10 +1868,10 @@
       "url": "https://www.ddanzi.com/free/873316317",
       "author": "샘골남자",
       "timestamp": null,
-      "views": 188,
-      "likes": null,
+      "views": 668,
+      "likes": 1,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737603",
+      "collected_at": "2026-02-22T21:57:51.917032",
       "thumbnail": null
     },
     {
@@ -1483,10 +1880,10 @@
       "url": "https://www.ddanzi.com/free/873316256",
       "author": "geol",
       "timestamp": null,
-      "views": 223,
+      "views": 579,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737605",
+      "collected_at": "2026-02-22T21:57:51.917035",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/256/316/873/a9e64fb8c9a1ade3fc983382034e9864.jpg"
     },
     {
@@ -1495,10 +1892,10 @@
       "url": "https://www.ddanzi.com/free/873316139",
       "author": "geol",
       "timestamp": null,
-      "views": 196,
+      "views": 506,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737607",
+      "collected_at": "2026-02-22T21:57:51.917038",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/139/316/873/3844a8175f3ee0461fd140a4a65ba17e.jpg"
     },
     {
@@ -1507,10 +1904,10 @@
       "url": "https://www.ddanzi.com/free/873316137",
       "author": "retina66",
       "timestamp": null,
-      "views": 253,
+      "views": 486,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737608",
+      "collected_at": "2026-02-22T21:57:51.917041",
       "thumbnail": null
     },
     {
@@ -1519,10 +1916,10 @@
       "url": "https://www.ddanzi.com/free/873316095",
       "author": "troyglaus",
       "timestamp": null,
-      "views": 344,
-      "likes": 3,
+      "views": 628,
+      "likes": 7,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737610",
+      "collected_at": "2026-02-22T21:57:51.917043",
       "thumbnail": null
     },
     {
@@ -1531,10 +1928,10 @@
       "url": "https://www.ddanzi.com/free/873316088",
       "author": "웡키키",
       "timestamp": null,
-      "views": 128,
-      "likes": 2,
+      "views": 202,
+      "likes": 3,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737612",
+      "collected_at": "2026-02-22T21:57:51.917047",
       "thumbnail": null
     },
     {
@@ -1543,10 +1940,10 @@
       "url": "https://www.ddanzi.com/free/873316085",
       "author": "세작감별사",
       "timestamp": null,
-      "views": 232,
+      "views": 383,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737613",
+      "collected_at": "2026-02-22T21:57:51.917050",
       "thumbnail": null
     },
     {
@@ -1555,10 +1952,10 @@
       "url": "https://www.ddanzi.com/free/873316027",
       "author": "웡키키",
       "timestamp": null,
-      "views": 261,
-      "likes": 4,
+      "views": 419,
+      "likes": 6,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737614",
+      "collected_at": "2026-02-22T21:57:51.917053",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/027/316/873/4c69dd62631ff17f0e4266e8cb7463bd.jpeg"
     },
     {
@@ -1567,10 +1964,10 @@
       "url": "https://www.ddanzi.com/free/873316020",
       "author": "닉네임없음(나야상진이)",
       "timestamp": null,
-      "views": 142,
+      "views": 304,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737616",
+      "collected_at": "2026-02-22T21:57:51.917055",
       "thumbnail": null
     },
     {
@@ -1579,10 +1976,10 @@
       "url": "https://www.ddanzi.com/free/873315732",
       "author": "😺맑은☀️",
       "timestamp": null,
-      "views": 643,
-      "likes": 5,
+      "views": 851,
+      "likes": 6,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737617",
+      "collected_at": "2026-02-22T21:57:51.917066",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/732/315/873/859a826f3f849624e240ddd81ef9a7d3.jpeg"
     },
     {
@@ -1591,10 +1988,10 @@
       "url": "https://www.ddanzi.com/free/873315660",
       "author": "무념무행",
       "timestamp": null,
-      "views": 172,
+      "views": 204,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737619",
+      "collected_at": "2026-02-22T21:57:51.917068",
       "thumbnail": null
     },
     {
@@ -1603,10 +2000,10 @@
       "url": "https://www.ddanzi.com/free/873315640",
       "author": "나운호깨",
       "timestamp": null,
-      "views": 462,
+      "views": 662,
       "likes": 4,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737620",
+      "collected_at": "2026-02-22T21:57:51.917071",
       "thumbnail": null
     },
     {
@@ -1615,10 +2012,10 @@
       "url": "https://www.ddanzi.com/free/873315470",
       "author": "예거라들러💭",
       "timestamp": null,
-      "views": 677,
-      "likes": 9,
+      "views": 872,
+      "likes": 11,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737622",
+      "collected_at": "2026-02-22T21:57:51.917073",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/470/315/873/db180296da64cd0ea09666300a7ea72a.jpeg"
     },
     {
@@ -1627,10 +2024,10 @@
       "url": "https://www.ddanzi.com/free/873315499",
       "author": "다르게바느질",
       "timestamp": null,
-      "views": 2370,
-      "likes": 19,
+      "views": 3803,
+      "likes": 25,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737623",
+      "collected_at": "2026-02-22T21:57:51.917077",
       "thumbnail": null
     },
     {
@@ -1639,10 +2036,10 @@
       "url": "https://www.ddanzi.com/free/873315394",
       "author": "대왕호돌이",
       "timestamp": null,
-      "views": 249,
+      "views": 288,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737625",
+      "collected_at": "2026-02-22T21:57:51.917079",
       "thumbnail": null
     },
     {
@@ -1651,10 +2048,10 @@
       "url": "https://www.ddanzi.com/free/873315339",
       "author": "꽃밭고양이",
       "timestamp": null,
-      "views": 1355,
+      "views": 1821,
       "likes": 3,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737626",
+      "collected_at": "2026-02-22T21:57:51.917082",
       "thumbnail": null
     },
     {
@@ -1663,10 +2060,10 @@
       "url": "https://www.ddanzi.com/free/873315176",
       "author": "하늘과구름",
       "timestamp": null,
-      "views": 1075,
+      "views": 1447,
       "likes": 6,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737628",
+      "collected_at": "2026-02-22T21:57:51.917084",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/176/315/873/cbe91aa756f03782750114b7f4e33283.jpg"
     },
     {
@@ -1675,10 +2072,10 @@
       "url": "https://www.ddanzi.com/free/873315111",
       "author": "서민여행가",
       "timestamp": null,
-      "views": 428,
+      "views": 521,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737629",
+      "collected_at": "2026-02-22T21:57:51.917086",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/111/315/873/0193eef154e9a2a258e9d0d33b2b2b9c.jpg"
     },
     {
@@ -1687,10 +2084,10 @@
       "url": "https://www.ddanzi.com/free/873314101",
       "author": "Speculator",
       "timestamp": null,
-      "views": 541,
+      "views": 588,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737635",
+      "collected_at": "2026-02-22T21:57:51.917088",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/101/314/873/0f33c905e019addc747a3bfb52963889.jpg"
     },
     {
@@ -1699,10 +2096,10 @@
       "url": "https://www.ddanzi.com/free/873313059",
       "author": "별명짓다시인되겠어",
       "timestamp": null,
-      "views": 943,
-      "likes": 3,
+      "views": 1020,
+      "likes": 5,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737636",
+      "collected_at": "2026-02-22T21:57:51.917090",
       "thumbnail": null
     },
     {
@@ -1711,10 +2108,10 @@
       "url": "https://www.ddanzi.com/free/873312998",
       "author": "_풍경소리_",
       "timestamp": null,
-      "views": 431,
+      "views": 457,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737638",
+      "collected_at": "2026-02-22T21:57:51.917092",
       "thumbnail": null
     },
     {
@@ -1723,10 +2120,10 @@
       "url": "https://www.ddanzi.com/free/873312911",
       "author": "우울할때똥싸",
       "timestamp": null,
-      "views": 1589,
+      "views": 1739,
       "likes": 3,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737639",
+      "collected_at": "2026-02-22T21:57:51.917095",
       "thumbnail": null
     },
     {
@@ -1735,10 +2132,10 @@
       "url": "https://www.ddanzi.com/free/873312775",
       "author": "웡키키",
       "timestamp": null,
-      "views": 2088,
-      "likes": 5,
+      "views": 2267,
+      "likes": 7,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737640",
+      "collected_at": "2026-02-22T21:57:51.917097",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/775/312/873/705bba1713d813b4922fb2661502540e.jpeg"
     },
     {
@@ -1747,10 +2144,10 @@
       "url": "https://www.ddanzi.com/free/873312719",
       "author": "달아래",
       "timestamp": null,
-      "views": 824,
+      "views": 889,
       "likes": 7,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737642",
+      "collected_at": "2026-02-22T21:57:51.917100",
       "thumbnail": null
     },
     {
@@ -1759,10 +2156,10 @@
       "url": "https://www.ddanzi.com/free/873312619",
       "author": "😺맑은☀️",
       "timestamp": null,
-      "views": 694,
+      "views": 747,
       "likes": 5,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737643",
+      "collected_at": "2026-02-22T21:57:51.917102",
       "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/619/312/873/536ecaa11a9ce6fbe0f4608d6b1df17d.jpeg"
     },
     {
@@ -1771,47 +2168,23 @@
       "url": "https://www.ddanzi.com/free/873312632",
       "author": "소심한T형",
       "timestamp": null,
-      "views": 596,
+      "views": 653,
       "likes": 7,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737645",
+      "collected_at": "2026-02-22T21:57:51.917105",
       "thumbnail": null
     },
     {
-      "site": "ddanzi",
-      "title": "지귀연 판사가 찰스 1세를 거론한 것은 이잼에 대한 저주가 섞인 주문임.",
-      "url": "https://www.ddanzi.com/free/873312598",
-      "author": "유명하면피곤해2",
-      "timestamp": null,
-      "views": 718,
-      "likes": 4,
+      "site": "bobaedream",
+      "title": "재명이는 왜그렇게 구라를 잘치지??",
+      "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864676&bm=1",
+      "author": "환단숯불고기",
+      "timestamp": "06:14",
+      "views": 60,
+      "likes": 3,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737646",
-      "thumbnail": null
-    },
-    {
-      "site": "ddanzi",
-      "title": "일단 유명해져라, 그렇다면 사람들은 당신이 똥을 싸도 박수를 쳐줄 것이다",
-      "url": "https://www.ddanzi.com/free/873312574",
-      "author": "동구라미",
-      "timestamp": null,
-      "views": 511,
-      "likes": 2,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737647",
-      "thumbnail": "https://img-cdn.ddanzi.com/files/attach/images/4258226/574/312/873/9c3806742634f887006470ab04a6c6d9.jpg"
-    },
-    {
-      "site": "ddanzi",
-      "title": "썸네일만 봐도 웃기고도 구역질남 …",
-      "url": "https://www.ddanzi.com/free/873312461",
-      "author": "달아래",
-      "timestamp": null,
-      "views": 1012,
-      "likes": 5,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.737649",
-      "thumbnail": null
+      "collected_at": "2026-02-22T21:57:54.063272",
+      "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/23/06/boba1771794548_766745739.jpg"
     },
     {
       "site": "bobaedream",
@@ -1819,10 +2192,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864673&bm=1",
       "author": "그리운살냄새",
       "timestamp": "05:52",
-      "views": 120,
+      "views": 163,
       "likes": 4,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:17.967785",
+      "collected_at": "2026-02-22T21:57:54.063291",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/23/05/enri1771792265_2028696239.gif"
     },
     {
@@ -1831,10 +2204,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864665&bm=1",
       "author": "그리운살냄새",
       "timestamp": "04:31",
-      "views": 854,
+      "views": 1105,
       "likes": 6,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:17.967793",
+      "collected_at": "2026-02-22T21:57:54.063294",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/23/04/enri1771788490_287044704.gif"
     },
     {
@@ -1843,10 +2216,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864664&bm=1",
       "author": "그리운살냄새",
       "timestamp": "04:15",
-      "views": 201,
+      "views": 237,
       "likes": 9,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:17.967795",
+      "collected_at": "2026-02-22T21:57:54.063296",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/23/04/enri1771787023_1839524885.jpg"
     },
     {
@@ -1855,10 +2228,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864662&bm=1",
       "author": "그리운살냄새",
       "timestamp": "03:55",
-      "views": 385,
+      "views": 445,
       "likes": 7,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:17.967797",
+      "collected_at": "2026-02-22T21:57:54.063298",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/23/03/enri1771785870_401393022.jpg"
     },
     {
@@ -1867,10 +2240,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864661&bm=1",
       "author": "모라카누",
       "timestamp": "03:45",
-      "views": 102,
+      "views": 107,
       "likes": 4,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:17.967798",
+      "collected_at": "2026-02-22T21:57:54.063301",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/23/03/GAkZ1771785905_1729662958.jpg"
     },
     {
@@ -1879,10 +2252,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864658&bm=1",
       "author": "그리운살냄새",
       "timestamp": "03:39",
-      "views": 485,
+      "views": 534,
       "likes": 5,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:17.967800",
+      "collected_at": "2026-02-22T21:57:54.063303",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/23/03/enri1771785455_2038997689.jpg"
     },
     {
@@ -1891,10 +2264,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864652&bm=1",
       "author": "당근나물",
       "timestamp": "02:54",
-      "views": 61,
+      "views": 68,
       "likes": 3,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:17.967801",
+      "collected_at": "2026-02-22T21:57:54.063305",
       "thumbnail": null
     },
     {
@@ -1903,10 +2276,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864649&bm=1",
       "author": "급하면어제나..",
       "timestamp": "02:45",
-      "views": 91,
+      "views": 93,
       "likes": 9,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:17.967803",
+      "collected_at": "2026-02-22T21:57:54.063308",
       "thumbnail": null
     },
     {
@@ -1915,10 +2288,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864643&bm=1",
       "author": "Sunkyo..",
       "timestamp": "01:51",
-      "views": 544,
-      "likes": 19,
+      "views": 856,
+      "likes": 20,
       "comments": 4,
-      "collected_at": "2026-02-22T21:40:17.967805",
+      "collected_at": "2026-02-22T21:57:54.063310",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/23/01/GBAW1771778630_409566483.jpg"
     },
     {
@@ -1930,7 +2303,7 @@
       "views": 184,
       "likes": 3,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:17.967806",
+      "collected_at": "2026-02-22T21:57:54.063313",
       "thumbnail": null
     },
     {
@@ -1939,10 +2312,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864638&bm=1",
       "author": "바보맨",
       "timestamp": "01:04",
-      "views": 239,
+      "views": 244,
       "likes": 4,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:17.967808",
+      "collected_at": "2026-02-22T21:57:54.063315",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/23/01/vict1771776231_161943729.png"
     },
     {
@@ -1951,10 +2324,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864636&bm=1",
       "author": "아임썬",
       "timestamp": "00:57",
-      "views": 402,
+      "views": 411,
       "likes": 3,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:17.967810",
+      "collected_at": "2026-02-22T21:57:54.063317",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/23/00/Hwoc1771775836_746349623.png"
     },
     {
@@ -1966,7 +2339,7 @@
       "views": 120,
       "likes": 3,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:17.967811",
+      "collected_at": "2026-02-22T21:57:54.063320",
       "thumbnail": null
     },
     {
@@ -1975,10 +2348,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864631&bm=1",
       "author": "돌아온핵사이..",
       "timestamp": "00:07",
-      "views": 93,
+      "views": 94,
       "likes": 3,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:17.967813",
+      "collected_at": "2026-02-22T21:57:54.063322",
       "thumbnail": null
     },
     {
@@ -1987,10 +2360,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864630&bm=1",
       "author": "엘리노먼",
       "timestamp": "00:00",
-      "views": 3368,
+      "views": 3619,
       "likes": 26,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:17.967814",
+      "collected_at": "2026-02-22T21:57:54.063324",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/22/23/mme11771772387_635889696.jpg"
     },
     {
@@ -1999,10 +2372,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864629&bm=1",
       "author": "여우타가",
       "timestamp": "02/22",
-      "views": 1443,
-      "likes": 28,
+      "views": 1541,
+      "likes": 29,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:17.967816",
+      "collected_at": "2026-02-22T21:57:54.063327",
       "thumbnail": null
     },
     {
@@ -2011,10 +2384,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864628&bm=1",
       "author": "소유무소유",
       "timestamp": "02/22",
-      "views": 209,
+      "views": 210,
       "likes": 13,
       "comments": 5,
-      "collected_at": "2026-02-22T21:40:17.967818",
+      "collected_at": "2026-02-22T21:57:54.063330",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/22/23/sm301771772120_303096324.png"
     },
     {
@@ -2023,10 +2396,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864626&bm=1",
       "author": "여우타가",
       "timestamp": "02/22",
-      "views": 144,
+      "views": 146,
       "likes": 13,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:17.967819",
+      "collected_at": "2026-02-22T21:57:54.063332",
       "thumbnail": null
     },
     {
@@ -2035,10 +2408,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864624&bm=1",
       "author": "Sunkyo..",
       "timestamp": "02/22",
-      "views": 1653,
-      "likes": 43,
+      "views": 1732,
+      "likes": 45,
       "comments": 3,
-      "collected_at": "2026-02-22T21:40:17.967825",
+      "collected_at": "2026-02-22T21:57:54.063334",
       "thumbnail": null
     },
     {
@@ -2047,10 +2420,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864623&bm=1",
       "author": "전두환샤망",
       "timestamp": "02/22",
-      "views": 70,
+      "views": 72,
       "likes": 6,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:17.967826",
+      "collected_at": "2026-02-22T21:57:54.063337",
       "thumbnail": null
     },
     {
@@ -2062,7 +2435,7 @@
       "views": 138,
       "likes": 8,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:17.967828",
+      "collected_at": "2026-02-22T21:57:54.063339",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/22/23/odys1771770990_2130525484.png"
     },
     {
@@ -2071,10 +2444,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864620&bm=1",
       "author": "당근나물",
       "timestamp": "02/22",
-      "views": 407,
+      "views": 412,
       "likes": 5,
       "comments": 3,
-      "collected_at": "2026-02-22T21:40:17.967830",
+      "collected_at": "2026-02-22T21:57:54.063341",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/22/23/hyun1771770890_684779988.gif"
     },
     {
@@ -2083,10 +2456,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864619&bm=1",
       "author": "전두환샤망",
       "timestamp": "02/22",
-      "views": 85,
+      "views": 86,
       "likes": 3,
       "comments": 2,
-      "collected_at": "2026-02-22T21:40:17.967831",
+      "collected_at": "2026-02-22T21:57:54.063343",
       "thumbnail": null
     },
     {
@@ -2095,10 +2468,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864618&bm=1",
       "author": "돌아온핵사이..",
       "timestamp": "02/22",
-      "views": 146,
+      "views": 147,
       "likes": 3,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:17.967833",
+      "collected_at": "2026-02-22T21:57:54.063345",
       "thumbnail": null
     },
     {
@@ -2110,7 +2483,7 @@
       "views": 159,
       "likes": 9,
       "comments": 4,
-      "collected_at": "2026-02-22T21:40:17.967834",
+      "collected_at": "2026-02-22T21:57:54.063348",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/22/23/yesd1771770138_1728606770.jpg"
     },
     {
@@ -2122,7 +2495,7 @@
       "views": 109,
       "likes": 4,
       "comments": 1,
-      "collected_at": "2026-02-22T21:40:17.967836",
+      "collected_at": "2026-02-22T21:57:54.063351",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/22/23/mme11771769864_1241940441.jpg"
     },
     {
@@ -2131,10 +2504,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864615&bm=1",
       "author": "전두환샤망",
       "timestamp": "02/22",
-      "views": 524,
+      "views": 528,
       "likes": 5,
       "comments": 4,
-      "collected_at": "2026-02-22T21:40:17.967837",
+      "collected_at": "2026-02-22T21:57:54.063354",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/22/23/odys1771769856_661488891.jpg"
     },
     {
@@ -2143,10 +2516,10 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864614&bm=1",
       "author": "당근나뮬",
       "timestamp": "02/22",
-      "views": 3425,
-      "likes": 44,
+      "views": 3879,
+      "likes": 46,
       "comments": 5,
-      "collected_at": "2026-02-22T21:40:17.967838",
+      "collected_at": "2026-02-22T21:57:54.063356",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/22/23/yesd1771769802_742613344.jpg"
     },
     {
@@ -2155,23 +2528,23 @@
       "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864613&bm=1",
       "author": "당근나물",
       "timestamp": "02/22",
-      "views": 222,
+      "views": 223,
       "likes": 3,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:17.967840",
+      "collected_at": "2026-02-22T21:57:54.063359",
       "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/22/23/hyun1771769752_286272416.jpg"
     },
     {
-      "site": "bobaedream",
-      "title": "전한길  3.1절 자유음악회 근황",
-      "url": "https://www.bobaedream.co.kr/view?code=strange&No=6864612&bm=1",
-      "author": "슈팝파",
-      "timestamp": "02/22",
-      "views": 7228,
-      "likes": 124,
-      "comments": 17,
-      "collected_at": "2026-02-22T21:40:17.967841",
-      "thumbnail": "https://file1.bobaedream.co.kr/strange/2026/02/22/23/yenu1771769707_1591110595.png"
+      "site": "ppomppu",
+      "title": "호불호 심하게 갈린다는 국수 jpg",
+      "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843559",
+      "author": null,
+      "timestamp": "06:40:29",
+      "views": 6200,
+      "likes": null,
+      "comments": null,
+      "collected_at": "2026-02-22T21:57:52.208814",
+      "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0223/20260223045433_OHCvQ31XJx.jpg"
     },
     {
       "site": "ppomppu",
@@ -2179,10 +2552,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843495",
       "author": null,
       "timestamp": "04:29:26",
-      "views": 14706,
+      "views": 17142,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993114",
+      "collected_at": "2026-02-22T21:57:52.208822",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0223/900w_20260223002844_0QXUqLdPi6.jpg"
     },
     {
@@ -2191,10 +2564,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843459",
       "author": null,
       "timestamp": "03:29:08",
-      "views": 11458,
+      "views": 12869,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993122",
+      "collected_at": "2026-02-22T21:57:52.208824",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/20260222234155_1H5UObRR6S.webp"
     },
     {
@@ -2203,10 +2576,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843008",
       "author": null,
       "timestamp": "03:27:01",
-      "views": 10794,
+      "views": 12033,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993124",
+      "collected_at": "2026-02-22T21:57:52.208826",
       "thumbnail": "https://cdn3.ppomppu.co.kr/zboard/data3/2026/0222/20260222163907_19W1N2Zbyv.jpg"
     },
     {
@@ -2215,10 +2588,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843292",
       "author": null,
       "timestamp": "02:57:01",
-      "views": 32420,
+      "views": 33909,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993125",
+      "collected_at": "2026-02-22T21:57:52.208828",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/20260222211140_y7TLlY98FK.webp"
     },
     {
@@ -2227,10 +2600,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843485",
       "author": null,
       "timestamp": "02:42:01",
-      "views": 15702,
+      "views": 17467,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993127",
+      "collected_at": "2026-02-22T21:57:52.208829",
       "thumbnail": null
     },
     {
@@ -2239,10 +2612,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843361",
       "author": null,
       "timestamp": "02:37:01",
-      "views": 26831,
+      "views": 27854,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993128",
+      "collected_at": "2026-02-22T21:57:52.208831",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/900w_20260222220957_B8t3C6SxM9.png"
     },
     {
@@ -2251,10 +2624,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843506",
       "author": null,
       "timestamp": "02:22:01",
-      "views": 16979,
+      "views": 18033,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993130",
+      "collected_at": "2026-02-22T21:57:52.208832",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0223/20260223004520_pek0BJoPS5.webp"
     },
     {
@@ -2263,10 +2636,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843453",
       "author": null,
       "timestamp": "02:07:01",
-      "views": 12475,
+      "views": 12912,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993131",
+      "collected_at": "2026-02-22T21:57:52.208834",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/20260222233407_8u1UQnKQZs.webp"
     },
     {
@@ -2275,10 +2648,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843518",
       "author": null,
       "timestamp": "01:42:01",
-      "views": 19878,
+      "views": 20655,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993133",
+      "collected_at": "2026-02-22T21:57:52.208835",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0223/20260223005447_hk2hSbxHaW.webp"
     },
     {
@@ -2287,10 +2660,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843474",
       "author": null,
       "timestamp": "01:38:35",
-      "views": 15941,
+      "views": 16385,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993134",
+      "collected_at": "2026-02-22T21:57:52.208836",
       "thumbnail": null
     },
     {
@@ -2299,10 +2672,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843315",
       "author": null,
       "timestamp": "01:27:01",
-      "views": 9909,
+      "views": 10199,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993136",
+      "collected_at": "2026-02-22T21:57:52.208838",
       "thumbnail": null
     },
     {
@@ -2311,10 +2684,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843484",
       "author": null,
       "timestamp": "01:17:02",
-      "views": 3243,
+      "views": 3407,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993137",
+      "collected_at": "2026-02-22T21:57:52.208839",
       "thumbnail": null
     },
     {
@@ -2323,10 +2696,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843211",
       "author": null,
       "timestamp": "01:12:01",
-      "views": 9296,
+      "views": 9532,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993139",
+      "collected_at": "2026-02-22T21:57:52.208841",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/900w_20260222195800_tdVbC1PP30.jpg"
     },
     {
@@ -2335,10 +2708,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843416",
       "author": null,
       "timestamp": "00:52:02",
-      "views": 9084,
+      "views": 9225,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993140",
+      "collected_at": "2026-02-22T21:57:52.208842",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/900w_20260222230117_c4XrVF4VMM.jpg"
     },
     {
@@ -2347,10 +2720,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843378",
       "author": null,
       "timestamp": "00:47:01",
-      "views": 34354,
+      "views": 34717,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993142",
+      "collected_at": "2026-02-22T21:57:52.208844",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/20260222222320_TNww3dWx1A.jpg"
     },
     {
@@ -2359,10 +2732,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843316",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 19317,
+      "views": 19531,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993143",
+      "collected_at": "2026-02-22T21:57:52.208845",
       "thumbnail": "https://cdn2.ppomppu.co.kr/images/gif_load.png"
     },
     {
@@ -2371,10 +2744,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9842568",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 12529,
+      "views": 12625,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993144",
+      "collected_at": "2026-02-22T21:57:52.208846",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/900w_20260222090035_mZkFaKVApX.jpg"
     },
     {
@@ -2383,10 +2756,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843367",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 22510,
+      "views": 22753,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993146",
+      "collected_at": "2026-02-22T21:57:52.208848",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/20260222221327_0zAuzrrQJV.jpeg"
     },
     {
@@ -2395,10 +2768,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843404",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 22555,
+      "views": 22808,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993147",
+      "collected_at": "2026-02-22T21:57:52.208849",
       "thumbnail": null
     },
     {
@@ -2407,10 +2780,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843264",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 14161,
+      "views": 14263,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993149",
+      "collected_at": "2026-02-22T21:57:52.208851",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/20260222204523_4VOL7goCUU.png"
     },
     {
@@ -2419,10 +2792,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843353",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 22197,
+      "views": 22341,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993150",
+      "collected_at": "2026-02-22T21:57:52.208857",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/20260222220127_SD3gFG8Pog.webp"
     },
     {
@@ -2431,10 +2804,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843164",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 8989,
+      "views": 9018,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993152",
+      "collected_at": "2026-02-22T21:57:52.208858",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/900w_20260222191950_fHlKpfw2eu.jpeg"
     },
     {
@@ -2443,10 +2816,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843253",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 21139,
+      "views": 21267,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993153",
+      "collected_at": "2026-02-22T21:57:52.208860",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/20260222203611_ybsgR8qD8w.jpg"
     },
     {
@@ -2455,10 +2828,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843204",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 31797,
+      "views": 31904,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993154",
+      "collected_at": "2026-02-22T21:57:52.208861",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/900w_20260222195554_1eL50LXmRN.jpg"
     },
     {
@@ -2467,10 +2840,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843218",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 16684,
+      "views": 16760,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993156",
+      "collected_at": "2026-02-22T21:57:52.208863",
       "thumbnail": "https://img.youtube.com/vi/X6qDfY6Aw5Y/hqdefault.jpg"
     },
     {
@@ -2479,10 +2852,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843193",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 41435,
+      "views": 41544,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993157",
+      "collected_at": "2026-02-22T21:57:52.208864",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/900w_20260222194829_3voURj7WYt.jpg"
     },
     {
@@ -2491,10 +2864,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843061",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 10816,
+      "views": 10836,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993159",
+      "collected_at": "2026-02-22T21:57:52.208865",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/20260222174307_T1hqbNGC7U.jpeg"
     },
     {
@@ -2503,10 +2876,10 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843183",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 41853,
+      "views": 41971,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993160",
+      "collected_at": "2026-02-22T21:57:52.208867",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/900w_20260222193835_7dmtFhb3vQ.jpeg"
     },
     {
@@ -2515,23 +2888,11 @@
       "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9842974",
       "author": null,
       "timestamp": "26/02/22",
-      "views": 33594,
+      "views": 33644,
       "likes": null,
       "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993166",
+      "collected_at": "2026-02-22T21:57:52.208868",
       "thumbnail": "https://cdn2.ppomppu.co.kr/zboard/data3/2026/0222/20260222160214_IChsSZocx7.webp"
-    },
-    {
-      "site": "ppomppu",
-      "title": "김민석은 총리까지만 하고 그만하는 게",
-      "url": "https://www.ppomppu.co.kr/zboard/view.php?id=freeboard&no=9843130",
-      "author": null,
-      "timestamp": "26/02/22",
-      "views": 15005,
-      "likes": null,
-      "comments": null,
-      "collected_at": "2026-02-22T21:40:15.993167",
-      "thumbnail": null
     }
   ]
 }

@@ -1129,6 +1129,7 @@ _CONTENT_SELECTORS: Dict[str, List[str]] = {
     "dogdrip": ["div.xe_content"],
     "theqoo": ["div.xe_content"],
     "82cook": ["div.view_content", "div.post_content"],
+    "slrclub": ["div#userct"],
 }
 
 # og:image에서 사이트 기본 이미지(콘텐츠가 아닌 것) 필터

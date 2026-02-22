@@ -105,7 +105,7 @@ const PostCard = ({ post, rank }: PostCardProps) => {
       href={post.url}
       rel="noopener noreferrer"
       onClick={() => { markVisited(post.url); setVisited(true) }}
-      className={`flex items-center gap-2.5 px-4 py-2.5 hover:bg-gray-50 transition-colors duration-100 border-b border-gray-100 group ${visited ? 'bg-gray-50/80' : 'bg-white'}`}
+      className={`flex items-center gap-2.5 px-4 py-2.5 hover:bg-gray-50 transition-colors duration-100 border-b border-gray-100 group ${visited ? 'bg-amber-50/70' : 'bg-white'}`}
     >
       {/* 순위 */}
       <span className="text-sm font-semibold text-gray-400 w-5 text-right flex-shrink-0">

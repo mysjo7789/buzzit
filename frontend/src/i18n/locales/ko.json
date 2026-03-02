@@ -1,0 +1,87 @@
+{
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "retry": "다시 시도",
+    "close": "닫기",
+    "confirm": "확인",
+    "cancel": "취소"
+  },
+  "nav": {
+    "home": "홈",
+    "mbti": "MBTI 테스트"
+  },
+  "home": {
+    "title": "인기글",
+    "allSites": "전체",
+    "sort": {
+      "latest": "최신순",
+      "popular": "인기순",
+      "likes": "추천순",
+      "comments": "댓글순"
+    },
+    "noPosts": "게시글이 없습니다",
+    "updateTime": "업데이트",
+    "postsCount": "개"
+  },
+  "mbti": {
+    "banner": {
+      "title": "MBTI 성격 테스트",
+      "subtitle": "당신의 진짜 성격을 찾아보세요 • 2-3분",
+      "start": "시작하기"
+    },
+    "start": {
+      "title": "MBTI 테스트",
+      "subtitle": "당신의 진짜 성격을 찾아보세요",
+      "questions": "16개 질문",
+      "duration": "2-3분",
+      "startButton": "시작하기 →",
+      "tip": "💡 편하게 직관적으로 선택하세요",
+      "disclaimer": "이 테스트는 재미와 자기이해를 위한 것으로, 공식 MBTI®와 무관합니다."
+    },
+    "test": {
+      "resume": "진행 중인 테스트가 있습니다. 이어서 하시겠어요?",
+      "loading": "테스트를 불러오는 중..."
+    },
+    "result": {
+      "title": "나는 {{type}}!",
+      "pageTitle": "나는 {{title}} {{type}}! | Buzzit MBTI",
+      "loading": "결과를 불러오는 중...",
+      "stats": {
+        "title": "📊 실시간 통계",
+        "totalTests": "총 테스트",
+        "typeRatio": "이 유형 비율",
+        "mostCommon": "가장 많은 유형",
+        "people": "명",
+        "disclaimer": "* 이 브라우저에서 테스트한 결과 기반"
+      },
+      "actions": {
+        "restart": "다시 하기",
+        "shareWithFriend": "친구도 테스트하기"
+      },
+      "posts": {
+        "title": "🔥 인기 게시글",
+        "subtitle": "웃긴 유머도 함께 즐겨보세요!",
+        "viewMore": "더 많은 게시글 보러가기"
+      }
+    },
+    "types": {
+      "INTJ": { "title": "전략가", "subtitle": "완벽주의 설계자" },
+      "INTP": { "title": "논리학자", "subtitle": "호기심 많은 사색가" },
+      "ENTJ": { "title": "지휘관", "subtitle": "타고난 리더" },
+      "ENTP": { "title": "변론가", "subtitle": "아이디어 뱅크" },
+      "INFJ": { "title": "옹호자", "subtitle": "신비로운 조언자" },
+      "INFP": { "title": "중재자", "subtitle": "꿈꾸는 이상주의자" },
+      "ENFJ": { "title": "선도자", "subtitle": "타고난 멘토" },
+      "ENFP": { "title": "활동가", "subtitle": "자유로운 영혼" },
+      "ISTJ": { "title": "현실주의자", "subtitle": "신뢰할 수 있는 실행자" },
+      "ISFJ": { "title": "수호자", "subtitle": "따뜻한 지원자" },
+      "ESTJ": { "title": "경영자", "subtitle": "실용적 조직가" },
+      "ESFJ": { "title": "집정관", "subtitle": "사교적 조력자" },
+      "ISTP": { "title": "장인", "subtitle": "만능 해결사" },
+      "ISFP": { "title": "모험가", "subtitle": "자유로운 예술가" },
+      "ESTP": { "title": "사업가", "subtitle": "에너제틱 행동파" },
+      "ESFP": { "title": "연예인", "subtitle": "분위기 메이커" }
+    }
+  }
+}

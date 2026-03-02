@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
 import { initKakao } from './utils/kakao'
+import { LocaleProvider } from './contexts/LocaleContext'
 
 // Kakao SDK 초기화
 setTimeout(() => {
@@ -18,7 +19,9 @@ if (!rootElement) {
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <LocaleProvider>
+        <App />
+      </LocaleProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )

@@ -4,6 +4,7 @@ import { Loader2, ChevronLeft, ChevronRight, Flame } from 'lucide-react'
 import { apiService } from '../utils/api'
 import { Post } from '../types'
 import PostCard from '../components/PostCard'
+import { useTranslation } from '../hooks/useTranslation'
 
 type SortType = 'latest' | 'popular' | 'likes' | 'comments'
 
@@ -104,6 +105,7 @@ const calcPerSitePopularityScores = (posts: Post[]): Map<Post, number> => {
 const ITEMS_PER_PAGE = 30
 
 const HomePage = () => {
+  const { t } = useTranslation()
   const [searchParams, setSearchParams] = useSearchParams()
   const [allPosts, setAllPosts] = useState<Post[]>([])
   const [loading, setLoading] = useState(true)
@@ -220,7 +222,7 @@ const HomePage = () => {
       <div className="flex items-center justify-center min-h-[60vh]">
         <div className="text-center">
           <Loader2 className="h-8 w-8 text-primary-600 animate-spin mx-auto mb-3" />
-          <p className="text-sm text-gray-500">인기글을 불러오는 중...</p>
+          <p className="text-sm text-gray-500">{t('common.loading')}</p>
         </div>
       </div>
     )

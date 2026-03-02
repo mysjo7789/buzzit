@@ -1,0 +1,87 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "close": "Close",
+    "confirm": "Confirm",
+    "cancel": "Cancel"
+  },
+  "nav": {
+    "home": "Home",
+    "mbti": "MBTI Test"
+  },
+  "home": {
+    "title": "Popular Posts",
+    "allSites": "All",
+    "sort": {
+      "latest": "Latest",
+      "popular": "Popular",
+      "likes": "Most Liked",
+      "comments": "Most Commented"
+    },
+    "noPosts": "No posts available",
+    "updateTime": "Updated",
+    "postsCount": "posts"
+  },
+  "mbti": {
+    "banner": {
+      "title": "MBTI Personality Test",
+      "subtitle": "Discover Your True Personality • 2-3 min",
+      "start": "Start"
+    },
+    "start": {
+      "title": "MBTI Test",
+      "subtitle": "Discover Your True Personality",
+      "questions": "16 Questions",
+      "duration": "2-3 min",
+      "startButton": "Start Test →",
+      "tip": "💡 Choose intuitively and comfortably",
+      "disclaimer": "This test is for fun and self-understanding and is not affiliated with the official MBTI®."
+    },
+    "test": {
+      "resume": "You have a test in progress. Would you like to continue?",
+      "loading": "Loading test..."
+    },
+    "result": {
+      "title": "I'm {{type}}!",
+      "pageTitle": "I'm a {{title}} {{type}}! | Buzzit MBTI",
+      "loading": "Loading results...",
+      "stats": {
+        "title": "📊 Live Statistics",
+        "totalTests": "Total Tests",
+        "typeRatio": "This Type Ratio",
+        "mostCommon": "Most Common Type",
+        "people": "people",
+        "disclaimer": "* Based on tests taken in this browser"
+      },
+      "actions": {
+        "restart": "Take Again",
+        "shareWithFriend": "Share with Friends"
+      },
+      "posts": {
+        "title": "🔥 Popular Posts",
+        "subtitle": "Enjoy some humor too!",
+        "viewMore": "View More Posts"
+      }
+    },
+    "types": {
+      "INTJ": { "title": "Architect", "subtitle": "Perfectionist Strategist" },
+      "INTP": { "title": "Logician", "subtitle": "Curious Thinker" },
+      "ENTJ": { "title": "Commander", "subtitle": "Natural Leader" },
+      "ENTP": { "title": "Debater", "subtitle": "Idea Generator" },
+      "INFJ": { "title": "Advocate", "subtitle": "Mystical Counselor" },
+      "INFP": { "title": "Mediator", "subtitle": "Dreamy Idealist" },
+      "ENFJ": { "title": "Protagonist", "subtitle": "Natural Mentor" },
+      "ENFP": { "title": "Campaigner", "subtitle": "Free Spirit" },
+      "ISTJ": { "title": "Logistician", "subtitle": "Reliable Executor" },
+      "ISFJ": { "title": "Defender", "subtitle": "Warm Supporter" },
+      "ESTJ": { "title": "Executive", "subtitle": "Practical Organizer" },
+      "ESFJ": { "title": "Consul", "subtitle": "Social Helper" },
+      "ISTP": { "title": "Virtuoso", "subtitle": "Versatile Problem Solver" },
+      "ISFP": { "title": "Adventurer", "subtitle": "Free-spirited Artist" },
+      "ESTP": { "title": "Entrepreneur", "subtitle": "Energetic Go-getter" },
+      "ESFP": { "title": "Entertainer", "subtitle": "Life of the Party" }
+    }
+  }
+}

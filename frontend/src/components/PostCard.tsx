@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Eye, Heart, MessageCircle } from 'lucide-react'
 import { Post } from '../types'
+import { usePostTranslation } from '../hooks/usePostTranslation'
 
 interface PostCardProps {
   post: Post
@@ -83,6 +84,7 @@ const markVisited = (url: string) => {
 const PostCard = ({ post, rank }: PostCardProps) => {
   const [imgError, setImgError] = useState(false)
   const [visited, setVisited] = useState(() => getVisitedSet().has(post.url))
+  const translatedTitle = usePostTranslation(post)
 
   const formatNumber = (num: number | null | undefined) => {
     if (num === null || num === undefined) return null
@@ -144,7 +146,7 @@ const PostCard = ({ post, rank }: PostCardProps) => {
             {siteName}
           </span>
           <h3 className={`text-sm transition-colors line-clamp-1 leading-snug ${visited ? 'text-gray-400' : 'text-gray-900 group-hover:text-primary-600'}`}>
-            {post.title}
+            {translatedTitle}
           </h3>
         </div>
 

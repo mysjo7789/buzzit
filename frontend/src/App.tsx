@@ -6,6 +6,9 @@ import PostDetailPage from './pages/PostDetailPage'
 import AboutPage from './pages/AboutPage'
 import PrivacyPage from './pages/PrivacyPage'
 import TermsPage from './pages/TermsPage'
+import MBTIStartPage from './pages/MBTIStartPage'
+import MBTITestPage from './pages/MBTITestPage'
+import MBTIResultPage from './pages/MBTIResultPage'
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/terms" element={<TermsPage />} />
+        <Route path="/mbti" element={<MBTIStartPage />} />
+        <Route path="/mbti/test" element={<MBTITestPage />} />
+        <Route path="/mbti/result" element={<MBTIResultPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Layout>

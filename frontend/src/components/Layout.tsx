@@ -25,6 +25,12 @@ const Layout = ({ children }: LayoutProps) => {
             </div>
 
             <div className="flex items-center gap-2">
+              <Link
+                to="/mbti"
+                className="px-3 py-1.5 text-sm font-semibold text-white bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-lg transition-all shadow-sm hover:shadow-md"
+              >
+                🧠 MBTI
+              </Link>
             </div>
           </div>
         </div>

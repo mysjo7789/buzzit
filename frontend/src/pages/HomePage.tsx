@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useSearchParams, Link } from 'react-router-dom'
 import { Loader2, ChevronLeft, ChevronRight, Flame } from 'lucide-react'
 import { apiService } from '../utils/api'
 import { Post } from '../types'
@@ -228,6 +228,38 @@ const HomePage = () => {
 
   return (
     <div className="space-y-3">
+      {/* MBTI 테스트 배너 */}
+      <Link
+        to="/mbti"
+        className="block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5"
+      >
+        <div className="flex items-center justify-between text-white">
+          <div className="flex items-center gap-3">
+            <span className="text-3xl">🧠</span>
+            <div>
+              <div className="font-bold text-lg">MBTI 성격 테스트</div>
+              <div className="text-sm text-orange-100">당신의 진짜 성격을 찾아보세요 • 2-3분</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-sm font-medium hidden sm:inline">시작하기</span>
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </div>
+        </div>
+      </Link>
+
       {/* 상단 정보 바 */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">

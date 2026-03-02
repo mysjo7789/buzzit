@@ -1,36 +1,33 @@
 import { MBTIResult } from '../../types/mbti'
+import { isKakaoAvailable, getKakao } from '../../utils/kakao'
 
 interface ShareButtonsProps {
   result: MBTIResult
 }
 
-// Kakao 글로벌 타입 선언
-declare global {
-  interface Window {
-    Kakao: any
-  }
-}
-
 function ShareButtons({ result }: ShareButtonsProps) {
   const { type, title, subtitle } = result
-  const currentUrl = `https://bzibzi.com/mbti/result?type=${type}`
+  const siteUrl = import.meta.env.VITE_SITE_URL || 'https://bzibzi.com'
+  const currentUrl = `${siteUrl}/mbti/result?type=${type}`
+  const startUrl = `${siteUrl}/mbti`
 
   /**
    * 카카오톡 공유
    */
   const handleKakaoShare = () => {
-    if (typeof window.Kakao === 'undefined') {
-      alert('카카오톡 공유 기능을 사용할 수 없습니다.')
+    if (!isKakaoAvailable()) {
+      alert('카카오톡 공유 기능을 사용할 수 없습니다.\n설정에서 Kakao JavaScript Key를 등록해주세요.')
       return
     }
 
     try {
-      window.Kakao.Share.sendDefault({
+      const Kakao = getKakao()
+      Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
           title: `나는 ${title} ${type}!`,
           description: `"${subtitle}" - 당신의 MBTI는? 2분이면 알 수 있어요!`,
-          imageUrl: 'https://bzibzi.com/og-default.png',
+          imageUrl: `${siteUrl}/og-mbti-${type.toLowerCase()}.png`,
           link: {
             mobileWebUrl: currentUrl,
             webUrl: currentUrl,
@@ -40,8 +37,8 @@ function ShareButtons({ result }: ShareButtonsProps) {
           {
             title: '나도 테스트하기',
             link: {
-              mobileWebUrl: 'https://bzibzi.com/mbti',
-              webUrl: 'https://bzibzi.com/mbti',
+              mobileWebUrl: startUrl,
+              webUrl: startUrl,
             },
           },
         ],

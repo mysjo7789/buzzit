@@ -114,7 +114,7 @@ const PostCard = ({ post, rank }: PostCardProps) => {
 
       {/* 썸네일 */}
       {post.thumbnail && !imgError ? (
-        <div className="relative flex-shrink-0">
+        <div className="flex-shrink-0">
           <img
             src={thumbnailSrc || undefined}
             alt=""
@@ -129,20 +129,10 @@ const PostCard = ({ post, rank }: PostCardProps) => {
               }
             }}
           />
-          {post.is_adult && (
-            <span className="absolute -top-1 -right-1 text-xs bg-rose-500 text-white rounded-full w-5 h-5 flex items-center justify-center font-bold">
-              19
-            </span>
-          )}
         </div>
       ) : (
-        <div className={`w-16 h-16 rounded flex-shrink-0 flex items-center justify-center ${badgeClass} relative`}>
+        <div className={`w-16 h-16 rounded flex-shrink-0 flex items-center justify-center ${badgeClass}`}>
           <span className="text-sm font-bold leading-none">{siteMarks[post.site] || post.site[0]}</span>
-          {post.is_adult && (
-            <span className="absolute -top-1 -right-1 text-xs bg-rose-500 text-white rounded-full w-5 h-5 flex items-center justify-center font-bold">
-              19
-            </span>
-          )}
         </div>
       )}
 

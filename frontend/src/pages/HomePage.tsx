@@ -299,7 +299,7 @@ const HomePage = () => {
         ))}
       </div>
 
-      {/* 정렬 옵션 + 성인 콘텐츠 필터 */}
+      {/* 정렬 옵션 */}
       <div className="flex items-center gap-1 border-b border-gray-200 pb-2">
         {SORT_OPTIONS.map(({ key, label }) => (
           <button
@@ -310,21 +310,6 @@ const HomePage = () => {
             {label}
           </button>
         ))}
-        <button
-          onClick={() => {
-            const params = new URLSearchParams(searchParams)
-            if (showAdult) {
-              params.set('adult', 'false')
-            } else {
-              params.delete('adult')
-            }
-            params.delete('page')
-            setSearchParams(params, { replace: true })
-          }}
-          className={`sort-tab ${showAdult ? 'bg-rose-100 text-rose-700 border-rose-200' : 'sort-tab-inactive'}`}
-        >
-          🔞 {showAdult ? 'ON' : 'OFF'}
-        </button>
         <span className="ml-auto text-xs text-gray-400">
           {filteredPosts.length}개
         </span>

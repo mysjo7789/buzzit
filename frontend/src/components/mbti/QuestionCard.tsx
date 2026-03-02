@@ -38,8 +38,7 @@ function QuestionCard({ question, onSelect, selectedOption }: QuestionCardProps)
               A
             </span>
             <div className="flex-1">
-              <p className="font-semibold text-gray-900 text-lg mb-1">{question.optionA.text}</p>
-              <p className="text-sm text-gray-600">{question.optionA.description}</p>
+              <p className="font-semibold text-gray-900 text-lg">{question.optionA.text}</p>
             </div>
           </div>
         </button>
@@ -64,8 +63,7 @@ function QuestionCard({ question, onSelect, selectedOption }: QuestionCardProps)
               B
             </span>
             <div className="flex-1">
-              <p className="font-semibold text-gray-900 text-lg mb-1">{question.optionB.text}</p>
-              <p className="text-sm text-gray-600">{question.optionB.description}</p>
+              <p className="font-semibold text-gray-900 text-lg">{question.optionB.text}</p>
             </div>
           </div>
         </button>

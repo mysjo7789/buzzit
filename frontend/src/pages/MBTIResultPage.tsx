@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useNavigate, useSearchParams, Link } from 'react-router-dom'
 import { getResultByType } from '../data/results'
 import { clearProgress, saveResult } from '../utils/mbtiStorage'
 import { recordResult, getTotalTests, getMostCommonType, getTypeStats } from '../utils/mbtiStats'
 import { MBTIResult } from '../types/mbti'
+import { Post } from '../types'
+import { apiService } from '../utils/api'
 import ResultCard from '../components/mbti/ResultCard'
 import ShareButtons from '../components/mbti/ShareButtons'
+import PostCard from '../components/PostCard'
 
 function MBTIResultPage() {
   const navigate = useNavigate()
@@ -22,6 +25,8 @@ function MBTIResultPage() {
     mostCommon: null,
     currentTypeStats: null,
   })
+  const [posts, setPosts] = useState<Post[]>([])
+  const [loadingPosts, setLoadingPosts] = useState(false)
 
   useEffect(() => {
     if (!type) {
@@ -69,6 +74,20 @@ function MBTIResultPage() {
     if (ogImage) {
       ogImage.setAttribute('content', `${siteUrl}/og-mbti-${type.toLowerCase()}.png`)
     }
+
+    // 유머 게시글 로드
+    const loadPosts = async () => {
+      setLoadingPosts(true)
+      try {
+        const data = await apiService.getPosts()
+        setPosts(data.posts.slice(0, 5)) // 상위 5개만
+      } catch (error) {
+        console.error('Failed to load posts:', error)
+      } finally {
+        setLoadingPosts(false)
+      }
+    }
+    loadPosts()
   }, [type, navigate])
 
   const handleRestart = () => {
@@ -166,6 +185,49 @@ function MBTIResultPage() {
           친구도 테스트하기
         </button>
       </div>
+
+      {/* 유머 게시글 섹션 */}
+      {!loadingPosts && posts.length > 0 && (
+        <div className="mt-12 max-w-2xl mx-auto">
+          <div className="bg-white rounded-xl shadow-md overflow-hidden">
+            {/* 헤더 */}
+            <div className="px-6 py-4 border-b border-gray-200">
+              <h2 className="text-lg font-bold text-gray-900">🔥 인기 게시글</h2>
+              <p className="text-sm text-gray-500 mt-1">웃긴 유머도 함께 즐겨보세요!</p>
+            </div>
+
+            {/* 게시글 목록 */}
+            <div>
+              {posts.map((post, index) => (
+                <PostCard key={`${post.site}-${post.url}`} post={post} rank={index + 1} />
+              ))}
+            </div>
+
+            {/* 더보기 버튼 */}
+            <div className="px-6 py-4 bg-gray-50 text-center">
+              <Link
+                to="/"
+                className="inline-flex items-center gap-2 text-orange-600 hover:text-orange-700 font-semibold transition-colors"
+              >
+                더 많은 게시글 보러가기
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 하단 여백 */}
       <div className="h-8" />

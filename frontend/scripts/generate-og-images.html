@@ -93,10 +93,11 @@
   <div class="instructions">
     <h1>MBTI OG 이미지 생성기</h1>
     <p>각 이미지를 우클릭하여 "다른 이름으로 이미지 저장"을 선택하고, <code>og-mbti-[type].png</code> 형식으로 저장하세요.</p>
-    <p>예: <code>og-mbti-intj.png</code>, <code>og-mbti-enfp.png</code></p>
+    <p>예: <code>og-mbti-intj.png</code>, <code>og-mbti-enfp.png</code>, <code>og-mbti.png</code> (메인 페이지용)</p>
     <button onclick="downloadAll()">모든 이미지 다운로드 (자동)</button>
   </div>
 
+  <div class="preview-grid" id="mainImageGrid"></div>
   <div class="preview-grid" id="previewGrid"></div>
 
   <script>
@@ -160,7 +161,85 @@
       return canvas;
     }
 
+    function createMainOGImage() {
+      const canvas = document.createElement('canvas');
+      canvas.width = 1200;
+      canvas.height = 630;
+      const ctx = canvas.getContext('2d');
+
+      // Background gradient
+      const gradient = ctx.createLinearGradient(0, 0, 1200, 630);
+      gradient.addColorStop(0, '#FFF7ED');
+      gradient.addColorStop(1, '#FFEDD5');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, 1200, 630);
+
+      // Emoji
+      ctx.font = '140px Arial';
+      ctx.textAlign = 'center';
+      ctx.fillText('🧠', 600, 220);
+
+      // Title
+      ctx.font = 'bold 64px Arial';
+      ctx.fillStyle = '#111827';
+      ctx.fillText('MBTI 성격 테스트', 600, 340);
+
+      // Subtitle
+      ctx.font = '42px Arial';
+      ctx.fillStyle = '#F97316';
+      ctx.fillText('당신의 진짜 성격을 찾아보세요', 600, 410);
+
+      // Info
+      ctx.font = '32px Arial';
+      ctx.fillStyle = '#6B7280';
+      ctx.fillText('16개 질문 • 2-3분 소요', 600, 470);
+
+      // Footer
+      ctx.font = '28px Arial';
+      ctx.fillStyle = '#9CA3AF';
+      ctx.fillText('bzibzi.com/mbti', 600, 580);
+
+      return canvas;
+    }
+
     function renderPreviews() {
+      // Render main image
+      const mainGrid = document.getElementById('mainImageGrid');
+      const mainCard = document.createElement('div');
+      mainCard.className = 'preview-card';
+      mainCard.style.gridColumn = '1 / -1';
+
+      const mainTitle = document.createElement('h3');
+      mainTitle.textContent = 'MBTI 메인 페이지 이미지';
+      mainTitle.style.fontSize = '18px';
+      mainTitle.style.color = '#F97316';
+      mainCard.appendChild(mainTitle);
+
+      const mainCanvas = createMainOGImage();
+      mainCanvas.style.width = '100%';
+      mainCanvas.style.maxWidth = '600px';
+      mainCanvas.style.height = 'auto';
+      mainCanvas.style.border = '2px solid #F97316';
+      mainCanvas.style.borderRadius = '4px';
+      mainCard.appendChild(mainCanvas);
+
+      const mainDownloadBtn = document.createElement('button');
+      mainDownloadBtn.textContent = '다운로드 (og-mbti.png)';
+      mainDownloadBtn.style.marginTop = '10px';
+      mainDownloadBtn.onclick = () => {
+        mainCanvas.toBlob((blob) => {
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'og-mbti.png';
+          a.click();
+          URL.revokeObjectURL(url);
+        });
+      };
+      mainCard.appendChild(mainDownloadBtn);
+      mainGrid.appendChild(mainCard);
+
+      // Render type images
       const grid = document.getElementById('previewGrid');
 
       Object.entries(mbtiTypes).forEach(([type, data]) => {
@@ -200,24 +279,34 @@
     }
 
     function downloadAll() {
-      let index = 0;
+      let index = -1; // -1부터 시작하여 메인 이미지를 먼저 다운로드
       const types = Object.keys(mbtiTypes);
 
       function downloadNext() {
         if (index >= types.length) {
-          alert('모든 이미지 다운로드 완료!');
+          alert('모든 이미지 다운로드 완료! (총 ' + (types.length + 1) + '개)');
           return;
         }
 
-        const type = types[index];
-        const data = mbtiTypes[type];
-        const canvas = createOGImage(type, data);
+        let canvas, filename;
+
+        if (index === -1) {
+          // 메인 이미지 다운로드
+          canvas = createMainOGImage();
+          filename = 'og-mbti.png';
+        } else {
+          // 각 타입별 이미지 다운로드
+          const type = types[index];
+          const data = mbtiTypes[type];
+          canvas = createOGImage(type, data);
+          filename = `og-mbti-${type.toLowerCase()}.png`;
+        }
 
         canvas.toBlob((blob) => {
           const url = URL.createObjectURL(blob);
           const a = document.createElement('a');
           a.href = url;
-          a.download = `og-mbti-${type.toLowerCase()}.png`;
+          a.download = filename;
           a.click();
           URL.revokeObjectURL(url);
 

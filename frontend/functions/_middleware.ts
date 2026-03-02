@@ -80,7 +80,7 @@ interface Meta {
   jsonLd: string
 }
 
-async function getMeta(pathname: string): Promise<Meta> {
+async function getMeta(pathname: string, searchParams: URLSearchParams): Promise<Meta> {
   const m: Meta = {
     title: 'Buzzit - 커뮤니티 인기글 모아보기',
     description:
@@ -141,6 +141,46 @@ async function getMeta(pathname: string): Promise<Meta> {
       url: m.canonical,
       description: m.description,
     })
+  } else if (pathname === '/mbti') {
+    m.title = 'MBTI 성격 테스트 - Buzzit'
+    m.description = '당신의 진짜 성격을 찾아보세요! 16개 질문으로 알아보는 MBTI 성격 유형 테스트. 2-3분 소요.'
+    m.ogImage = `${SITE_URL}/og-mbti.png`
+    m.twitterCard = 'summary_large_image'
+    m.jsonLd = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: 'MBTI 성격 테스트',
+      url: m.canonical,
+      description: m.description,
+      applicationCategory: 'Entertainment',
+    })
+  } else if (pathname === '/mbti/test') {
+    m.title = 'MBTI 테스트 진행중 - Buzzit'
+    m.description = '16개 질문에 답하여 당신의 MBTI 성격 유형을 알아보세요.'
+    m.ogImage = `${SITE_URL}/og-mbti.png`
+    m.twitterCard = 'summary_large_image'
+  } else if (pathname === '/mbti/result') {
+    const type = searchParams.get('type')?.toUpperCase()
+    if (type && /^[IE][NS][TF][JP]$/.test(type)) {
+      m.title = `나는 ${type}! - MBTI 테스트 결과 | Buzzit`
+      m.description = `${type} 성격 유형 결과를 확인하고 친구들과 공유해보세요!`
+      m.ogImage = `${SITE_URL}/og-mbti-${type.toLowerCase()}.png`
+      m.twitterCard = 'summary_large_image'
+      m.ogType = 'article'
+      m.jsonLd = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: `MBTI ${type} 성격 유형`,
+        url: m.canonical,
+        image: m.ogImage,
+        publisher: { '@type': 'Organization', name: 'Buzzit' },
+      })
+    } else {
+      m.title = 'MBTI 테스트 결과 - Buzzit'
+      m.description = '당신의 MBTI 성격 유형 결과를 확인하세요!'
+      m.ogImage = `${SITE_URL}/og-mbti.png`
+      m.twitterCard = 'summary_large_image'
+    }
   } else if (pathname === '/about') {
     m.title = 'Buzzit 소개'
     m.description =
@@ -199,7 +239,7 @@ export const onRequest: PagesFunction<Env> = async (context) => {
       )
 
   // 라우트별 메타 태그 생성 & HTML 교체
-  const meta = await getMeta(url.pathname)
+  const meta = await getMeta(url.pathname, url.searchParams)
   let html = await indexResponse.text()
 
   html = html.replace(

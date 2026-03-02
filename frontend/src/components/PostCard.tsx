@@ -114,23 +114,35 @@ const PostCard = ({ post, rank }: PostCardProps) => {
 
       {/* 썸네일 */}
       {post.thumbnail && !imgError ? (
-        <img
-          src={thumbnailSrc || undefined}
-          alt=""
-          className="w-10 h-10 rounded object-cover flex-shrink-0"
-          referrerPolicy="no-referrer"
-          loading="lazy"
-          onError={() => setImgError(true)}
-          onLoad={(e) => {
-            const img = e.currentTarget
-            if (img.naturalWidth < 50 || img.naturalHeight < 50) {
-              setImgError(true)
-            }
-          }}
-        />
+        <div className="relative flex-shrink-0">
+          <img
+            src={thumbnailSrc || undefined}
+            alt=""
+            className="w-16 h-16 rounded object-cover"
+            referrerPolicy="no-referrer"
+            loading="lazy"
+            onError={() => setImgError(true)}
+            onLoad={(e) => {
+              const img = e.currentTarget
+              if (img.naturalWidth < 50 || img.naturalHeight < 50) {
+                setImgError(true)
+              }
+            }}
+          />
+          {post.is_adult && (
+            <span className="absolute -top-1 -right-1 text-xs bg-rose-500 text-white rounded-full w-5 h-5 flex items-center justify-center font-bold">
+              19
+            </span>
+          )}
+        </div>
       ) : (
-        <div className={`w-10 h-10 rounded flex-shrink-0 flex items-center justify-center ${badgeClass}`}>
-          <span className="text-xs font-bold leading-none">{siteMarks[post.site] || post.site[0]}</span>
+        <div className={`w-16 h-16 rounded flex-shrink-0 flex items-center justify-center ${badgeClass} relative`}>
+          <span className="text-sm font-bold leading-none">{siteMarks[post.site] || post.site[0]}</span>
+          {post.is_adult && (
+            <span className="absolute -top-1 -right-1 text-xs bg-rose-500 text-white rounded-full w-5 h-5 flex items-center justify-center font-bold">
+              19
+            </span>
+          )}
         </div>
       )}
 

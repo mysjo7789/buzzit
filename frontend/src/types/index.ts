@@ -9,6 +9,7 @@ export interface Post {
   comments?: number | null
   collected_at: string
   thumbnail?: string | null
+  is_adult?: boolean
 }
 
 export interface PostsResponse {

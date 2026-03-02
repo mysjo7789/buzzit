@@ -112,6 +112,7 @@ const HomePage = () => {
   const activeSite = searchParams.get('site') || 'all'
   const activeSort = (searchParams.get('sort') as SortType) || 'latest'
   const currentPage = Number(searchParams.get('page')) || 1
+  const showAdult = searchParams.get('adult') !== 'false' // 디폴트로 성인 콘텐츠 보기
 
   const fetchData = async () => {
     try {
@@ -177,8 +178,15 @@ const HomePage = () => {
       posts = interleaveBySite(posts)
     }
 
+    // 성인 콘텐츠를 상위에 정렬 (showAdult가 true일 때)
+    if (showAdult) {
+      const adultPosts = posts.filter(p => p.is_adult)
+      const normalPosts = posts.filter(p => !p.is_adult)
+      posts = [...adultPosts, ...normalPosts]
+    }
+
     return posts
-  }, [allPosts, activeSite, activeSort])
+  }, [allPosts, activeSite, activeSort, showAdult])
 
   const totalPages = Math.ceil(filteredPosts.length / ITEMS_PER_PAGE)
   const visiblePosts = filteredPosts.slice(
@@ -259,7 +267,7 @@ const HomePage = () => {
         ))}
       </div>
 
-      {/* 정렬 옵션 */}
+      {/* 정렬 옵션 + 성인 콘텐츠 필터 */}
       <div className="flex items-center gap-1 border-b border-gray-200 pb-2">
         {SORT_OPTIONS.map(({ key, label }) => (
           <button
@@ -270,6 +278,21 @@ const HomePage = () => {
             {label}
           </button>
         ))}
+        <button
+          onClick={() => {
+            const params = new URLSearchParams(searchParams)
+            if (showAdult) {
+              params.set('adult', 'false')
+            } else {
+              params.delete('adult')
+            }
+            params.delete('page')
+            setSearchParams(params, { replace: true })
+          }}
+          className={`sort-tab ${showAdult ? 'bg-rose-100 text-rose-700 border-rose-200' : 'sort-tab-inactive'}`}
+        >
+          🔞 {showAdult ? 'ON' : 'OFF'}
+        </button>
         <span className="ml-auto text-xs text-gray-400">
           {filteredPosts.length}개
         </span>

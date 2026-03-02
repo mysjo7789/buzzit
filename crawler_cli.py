@@ -44,13 +44,19 @@ async def _fill_thumbnails(data: Dict[str, Any]):
                 url = post.get("url", "")
                 if not url:
                     continue
-                try:
-                    thumb = await extract_thumbnail_from_page(client, url, site)
-                    if thumb:
-                        post["thumbnail"] = thumb
-                        count += 1
-                except Exception:
-                    continue
+                # 최대 3번 재시도
+                for attempt in range(3):
+                    try:
+                        thumb = await extract_thumbnail_from_page(client, url, site)
+                        if thumb:
+                            post["thumbnail"] = thumb
+                            count += 1
+                            break
+                    except Exception as e:
+                        if attempt == 2:  # 마지막 시도
+                            print(f"[thumbnail] {site} 실패: {url[:60]}")
+                        await asyncio.sleep(0.5)
+                        continue
         return count
 
     tasks = [_process_site(site, sp) for site, sp in by_site.items()]
@@ -59,7 +65,7 @@ async def _fill_thumbnails(data: Dict[str, Any]):
         if isinstance(r, int):
             filled += r
 
-    print(f"[thumbnail] 완료: {filled}/{len(no_thumb)}개 썸네일 추출")
+    print(f"[thumbnail] 완료: {filled}/{len(no_thumb)}개 썸네일 추출 ({filled/len(no_thumb)*100:.1f}%)")
 
 
 async def main():

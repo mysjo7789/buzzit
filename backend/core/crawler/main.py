@@ -31,6 +31,43 @@ _FMKOREA_HEADERS = {
 }
 REQUEST_DELAY_SEC = 1.5
 
+# 성인 콘텐츠 키워드 필터 (제목에 포함된 경우 우선순위 부여)
+ADULT_KEYWORDS = [
+    # 등급 표시
+    "19금", "19+", "19세", "29금", "39금", "49금", "59금", "69금",
+    # 축약어
+    "후방", "약후방", "ㅎㅂ", "ㅇㅎㅂ", "후방주의", "ㅎㅂㅈㅇ", "ㅇㅎ",
+    # 일반 키워드
+    "섹시", "몸매", "노출", "핫바디", "글래머", "쩨", "쩐", "꿀벅지",
+    "비키니", "속옷", "란제리", "레깅스", "요가복", "수영복",
+    # 성인 관련
+    "야사", "성인", "야동", "섹스", "19영상", "av", "야짤",
+    # 신체 부위 관련
+    "가슴", "엉덩이", "골반", "허벅지", "각선미", "꼭지", "젖", "슴가",
+    # 미모/외모 관련 (성적 암시가 있는 것들)
+    "볼륨", "핫", "육덕", "라인", "애플힙", "s라인",
+    # 영어 키워드
+    "sexy", "hot", "nsfw", "nude", "boobs", "ass",
+    # 부가 표현
+    "개꼴", "꼴림", "예쁜데", "이쁜데", "미모", "육감", "탄력",
+]
+
+def _has_adult_keyword(title: str) -> bool:
+    """제목에 성인 콘텐츠 키워드가 포함되어 있는지 확인"""
+    title_lower = title.lower()
+
+    # 정확한 매칭을 위한 특수 처리
+    # "19"는 단독으로 있거나 "19금", "19세" 등으로 사용될 때만 매칭
+    if re.search(r'\b19\b|19금|19세|19\+', title_lower):
+        return True
+
+    # 나머지 키워드는 부분 문자열로 검색
+    for keyword in ADULT_KEYWORDS:
+        if keyword.lower() in title_lower:
+            return True
+
+    return False
+
 @dataclass
 class Post:
     site: str
@@ -43,6 +80,7 @@ class Post:
     comments: Optional[int] = None
     collected_at: Optional[str] = None
     thumbnail: Optional[str] = None
+    is_adult: bool = False  # 성인 콘텐츠 여부
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -56,11 +94,16 @@ class Post:
             "comments": self.comments,
             "collected_at": self.collected_at or datetime.now().isoformat(),
             "thumbnail": self.thumbnail,
+            "is_adult": self.is_adult,
         }
 
 
-# 썸네일 추출 lazy-load 속성
-_LAZY_ATTRS = ["data-src", "data-original", "data-lazy-src", "data-lazy"]
+# 썸네일 추출 lazy-load 속성 (더 많은 속성 추가)
+_LAZY_ATTRS = [
+    "data-src", "data-original", "data-lazy-src", "data-lazy",
+    "data-srcset", "data-original-src", "data-echo",
+    "data-img-url", "data-url", "data-image"
+]
 
 # 리스팅 썸네일에서 제외할 URL 패턴 (프로필, UI 아이콘, 배지 등)
 _THUMB_EXCLUDE_PATTERNS = (
@@ -78,33 +121,60 @@ def _extract_thumbnail(element, base_url: str) -> Optional[str]:
     """목록 HTML 요소에서 첫 번째 유효한 콘텐츠 이미지 URL을 썸네일로 추출."""
     if not element:
         return None
-    for img in element.find_all("img", limit=5):
+
+    # 더 많은 이미지를 검사 (limit을 10으로 증가)
+    for img in element.find_all("img", limit=10):
         src = None
         # lazy-load 속성 우선
         for attr in _LAZY_ATTRS:
             val = img.get(attr)
-            if val and val.startswith(("http", "/")):
-                src = val
-                break
+            if val and isinstance(val, str):
+                # srcset 처리 (쉼표로 구분된 첫 번째 URL 사용)
+                if ',' in val:
+                    val = val.split(',')[0].strip().split()[0]
+                if val.startswith(("http", "/", "//")):
+                    src = val
+                    break
         if not src:
             src = img.get("src", "")
         if not src or src.startswith("data:"):
             continue
+
+        # // 프로토콜 처리
+        if src.startswith("//"):
+            src = "https:" + src
+
         # 아이콘/이모지/배지/프로필 등 비콘텐츠 이미지 제외
         src_lower = src.lower()
         if any(p in src_lower for p in _THUMB_EXCLUDE_PATTERNS):
             continue
-        # 작은 이미지 제외
+        # 작은 이미지 제외 (기준을 20px로 낮춤)
         width = img.get("width", "")
         height = img.get("height", "")
-        if width and str(width).isdigit() and int(width) < 30:
+        if width and str(width).isdigit() and int(width) < 20:
             continue
-        if height and str(height).isdigit() and int(height) < 30:
+        if height and str(height).isdigit() and int(height) < 20:
             continue
         # 절대 URL로 변환
         if not src.startswith("http"):
             src = urljoin(base_url, src)
         return src
+
+    # 이미지가 없으면 배경 이미지 스타일에서 추출 시도
+    if element:
+        style = element.get("style", "")
+        if "background-image" in style:
+            import re
+            match = re.search(r'url\(["\']?([^"\'()]+)["\']?\)', style)
+            if match:
+                bg_url = match.group(1)
+                if not bg_url.startswith("data:"):
+                    if bg_url.startswith("//"):
+                        bg_url = "https:" + bg_url
+                    elif not bg_url.startswith("http"):
+                        bg_url = urljoin(base_url, bg_url)
+                    return bg_url
+
     return None
 
 def _to_int_safe(text: Optional[str]) -> Optional[int]:
@@ -213,7 +283,8 @@ def parse_fmkorea(base_url: str, html: str) -> List[Post]:
             comments = _to_int_safe(comment_a.get_text(strip=True))
 
         thumbnail = _extract_thumbnail(tr, "https://www.fmkorea.com/")
-        posts.append(Post(site="fmkorea", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail))
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="fmkorea", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail, is_adult=is_adult))
 
     return dedupe_posts(posts)
 
@@ -243,12 +314,12 @@ def _fmkorea_fetch_sync(url: str) -> Optional[str]:
 
 
 async def crawl_fmkorea() -> List[Post]:
-    """에펨코리아 페이지 1~2 크롤링 (Cloudflare 우회를 위해 curl_cffi 사용)"""
+    """에펨코리아 페이지 1~10 크롤링 (Cloudflare 우회를 위해 curl_cffi 사용)"""
     base = "https://www.fmkorea.com/index.php?mid=humor&category=486622"
     all_posts: List[Post] = []
     loop = asyncio.get_event_loop()
 
-    for page in range(1, 3):
+    for page in range(1, 11):  # 1~10 페이지로 증가
         url = f"{base}&page={page}" if page > 1 else base
         html = await loop.run_in_executor(None, _fmkorea_fetch_sync, url)
         if not html:
@@ -256,6 +327,8 @@ async def crawl_fmkorea() -> List[Post]:
         posts = parse_fmkorea(url, html)
         all_posts.extend(posts)
         print(f"[fmkorea] page {page}: {len(posts)} items")
+        # 요청 간격 추가 (차단 방지)
+        await asyncio.sleep(2.0)
 
     all_posts = dedupe_posts(all_posts)
     print(f"[fmkorea] total: {len(all_posts)} items")
@@ -293,17 +366,18 @@ def parse_humoruniv(base_url: str, html: str) -> List[Post]:
         comments = _to_int_safe(und_cells[2].get_text(strip=True)) if len(und_cells) > 2 else None
 
         thumbnail = _extract_thumbnail(tr, "https://web.humoruniv.com/")
-        posts.append(Post(site="humoruniv", title=title, url=url, views=views, likes=likes, comments=comments, thumbnail=thumbnail))
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="humoruniv", title=title, url=url, views=views, likes=likes, comments=comments, thumbnail=thumbnail, is_adult=is_adult))
 
     return dedupe_posts(posts)
 
 
 async def crawl_humoruniv_multi_pages() -> List[Post]:
-    """웃긴대학 페이지 1~2 크롤링"""
+    """웃긴대학 페이지 1~10 크롤링"""
     base = "https://web.humoruniv.com/board/humor/list.html?table=pds&st=day"
     all_posts: List[Post] = []
     async with httpx.AsyncClient(timeout=30.0) as client:
-        for page in range(1, 3):
+        for page in range(1, 11):  # 1~10 페이지로 증가
             url = f"{base}&pg={page}" if page > 1 else base
             try:
                 response = await client.get(url, headers=HEADERS)
@@ -368,8 +442,9 @@ def parse_ruliweb(base_url: str, html: str) -> List[Post]:
             timestamp = time_td.get_text(strip=True)
 
         thumbnail = _extract_thumbnail(tr, "https://bbs.ruliweb.com/")
+        is_adult = _has_adult_keyword(title)
         posts.append(Post(site="ruliweb", title=title, url=url, author=author,
-                          views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail))
+                          views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail, is_adult=is_adult))
 
     return dedupe_posts(posts)
 
@@ -435,8 +510,9 @@ def parse_etoland(base_url: str, html: str) -> List[Post]:
             timestamp = date_div.get_text(strip=True)
 
         thumbnail = _extract_thumbnail(li, "https://www.etoland.co.kr/")
+        is_adult = _has_adult_keyword(title)
         posts.append(Post(site="etoland", title=title, url=url, author=author,
-                          views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail))
+                          views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail, is_adult=is_adult))
 
     return dedupe_posts(posts)
 
@@ -503,8 +579,9 @@ def parse_inven(base_url: str, html: str) -> List[Post]:
             continue
 
         thumbnail = _extract_thumbnail(parent_tr, "https://www.inven.co.kr/") if parent_tr else None
-        posts.append(Post(site="inven", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail))
-    
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="inven", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail, is_adult=is_adult))
+
     return dedupe_posts(posts)
 
 def parse_dcinside(base_url: str, html: str) -> List[Post]:
@@ -534,8 +611,9 @@ def parse_dcinside(base_url: str, html: str) -> List[Post]:
         timestamp = article.select_one("time") and article.select_one("time").get("datetime")
 
         thumbnail = _extract_thumbnail(article, "https://gall.dcinside.com/")
-        posts.append(Post(site="dcinside", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail))
-    
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="dcinside", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail, is_adult=is_adult))
+
     return dedupe_posts(posts)
 
 def parse_clien(base_url: str, html: str) -> List[Post]:
@@ -565,8 +643,9 @@ def parse_clien(base_url: str, html: str) -> List[Post]:
         author = item.select_one(".nickname span") and item.select_one(".nickname span").get_text(strip=True)
 
         thumbnail = _extract_thumbnail(item, "https://www.clien.net/")
-        posts.append(Post(site="clien", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=None, thumbnail=thumbnail))
-    
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="clien", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=None, thumbnail=thumbnail, is_adult=is_adult))
+
     return dedupe_posts(posts)
 
 def parse_dogdrip(base_url: str, html: str) -> List[Post]:
@@ -596,8 +675,9 @@ def parse_dogdrip(base_url: str, html: str) -> List[Post]:
         timestamp = item.select_one("time") and item.select_one("time").get("datetime")
 
         thumbnail = _extract_thumbnail(item, "https://www.dogdrip.net/")
-        posts.append(Post(site="dogdrip", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail))
-    
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="dogdrip", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail, is_adult=is_adult))
+
     return dedupe_posts(posts)
 
 def parse_theqoo(base_url: str, html: str) -> List[Post]:
@@ -627,8 +707,9 @@ def parse_theqoo(base_url: str, html: str) -> List[Post]:
         timestamp = item.select_one("time") and item.select_one("time").get("datetime")
 
         thumbnail = _extract_thumbnail(item, "https://theqoo.net/")
-        posts.append(Post(site="theqoo", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail))
-    
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="theqoo", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail, is_adult=is_adult))
+
     return dedupe_posts(posts)
 
 def parse_mlbpark(base_url: str, html: str) -> List[Post]:
@@ -669,8 +750,9 @@ def parse_mlbpark(base_url: str, html: str) -> List[Post]:
                 comments = _to_int_safe(reply_text)
 
         thumbnail = _extract_thumbnail(parent_tr, "https://mlbpark.donga.com/") if parent_tr else None
-        posts.append(Post(site="mlbpark", title=title, url=url, author=author, views=views, likes=likes, comments=comments, thumbnail=thumbnail))
-    
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="mlbpark", title=title, url=url, author=author, views=views, likes=likes, comments=comments, thumbnail=thumbnail, is_adult=is_adult))
+
     return dedupe_posts(posts)
 
 def parse_82cook(base_url: str, html: str) -> List[Post]:
@@ -697,8 +779,9 @@ def parse_82cook(base_url: str, html: str) -> List[Post]:
             comments = _to_int_safe(re.search(r"(\d+)\s*개의\s*댓글", txt) and re.search(r"(\d+)\s*개의\s*댓글", txt).group(1))
 
         thumbnail = _extract_thumbnail(parent, "https://www.82cook.com/") if parent else None
-        posts.append(Post(site="82cook", title=title, url=url, views=views, likes=likes, comments=comments, thumbnail=thumbnail))
-    
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="82cook", title=title, url=url, views=views, likes=likes, comments=comments, thumbnail=thumbnail, is_adult=is_adult))
+
     return dedupe_posts(posts)
 
 def parse_damoang(base_url: str, html: str) -> List[Post]:
@@ -746,8 +829,9 @@ def parse_damoang(base_url: str, html: str) -> List[Post]:
             continue
 
         thumbnail = _extract_thumbnail(parent_container, "https://damoang.net/")
-        posts.append(Post(site="damoang", title=title, url=url, views=None, likes=None, comments=comments, thumbnail=thumbnail))
-    
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="damoang", title=title, url=url, views=None, likes=None, comments=comments, thumbnail=thumbnail, is_adult=is_adult))
+
     return dedupe_posts(posts)
 
 async def get_damoang_post_details(posts: List[Post]) -> List[Post]:
@@ -804,10 +888,10 @@ async def get_damoang_post_details(posts: List[Post]) -> List[Post]:
     return detailed_posts
 
 async def crawl_damoang_multi_pages() -> List[Post]:
-    """다모앙 페이지 1~3까지 크롤링"""
+    """다모앙 페이지 1~5까지 크롤링"""
     all_posts = []
-    
-    for page in range(1, 4):  # 1, 2, 3 페이지
+
+    for page in range(1, 6):  # 1~5 페이지로 증가
         url = f"https://damoang.net/free?page={page}"
         try:
             async with httpx.AsyncClient(timeout=30.0) as client:
@@ -881,16 +965,17 @@ def parse_ddanzi(base_url: str, html: str) -> List[Post]:
         author = author_td.get_text(strip=True) if author_td else None
 
         thumbnail = _extract_thumbnail(tr, "https://www.ddanzi.com/")
-        posts.append(Post(site="ddanzi", title=title, url=url, author=author, views=views, likes=likes, thumbnail=thumbnail))
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="ddanzi", title=title, url=url, author=author, views=views, likes=likes, thumbnail=thumbnail, is_adult=is_adult))
 
     return dedupe_posts(posts)
 
 
 async def crawl_ddanzi_multi_pages() -> List[Post]:
-    """딴지일보 페이지 1~2 크롤링"""
+    """딴지일보 페이지 1~5 크롤링"""
     all_posts: List[Post] = []
     async with httpx.AsyncClient(timeout=30.0) as client:
-        for page in range(1, 3):
+        for page in range(1, 6):  # 1~5 페이지로 증가
             url = f"https://www.ddanzi.com/index.php?mid=free&page={page}" if page > 1 else "https://www.ddanzi.com/free"
             try:
                 response = await client.get(url, headers=HEADERS)
@@ -964,8 +1049,9 @@ def parse_bobaedream(base_url: str, html: str) -> List[Post]:
             timestamp = date_cell.get_text(strip=True)
 
         thumbnail = _extract_thumbnail(tr, "https://www.bobaedream.co.kr/")
-        posts.append(Post(site="bobaedream", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail))
-    
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="bobaedream", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail, is_adult=is_adult))
+
     return dedupe_posts(posts)
 
 
@@ -1041,17 +1127,18 @@ def parse_ppomppu(base_url: str, html: str) -> List[Post]:
                 timestamp = time_cell.get_text(strip=True)
 
         thumbnail = _extract_thumbnail(parent_tr, base_url) if parent_tr else None
-        posts.append(Post(site="ppomppu", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail))
-    
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="ppomppu", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail, is_adult=is_adult))
+
     return dedupe_posts(posts)
 
 
 async def crawl_ppomppu_multi_pages() -> List[Post]:
-    """뽐뿌 페이지 1~2 크롤링"""
+    """뽐뿌 페이지 1~5 크롤링"""
     base = "https://www.ppomppu.co.kr/zboard/zboard.php?id=freeboard&hotlist_flag=999"
     all_posts: List[Post] = []
     async with httpx.AsyncClient(timeout=30.0) as client:
-        for page in range(1, 3):
+        for page in range(1, 6):  # 1~5 페이지로 증가
             url = f"{base}&page={page}" if page > 1 else base
             try:
                 response = await client.get(url, headers=HEADERS)
@@ -1172,15 +1259,19 @@ def _extract_first_media_from_content(soup: BeautifulSoup, site: str, base_url: 
                 return content
         return None
 
-    # 1) 이미지 태그에서 추출
-    for img in content_el.find_all("img", limit=10):
+    # 1) 이미지 태그에서 추출 (더 많은 이미지 검사)
+    for img in content_el.find_all("img", limit=30):  # limit을 30으로 증가
         src = None
         # lazy-load 속성 우선
         for attr in _LAZY_ATTRS:
             val = img.get(attr)
-            if val and val.startswith(("http", "/", "//")):
-                src = val
-                break
+            if val and isinstance(val, str):
+                # srcset 처리
+                if ',' in val:
+                    val = val.split(',')[0].strip().split()[0]
+                if val.startswith(("http", "/", "//")):
+                    src = val
+                    break
         if not src:
             src = img.get("src", "")
 
@@ -1199,12 +1290,12 @@ def _extract_first_media_from_content(soup: BeautifulSoup, site: str, base_url: 
         )):
             continue
 
-        # 아이콘/이모지 등 작은 이미지 제외
+        # 아이콘/이모지 등 작은 이미지 제외 (기준을 30px로 낮춤)
         width = img.get("width", "")
         height = img.get("height", "")
-        if width and str(width).isdigit() and int(width) < 50:
+        if width and str(width).isdigit() and int(width) < 30:
             continue
-        if height and str(height).isdigit() and int(height) < 50:
+        if height and str(height).isdigit() and int(height) < 30:
             continue
 
         # 절대 URL로 변환
@@ -1319,7 +1410,8 @@ def parse_slrclub(base_url: str, html: str) -> List[Post]:
         views = _to_int_safe(click_td.get_text(strip=True)) if click_td else None
 
         thumbnail = _extract_thumbnail(tr, "https://www.slrclub.com/")
-        posts.append(Post(site="slrclub", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail))
+        is_adult = _has_adult_keyword(title)
+        posts.append(Post(site="slrclub", title=title, url=url, author=author, views=views, likes=likes, comments=comments, timestamp=timestamp, thumbnail=thumbnail, is_adult=is_adult))
 
     return dedupe_posts(posts)
 
@@ -1371,8 +1463,15 @@ async def _crawl_site(
         print(f"[{site_name}] error: {e}")
         return []
 
-    collected = posts[:30]
-    print(f"[{site_name}] parsed {len(posts)} items, collected {len(collected)} items")
+    # 성인 콘텐츠를 우선 정렬 (is_adult=True 먼저)
+    adult_posts = [p for p in posts if p.is_adult]
+    normal_posts = [p for p in posts if not p.is_adult]
+
+    # 성인 콘텐츠를 더 많이 수집 (최대 50개까지)
+    collected = (adult_posts + normal_posts)[:50]
+
+    adult_count = len([p for p in collected if p.is_adult])
+    print(f"[{site_name}] parsed {len(posts)} items, collected {len(collected)} items (adult: {adult_count})")
     return [p.to_dict() for p in collected]
 
 

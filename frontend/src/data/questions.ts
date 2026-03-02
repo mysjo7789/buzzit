@@ -1,11 +1,11 @@
 import { MBTIQuestion } from '../types/mbti'
 
 /**
- * MBTI 테스트 질문 16개
- * E/I 4개, S/N 4개, T/F 4개, J/P 4개
+ * MBTI 테스트 질문 12개 (각 차원당 3개 - 홀수로 동점 방지)
+ * E/I 3개, S/N 3개, T/F 3개, J/P 3개
  */
 export const questions: MBTIQuestion[] = [
-  // E/I (외향성/내향성) - 4문항
+  // E/I (외향성/내향성) - 3문항
   {
     id: 1,
     dimension: 'EI',
@@ -51,25 +51,10 @@ export const questions: MBTIQuestion[] = [
       score: -1,
     },
   },
+
+  // S/N (감각형/직관형) - 3문항
   {
     id: 4,
-    dimension: 'EI',
-    text: '낯선 환경에 처음 갔을 때?',
-    optionA: {
-      text: '일단 사람들한테 말 걸어보기',
-      description: '먼저 다가가서 대화 시도',
-      score: 1,
-    },
-    optionB: {
-      text: '조용히 관찰하면서 적응하기',
-      description: '관찰 후 천천히 적응',
-      score: -1,
-    },
-  },
-
-  // S/N (감각형/직관형) - 4문항
-  {
-    id: 5,
     dimension: 'SN',
     text: '새로운 폰을 샀을 때 나는?',
     optionA: {
@@ -84,7 +69,7 @@ export const questions: MBTIQuestion[] = [
     },
   },
   {
-    id: 6,
+    id: 5,
     dimension: 'SN',
     text: '친구가 고민 상담을 하면?',
     optionA: {
@@ -99,7 +84,7 @@ export const questions: MBTIQuestion[] = [
     },
   },
   {
-    id: 7,
+    id: 6,
     dimension: 'SN',
     text: '여행 계획을 세울 때?',
     optionA: {
@@ -113,25 +98,10 @@ export const questions: MBTIQuestion[] = [
       score: -1,
     },
   },
-  {
-    id: 8,
-    dimension: 'SN',
-    text: '누군가 이야기를 할 때 나는?',
-    optionA: {
-      text: '"그래서 결론이 뭔데?"',
-      description: '핵심부터 알고 싶음',
-      score: 1,
-    },
-    optionB: {
-      text: '"그게 무슨 의미일까?"',
-      description: '숨은 뜻을 찾아봄',
-      score: -1,
-    },
-  },
 
-  // T/F (사고형/감정형) - 4문항
+  // T/F (사고형/감정형) - 3문항
   {
-    id: 9,
+    id: 7,
     dimension: 'TF',
     text: '친구가 실수로 약속을 까먹었을 때?',
     optionA: {
@@ -146,7 +116,7 @@ export const questions: MBTIQuestion[] = [
     },
   },
   {
-    id: 10,
+    id: 8,
     dimension: 'TF',
     text: '영화를 보고 나서?',
     optionA: {
@@ -161,7 +131,7 @@ export const questions: MBTIQuestion[] = [
     },
   },
   {
-    id: 11,
+    id: 9,
     dimension: 'TF',
     text: '팀 프로젝트에서 의견 충돌이 생기면?',
     optionA: {
@@ -175,25 +145,10 @@ export const questions: MBTIQuestion[] = [
       score: -1,
     },
   },
-  {
-    id: 12,
-    dimension: 'TF',
-    text: '친구가 "나 우울해..."라고 하면?',
-    optionA: {
-      text: '"왜? 무슨 일 있어?"',
-      description: '원인 파악부터',
-      score: 1,
-    },
-    optionB: {
-      text: '"힘들구나... 내가 옆에 있을게"',
-      description: '일단 공감',
-      score: -1,
-    },
-  },
 
-  // J/P (판단형/인식형) - 4문항
+  // J/P (판단형/인식형) - 3문항
   {
-    id: 13,
+    id: 10,
     dimension: 'JP',
     text: '아침에 일어나면 제일 먼저?',
     optionA: {
@@ -208,7 +163,7 @@ export const questions: MBTIQuestion[] = [
     },
   },
   {
-    id: 14,
+    id: 11,
     dimension: 'JP',
     text: '배달음식 주문할 때?',
     optionA: {
@@ -223,7 +178,7 @@ export const questions: MBTIQuestion[] = [
     },
   },
   {
-    id: 15,
+    id: 12,
     dimension: 'JP',
     text: '방 청소를 할 때?',
     optionA: {
@@ -234,21 +189,6 @@ export const questions: MBTIQuestion[] = [
     optionB: {
       text: '너무 더러워지면 그때 한 번에 대청소',
       description: '유연하고 즉흥적',
-      score: -1,
-    },
-  },
-  {
-    id: 16,
-    dimension: 'JP',
-    text: '카톡 메시지가 왔을 때?',
-    optionA: {
-      text: '본 순간 바로 답장 (안 그러면 신경 쓰임)',
-      description: '즉시 처리 선호',
-      score: 1,
-    },
-    optionB: {
-      text: '"나중에 답장해야지~" → (3일 후) "아 깜빡했다"',
-      description: '나중에 처리',
       score: -1,
     },
   },

@@ -27,14 +27,14 @@
   "mbti": {
     "banner": {
       "title": "MBTI Personality Test",
-      "subtitle": "Discover Your True Personality • 2-3 min",
+      "subtitle": "Discover Your True Personality • 1-2 min",
       "start": "Start"
     },
     "start": {
       "title": "MBTI Test",
       "subtitle": "Discover Your True Personality",
-      "questions": "16 Questions",
-      "duration": "2-3 min",
+      "questions": "12 Questions",
+      "duration": "1-2 min",
       "startButton": "Start Test →",
       "tip": "💡 Choose intuitively and comfortably",
       "disclaimer": "This test is for fun and self-understanding and is not affiliated with the official MBTI®."

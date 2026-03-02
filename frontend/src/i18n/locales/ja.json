@@ -27,14 +27,14 @@
   "mbti": {
     "banner": {
       "title": "MBTI性格診断",
-      "subtitle": "あなたの本当の性格を見つけよう • 2-3分",
+      "subtitle": "あなたの本当の性格を見つけよう • 1-2分",
       "start": "始める"
     },
     "start": {
       "title": "MBTI診断",
       "subtitle": "あなたの本当の性格を見つけよう",
-      "questions": "16の質問",
-      "duration": "2-3分",
+      "questions": "12の質問",
+      "duration": "1-2分",
       "startButton": "テストを始める →",
       "tip": "💡 直感的に気楽に選んでください",
       "disclaimer": "このテストは娯楽と自己理解のためのものであり、公式MBTI®とは無関係です。"

@@ -27,14 +27,14 @@
   "mbti": {
     "banner": {
       "title": "MBTI 성격 테스트",
-      "subtitle": "당신의 진짜 성격을 찾아보세요 • 2-3분",
+      "subtitle": "당신의 진짜 성격을 찾아보세요 • 1-2분",
       "start": "시작하기"
     },
     "start": {
       "title": "MBTI 테스트",
       "subtitle": "당신의 진짜 성격을 찾아보세요",
-      "questions": "16개 질문",
-      "duration": "2-3분",
+      "questions": "12개 질문",
+      "duration": "1-2분",
       "startButton": "시작하기 →",
       "tip": "💡 편하게 직관적으로 선택하세요",
       "disclaimer": "이 테스트는 재미와 자기이해를 위한 것으로, 공식 MBTI®와 무관합니다."

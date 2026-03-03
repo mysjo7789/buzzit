@@ -239,12 +239,12 @@ const HomePage = () => {
           <div className="flex items-center gap-3">
             <span className="text-3xl">🧠</span>
             <div>
-              <div className="font-bold text-lg">MBTI 성격 테스트</div>
-              <div className="text-sm text-orange-100">당신의 진짜 성격을 찾아보세요 • 2-3분</div>
+              <div className="font-bold text-lg">{t('mbti.banner.title')}</div>
+              <div className="text-sm text-orange-100">{t('mbti.banner.subtitle')}</div>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-sm font-medium hidden sm:inline">시작하기</span>
+            <span className="text-sm font-medium hidden sm:inline">{t('mbti.banner.start')}</span>
             <svg
               className="w-5 h-5"
               fill="none"

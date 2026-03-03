@@ -76,6 +76,8 @@ interface Meta {
   canonical: string
   ogType: string
   ogImage: string
+  ogImageWidth: number
+  ogImageHeight: number
   twitterCard: string
   jsonLd: string
 }
@@ -88,6 +90,8 @@ async function getMeta(pathname: string, searchParams: URLSearchParams): Promise
     canonical: SITE_URL + (pathname === '/' ? '' : pathname),
     ogType: 'website',
     ogImage: `${SITE_URL}/og-default.png`,
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
     twitterCard: 'summary',
     jsonLd: JSON.stringify({
       '@context': 'https://schema.org',
@@ -143,7 +147,7 @@ async function getMeta(pathname: string, searchParams: URLSearchParams): Promise
     })
   } else if (pathname === '/mbti') {
     m.title = 'MBTI 성격 테스트 - Buzzit'
-    m.description = '당신의 진짜 성격을 찾아보세요! 16개 질문으로 알아보는 MBTI 성격 유형 테스트. 2-3분 소요.'
+    m.description = '당신의 진짜 성격을 찾아보세요! 12개 질문으로 알아보는 MBTI 성격 유형 테스트. 1-2분 소요.'
     m.ogImage = `${SITE_URL}/og-mbti.png`
     m.twitterCard = 'summary_large_image'
     m.jsonLd = JSON.stringify({
@@ -156,7 +160,7 @@ async function getMeta(pathname: string, searchParams: URLSearchParams): Promise
     })
   } else if (pathname === '/mbti/test') {
     m.title = 'MBTI 테스트 진행중 - Buzzit'
-    m.description = '16개 질문에 답하여 당신의 MBTI 성격 유형을 알아보세요.'
+    m.description = '12개 질문에 답하여 당신의 MBTI 성격 유형을 알아보세요.'
     m.ogImage = `${SITE_URL}/og-mbti.png`
     m.twitterCard = 'summary_large_image'
   } else if (pathname === '/mbti/result') {
@@ -208,6 +212,8 @@ function buildSeoBlock(m: Meta): string {
     <meta property="og:site_name" content="Buzzit" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:image" content="${esc(m.ogImage)}" />
+    <meta property="og:image:width" content="${m.ogImageWidth}" />
+    <meta property="og:image:height" content="${m.ogImageHeight}" />
     <meta name="twitter:card" content="${m.twitterCard}" />
     <meta name="twitter:title" content="${esc(m.title)}" />
     <meta name="twitter:description" content="${esc(m.description)}" />

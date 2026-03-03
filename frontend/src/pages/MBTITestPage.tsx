@@ -4,11 +4,13 @@ import { questions } from '../data/questions'
 import { MBTIAnswer, MBTIOption } from '../types/mbti'
 import { saveProgress, loadProgress, clearProgress } from '../utils/mbtiStorage'
 import { calculateMBTI } from '../utils/mbtiCalculator'
+import { useTranslation } from '../hooks/useTranslation'
 import QuestionCard from '../components/mbti/QuestionCard'
 import ProgressBar from '../components/mbti/ProgressBar'
 
 function MBTITestPage() {
   const navigate = useNavigate()
+  const { t } = useTranslation()
   const [searchParams] = useSearchParams()
   const isNewTest = searchParams.get('new') === 'true'
 
@@ -94,7 +96,7 @@ function MBTITestPage() {
   }
 
   const handleExit = () => {
-    const confirmExit = window.confirm('테스트를 종료하시겠어요? 진행 상황은 저장됩니다.')
+    const confirmExit = window.confirm(t('mbti.test.exitConfirm'))
     if (confirmExit) {
       navigate('/mbti')
     }
@@ -113,7 +115,7 @@ function MBTITestPage() {
             <button
               onClick={handleExit}
               className="text-gray-500 hover:text-gray-700 transition-colors"
-              aria-label="나가기"
+              aria-label={t('mbti.test.exit')}
             >
               <svg
                 className="w-6 h-6"
@@ -131,7 +133,7 @@ function MBTITestPage() {
             </button>
 
             {/* MBTI 타이틀 */}
-            <h1 className="text-lg font-bold text-gray-900">MBTI 테스트</h1>
+            <h1 className="text-lg font-bold text-gray-900">{t('mbti.test.title')}</h1>
 
             {/* 빈 공간 (균형 맞추기) */}
             <div className="w-6" />
@@ -172,7 +174,7 @@ function MBTITestPage() {
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
-              이전 질문
+              {t('mbti.test.previousQuestion')}
             </button>
           </div>
         )}

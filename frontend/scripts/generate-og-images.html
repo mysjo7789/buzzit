@@ -133,28 +133,31 @@
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, 1200, 630);
 
+      const emojiFont = '120px "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif';
+      const textFont = (weight, size) => `${weight} ${size}px "Apple SD Gothic Neo", "Malgun Gothic", sans-serif`;
+
       // Emoji
-      ctx.font = '120px Arial';
+      ctx.font = emojiFont;
       ctx.textAlign = 'center';
       ctx.fillText(data.emoji, 600, 200);
 
       // Type
-      ctx.font = 'bold 80px Arial';
+      ctx.font = textFont('bold', 80);
       ctx.fillStyle = '#111827';
       ctx.fillText(type, 600, 310);
 
       // Title
-      ctx.font = '600 48px Arial';
+      ctx.font = textFont('600', 48);
       ctx.fillStyle = '#F97316';
       ctx.fillText(data.title, 600, 380);
 
       // Subtitle
-      ctx.font = '36px Arial';
+      ctx.font = textFont('normal', 36);
       ctx.fillStyle = '#6B7280';
       ctx.fillText(data.subtitle, 600, 440);
 
       // Footer
-      ctx.font = '28px Arial';
+      ctx.font = textFont('normal', 28);
       ctx.fillStyle = '#9CA3AF';
       ctx.fillText('Buzzit MBTI 테스트', 600, 580);
 
@@ -174,28 +177,31 @@
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, 1200, 630);
 
+      const emojiFont = '140px "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif';
+      const textFont = (weight, size) => `${weight} ${size}px "Apple SD Gothic Neo", "Malgun Gothic", sans-serif`;
+
       // Emoji
-      ctx.font = '140px Arial';
+      ctx.font = emojiFont;
       ctx.textAlign = 'center';
       ctx.fillText('🧠', 600, 220);
 
       // Title
-      ctx.font = 'bold 64px Arial';
+      ctx.font = textFont('bold', 64);
       ctx.fillStyle = '#111827';
       ctx.fillText('MBTI 성격 테스트', 600, 340);
 
       // Subtitle
-      ctx.font = '42px Arial';
+      ctx.font = textFont('normal', 42);
       ctx.fillStyle = '#F97316';
       ctx.fillText('당신의 진짜 성격을 찾아보세요', 600, 410);
 
       // Info
-      ctx.font = '32px Arial';
+      ctx.font = textFont('normal', 32);
       ctx.fillStyle = '#6B7280';
-      ctx.fillText('16개 질문 • 2-3분 소요', 600, 470);
+      ctx.fillText('12개 질문 • 1-2분 소요', 600, 470);
 
       // Footer
-      ctx.font = '28px Arial';
+      ctx.font = textFont('normal', 28);
       ctx.fillStyle = '#9CA3AF';
       ctx.fillText('bzibzi.com/mbti', 600, 580);
 

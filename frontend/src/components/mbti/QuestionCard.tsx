@@ -1,4 +1,5 @@
 import { MBTIQuestion, MBTIOption } from '../../types/mbti'
+import { useTranslation } from '../../hooks/useTranslation'
 
 interface QuestionCardProps {
   question: MBTIQuestion
@@ -7,12 +8,14 @@ interface QuestionCardProps {
 }
 
 function QuestionCard({ question, onSelect, selectedOption }: QuestionCardProps) {
+  const { t } = useTranslation()
+
   return (
     <div className="w-full max-w-2xl mx-auto">
       {/* 질문 텍스트 */}
       <div className="mb-8 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
-          {question.text}
+          {t(question.text)}
         </h2>
       </div>
 
@@ -38,7 +41,7 @@ function QuestionCard({ question, onSelect, selectedOption }: QuestionCardProps)
               A
             </span>
             <div className="flex-1">
-              <p className="font-semibold text-gray-900 text-lg">{question.optionA.text}</p>
+              <p className="font-semibold text-gray-900 text-lg">{t(question.optionA.text)}</p>
             </div>
           </div>
         </button>
@@ -63,7 +66,7 @@ function QuestionCard({ question, onSelect, selectedOption }: QuestionCardProps)
               B
             </span>
             <div className="flex-1">
-              <p className="font-semibold text-gray-900 text-lg">{question.optionB.text}</p>
+              <p className="font-semibold text-gray-900 text-lg">{t(question.optionB.text)}</p>
             </div>
           </div>
         </button>

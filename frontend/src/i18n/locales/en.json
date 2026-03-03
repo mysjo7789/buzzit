@@ -40,24 +40,63 @@
       "disclaimer": "This test is for fun and self-understanding and is not affiliated with the official MBTI®."
     },
     "test": {
+      "title": "MBTI Test",
       "resume": "You have a test in progress. Would you like to continue?",
-      "loading": "Loading test..."
+      "loading": "Loading test...",
+      "exitConfirm": "Exit the test? Your progress will be saved.",
+      "previousQuestion": "Previous Question",
+      "exit": "Exit"
+    },
+    "questions": {
+      "1": { "text": "When a friend suddenly texts you to hang out on a weekend morning?", "optionA": "\"Sure! Where should we go?\"", "optionB": "\"Hmm... I'd rather stay home\"" },
+      "2": { "text": "When you go to a party or gathering?", "optionA": "Mingle around and chat with new people", "optionB": "Deep conversations with just 1-2 close friends" },
+      "3": { "text": "After being with people all day?", "optionA": "Excited! Want to hang out more!", "optionB": "Need to go home and recharge alone" },
+      "4": { "text": "When starting a new project, I...", "optionA": "Gather proven methods and concrete data first", "optionB": "Envision the big picture and explore new possibilities" },
+      "5": { "text": "What kind of conversation topics attract you more?", "optionA": "Real experiences, specific facts, practical stories", "optionB": "Future possibilities, new ideas, imagination and theories" },
+      "6": { "text": "When learning something new, I...", "optionA": "Follow step-by-step instructions carefully", "optionB": "Grasp the overall concept first and apply it my own way" },
+      "7": { "text": "If a friend says they were treated unfairly at work?", "optionA": "Analyze the situation and suggest specific solutions", "optionB": "First empathize and listen to how they feel" },
+      "8": { "text": "When making an important decision, I...", "optionA": "Logically analyze the pros and cons", "optionB": "Follow my heart and personal values" },
+      "9": { "text": "When someone on the team makes a mistake?", "optionA": "Identify the cause and discuss prevention measures", "optionB": "First check on their feelings and encourage them" },
+      "10": { "text": "First thing you do when you wake up?", "optionA": "Check today's to-do list", "optionB": "Scroll phone in bed, get up whenever I feel like it" },
+      "11": { "text": "When ordering delivery food?", "optionA": "Order my usual go-to menu", "optionB": "\"What should I eat today?\" → Try something new after 30 min" },
+      "12": { "text": "When it comes to cleaning your room?", "optionA": "Clean regularly on a set schedule", "optionB": "Wait until it's really messy, then deep clean all at once" }
     },
     "result": {
       "title": "I'm {{type}}!",
       "pageTitle": "I'm a {{title}} {{type}}! | Buzzit MBTI",
       "loading": "Loading results...",
+      "yourTraits": "Your Traits",
+      "inAWord": "In a Word",
+      "compatibleTypes": "Compatible Types",
+      "statistics": "Statistics",
+      "ofAll": "of all",
+      "rarity": "Rarity",
+      "rankSuffix": "",
       "stats": {
         "title": "📊 Live Statistics",
         "totalTests": "Total Tests",
         "typeRatio": "This Type Ratio",
         "mostCommon": "Most Common Type",
-        "people": "people",
+        "people": "",
         "disclaimer": "* Based on tests taken in this browser"
       },
       "actions": {
         "restart": "Take Again",
         "shareWithFriend": "Share with Friends"
+      },
+      "share": {
+        "title": "Share Results",
+        "kakao": "KakaoTalk",
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "copyLink": "Copy Link",
+        "linkCopied": "Link copied!",
+        "kakaoUnavailable": "KakaoTalk sharing is not available.",
+        "kakaoError": "Error sharing to KakaoTalk.",
+        "kakaoButton": "Take the Test",
+        "shareTitle": "I'm {{title}} {{type}}!",
+        "shareDesc": "\"{{subtitle}}\" - What's your MBTI? Find out in 2 minutes!",
+        "tweetText": "I'm {{subtitle}} {{type}}! What's your MBTI? #MBTITest #Buzzit"
       },
       "posts": {
         "title": "🔥 Popular Posts",
@@ -66,22 +105,86 @@
       }
     },
     "types": {
-      "INTJ": { "title": "Architect", "subtitle": "Perfectionist Strategist" },
-      "INTP": { "title": "Logician", "subtitle": "Curious Thinker" },
-      "ENTJ": { "title": "Commander", "subtitle": "Natural Leader" },
-      "ENTP": { "title": "Debater", "subtitle": "Idea Generator" },
-      "INFJ": { "title": "Advocate", "subtitle": "Mystical Counselor" },
-      "INFP": { "title": "Mediator", "subtitle": "Dreamy Idealist" },
-      "ENFJ": { "title": "Protagonist", "subtitle": "Natural Mentor" },
-      "ENFP": { "title": "Campaigner", "subtitle": "Free Spirit" },
-      "ISTJ": { "title": "Logistician", "subtitle": "Reliable Executor" },
-      "ISFJ": { "title": "Defender", "subtitle": "Warm Supporter" },
-      "ESTJ": { "title": "Executive", "subtitle": "Practical Organizer" },
-      "ESFJ": { "title": "Consul", "subtitle": "Social Helper" },
-      "ISTP": { "title": "Virtuoso", "subtitle": "Versatile Problem Solver" },
-      "ISFP": { "title": "Adventurer", "subtitle": "Free-spirited Artist" },
-      "ESTP": { "title": "Entrepreneur", "subtitle": "Energetic Go-getter" },
-      "ESFP": { "title": "Entertainer", "subtitle": "Life of the Party" }
+      "INTJ": {
+        "title": "Architect", "subtitle": "Perfectionist Strategist",
+        "trait1": "Logical and systematic thinking", "trait2": "Long-term planning and goal-oriented", "trait3": "Independent and self-directed", "trait4": "Seeks new knowledge and insights", "trait5": "Perfectionist tendencies",
+        "quote": "Everything goes best according to plan"
+      },
+      "INTP": {
+        "title": "Logician", "subtitle": "Curious Thinker",
+        "trait1": "Analytical and objective", "trait2": "Interested in theories and principles", "trait3": "Independent and creative", "trait4": "Enjoys problem solving", "trait5": "Flexible thinking style",
+        "quote": "I wonder why? I'm curious"
+      },
+      "ENTJ": {
+        "title": "Commander", "subtitle": "Natural Leader",
+        "trait1": "Decisive and driven", "trait2": "Goal-oriented and efficient", "trait3": "Excellent leadership", "trait4": "Logical and strategic", "trait5": "Full of confidence",
+        "quote": "Let's make a plan and execute it!"
+      },
+      "ENTP": {
+        "title": "Debater", "subtitle": "Idea Generator",
+        "trait1": "Creative and innovative", "trait2": "Enjoys debates and arguments", "trait3": "Explores new possibilities", "trait4": "Logical and analytical", "trait5": "Great sense of humor",
+        "quote": "What if we try it this way?"
+      },
+      "INFJ": {
+        "title": "Advocate", "subtitle": "Mystical Counselor",
+        "trait1": "Excellent insight", "trait2": "Idealistic and dedicated", "trait3": "Outstanding empathy", "trait4": "Creative and original", "trait5": "Deep inner world",
+        "quote": "I can sense people's true feelings"
+      },
+      "INFP": {
+        "title": "Mediator", "subtitle": "Dreamy Idealist",
+        "trait1": "Idealistic and romantic", "trait2": "Rich in sensitivity", "trait3": "Creative and imaginative", "trait4": "Values authenticity and meaning", "trait5": "Quiet but passionate",
+        "quote": "I want to live life my way"
+      },
+      "ENFJ": {
+        "title": "Protagonist", "subtitle": "Natural Mentor",
+        "trait1": "Inspires people", "trait2": "Excellent empathy and communication", "trait3": "Pursues harmony and cooperation", "trait4": "Passionate and dedicated", "trait5": "Helps others grow",
+        "quote": "Let's do this together!"
+      },
+      "ENFP": {
+        "title": "Campaigner", "subtitle": "Free Spirit",
+        "trait1": "Passionate and energetic", "trait2": "Creative and imaginative", "trait3": "Loves being around people", "trait4": "Free and spontaneous", "trait5": "Seeks new experiences",
+        "quote": "The world is my playground!"
+      },
+      "ISTJ": {
+        "title": "Logistician", "subtitle": "Reliable Executor",
+        "trait1": "Systematic and organized", "trait2": "Strong sense of responsibility", "trait3": "Realistic and practical", "trait4": "Reliable and trustworthy", "trait5": "Respects rules and traditions",
+        "quote": "Step by step, according to plan"
+      },
+      "ISFJ": {
+        "title": "Defender", "subtitle": "Warm Supporter",
+        "trait1": "Deeply caring", "trait2": "Strong sense of responsibility", "trait3": "Attentive and detail-oriented", "trait4": "Pursues harmonious relationships", "trait5": "Devoted and sincere",
+        "quote": "Let me help you"
+      },
+      "ESTJ": {
+        "title": "Executive", "subtitle": "Practical Organizer",
+        "trait1": "Excellent organization and management", "trait2": "Decisive and driven", "trait3": "Realistic and practical", "trait4": "Values rules and order", "trait5": "Strong sense of responsibility",
+        "quote": "Let's handle this efficiently"
+      },
+      "ESFJ": {
+        "title": "Consul", "subtitle": "Social Helper",
+        "trait1": "Social and kind", "trait2": "Puts others first", "trait3": "Creates harmonious atmosphere", "trait4": "Responsible and sincere", "trait5": "Respects traditions and customs",
+        "quote": "Let's all be happy together!"
+      },
+      "ISTP": {
+        "title": "Virtuoso", "subtitle": "Versatile Problem Solver",
+        "trait1": "Excellent problem solver", "trait2": "Practical and realistic", "trait3": "Logical and analytical", "trait4": "Independent and free", "trait5": "Good with hands",
+        "quote": "You'll know once you try it yourself"
+      },
+      "ISFP": {
+        "title": "Adventurer", "subtitle": "Free-spirited Artist",
+        "trait1": "Rich in sensitivity", "trait2": "Excellent artistic sense", "trait3": "Free and independent", "trait4": "Lives in the present", "trait5": "Quiet but warm",
+        "quote": "Enjoy this very moment"
+      },
+      "ESTP": {
+        "title": "Entrepreneur", "subtitle": "Energetic Go-getter",
+        "trait1": "Energetic and active", "trait2": "Spontaneous and flexible", "trait3": "Realistic and practical", "trait4": "Excellent crisis management", "trait5": "Social and bold",
+        "quote": "Just do it first, think later!"
+      },
+      "ESFP": {
+        "title": "Entertainer", "subtitle": "Life of the Party",
+        "trait1": "Social and outgoing", "trait2": "Spontaneous and free", "trait3": "Optimistic and positive", "trait4": "Lives in the present", "trait5": "Natural mood maker",
+        "quote": "Life should be fun!"
+      }
     }
   }
 }

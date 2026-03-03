@@ -3,20 +3,21 @@ import { MBTIQuestion } from '../types/mbti'
 /**
  * MBTI 테스트 질문 12개 (각 차원당 3개 - 홀수로 동점 방지)
  * E/I 3개, S/N 3개, T/F 3개, J/P 3개
+ * text와 optionA/B.text는 i18n 키로 사용됨
  */
 export const questions: MBTIQuestion[] = [
   // E/I (외향성/내향성) - 3문항
   {
     id: 1,
     dimension: 'EI',
-    text: '주말 아침, 친구가 갑자기 놀자고 연락하면?',
+    text: 'mbti.questions.1.text',
     optionA: {
-      text: '"좋아! 어디로 갈까?"',
+      text: 'mbti.questions.1.optionA',
       description: '즉시 OK, 사람 만나는 게 에너지 충전',
       score: 1,
     },
     optionB: {
-      text: '"음... 집에 있고 싶은데"',
+      text: 'mbti.questions.1.optionB',
       description: '혼자만의 시간이 더 필요함',
       score: -1,
     },
@@ -24,14 +25,14 @@ export const questions: MBTIQuestion[] = [
   {
     id: 2,
     dimension: 'EI',
-    text: '파티나 모임에 갔을 때 나는?',
+    text: 'mbti.questions.2.text',
     optionA: {
-      text: '여기저기 돌아다니며 새로운 사람들과 대화',
+      text: 'mbti.questions.2.optionA',
       description: '새로운 사람 만나기를 즐김',
       score: 1,
     },
     optionB: {
-      text: '친한 사람 1-2명이랑만 깊은 얘기',
+      text: 'mbti.questions.2.optionB',
       description: '소수의 친한 사람과 깊은 대화 선호',
       score: -1,
     },
@@ -39,109 +40,109 @@ export const questions: MBTIQuestion[] = [
   {
     id: 3,
     dimension: 'EI',
-    text: '하루 종일 사람들과 있었다면?',
+    text: 'mbti.questions.3.text',
     optionA: {
-      text: '신나! 더 놀고 싶은데?',
+      text: 'mbti.questions.3.optionA',
       description: '사람들과 있으면 에너지가 충전됨',
       score: 1,
     },
     optionB: {
-      text: '집 가서 혼자 쉬어야 배터리 충전됨',
+      text: 'mbti.questions.3.optionB',
       description: '혼자만의 시간이 필요함',
       score: -1,
     },
   },
 
-  // S/N (감각형/직관형) - 3문항
+  // S/N (감각형/직관형) - 3문항 (개선됨)
   {
     id: 4,
     dimension: 'SN',
-    text: '새로운 폰을 샀을 때 나는?',
+    text: 'mbti.questions.4.text',
     optionA: {
-      text: '설명서 읽으면서 기능 하나하나 파악',
-      description: '구체적이고 체계적으로 학습',
+      text: 'mbti.questions.4.optionA',
+      description: '검증된 방법, 구체적 데이터 중심',
       score: 1,
     },
     optionB: {
-      text: '일단 만져보면서 감으로 익히기',
-      description: '직관적으로 탐색하며 학습',
+      text: 'mbti.questions.4.optionB',
+      description: '큰 그림, 새로운 가능성 탐색',
       score: -1,
     },
   },
   {
     id: 5,
     dimension: 'SN',
-    text: '친구가 고민 상담을 하면?',
+    text: 'mbti.questions.5.text',
     optionA: {
-      text: '"정확히 언제 어떻게 된 건데?"',
-      description: '구체적인 사실부터 파악',
+      text: 'mbti.questions.5.optionA',
+      description: '실제 경험, 구체적 사실 선호',
       score: 1,
     },
     optionB: {
-      text: '"아 그 마음 이해해..."',
-      description: '전체적인 맥락과 감정 먼저',
+      text: 'mbti.questions.5.optionB',
+      description: '미래 가능성, 아이디어 선호',
       score: -1,
     },
   },
   {
     id: 6,
     dimension: 'SN',
-    text: '여행 계획을 세울 때?',
+    text: 'mbti.questions.6.text',
     optionA: {
-      text: '시간별 일정표 작성, 맛집 리스트, 교통편 예약',
-      description: '구체적이고 상세한 계획',
+      text: 'mbti.questions.6.optionA',
+      description: '단계별로 차근차근',
       score: 1,
     },
     optionB: {
-      text: '대충 어디 갈지만 정하고 그때그때 즉흥적으로',
-      description: '큰 틀만 정하고 유연하게',
+      text: 'mbti.questions.6.optionB',
+      description: '전체 개념 먼저, 자기 방식으로 응용',
       score: -1,
     },
   },
 
-  // T/F (사고형/감정형) - 3문항
+  // T/F (사고형/감정형) - 3문항 (개선됨)
   {
     id: 7,
     dimension: 'TF',
-    text: '친구가 실수로 약속을 까먹었을 때?',
+    text: 'mbti.questions.7.text',
     optionA: {
-      text: '"다음부턴 알람 설정해둬"',
-      description: '해결책 제시',
+      text: 'mbti.questions.7.optionA',
+      description: '상황 분석, 해결책 제시',
       score: 1,
     },
     optionB: {
-      text: '"괜찮아, 다들 그럴 수 있지"',
-      description: '공감과 위로',
+      text: 'mbti.questions.7.optionB',
+      description: '공감과 경청',
       score: -1,
     },
   },
   {
     id: 8,
     dimension: 'TF',
-    text: '영화를 보고 나서?',
+    text: 'mbti.questions.8.text',
     optionA: {
-      text: '"스토리가 논리적으로 말이 안 됨"',
-      description: '분석과 평가',
+      text: 'mbti.questions.8.optionA',
+      description: '논리적 분석',
       score: 1,
     },
     optionB: {
-      text: '"마지막에 너무 감동이야 ㅠㅠ"',
-      description: '감정과 느낌',
+      text: 'mbti.questions.8.optionB',
+      description: '가치관과 마음',
       score: -1,
     },
   },
   {
     id: 9,
     dimension: 'TF',
-    text: '팀 프로젝트에서 의견 충돌이 생기면?',
+    text: 'mbti.questions.9.text',
     optionA: {
-      text: '"객관적으로 어떤 게 더 효율적인지 따져보자"',
-      description: '논리와 효율 중심',
+      text: 'mbti.questions.9.optionA',
+      description: '원인 파악, 재발 방지',
       score: 1,
     },
     optionB: {
-      text: '"일단 모두의 의견을 들어보고 조율해보자"',
-      description: '관계와 조화 중심',
+      text: 'mbti.questions.9.optionB',
+      description: '기분 살피기, 격려',
       score: -1,
     },
   },
@@ -150,14 +151,14 @@ export const questions: MBTIQuestion[] = [
   {
     id: 10,
     dimension: 'JP',
-    text: '아침에 일어나면 제일 먼저?',
+    text: 'mbti.questions.10.text',
     optionA: {
-      text: '오늘 할 일 체크리스트 확인',
+      text: 'mbti.questions.10.optionA',
       description: '계획적이고 체계적',
       score: 1,
     },
     optionB: {
-      text: '일단 침대에서 폰 보다가 마음 내킬 때 일어남',
+      text: 'mbti.questions.10.optionB',
       description: '즉흥적이고 유연함',
       score: -1,
     },
@@ -165,14 +166,14 @@ export const questions: MBTIQuestion[] = [
   {
     id: 11,
     dimension: 'JP',
-    text: '배달음식 주문할 때?',
+    text: 'mbti.questions.11.text',
     optionA: {
-      text: '평소에 먹던 익숙한 메뉴 주문',
+      text: 'mbti.questions.11.optionA',
       description: '확실한 것 선호',
       score: 1,
     },
     optionB: {
-      text: '"오늘은 뭐 먹지?" → 30분 고민 끝에 새로운 거 도전',
+      text: 'mbti.questions.11.optionB',
       description: '새로운 것 탐색',
       score: -1,
     },
@@ -180,14 +181,14 @@ export const questions: MBTIQuestion[] = [
   {
     id: 12,
     dimension: 'JP',
-    text: '방 청소를 할 때?',
+    text: 'mbti.questions.12.text',
     optionA: {
-      text: '정해진 요일에 규칙적으로 청소',
+      text: 'mbti.questions.12.optionA',
       description: '규칙적이고 계획적',
       score: 1,
     },
     optionB: {
-      text: '너무 더러워지면 그때 한 번에 대청소',
+      text: 'mbti.questions.12.optionB',
       description: '유연하고 즉흥적',
       score: -1,
     },

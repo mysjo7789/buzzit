@@ -487,6 +487,37 @@ async def delete_comment(
     return {"message": "댓글이 삭제되었습니다"}
 
 
+# ── Object Storage (Leapcell S3) ───────────────────────────────────
+
+_S3_ENDPOINT = "https://objstorage.leapcell.io"
+_S3_BUCKET = os.getenv("LEAPCELL_S3_BUCKET", "os-wsp2030135531681386496-pdmi-azaa-thccjllm")
+_S3_ACCESS_KEY = os.getenv("LEAPCELL_S3_ACCESS_KEY", "5872241d993b4a878f96ad69a8968a79")
+_S3_SECRET_KEY = os.getenv("LEAPCELL_S3_SECRET_KEY", "")
+
+
+def _save_image_to_s3(image_bytes: bytes, result_id: str):
+    """분석된 이미지를 S3에 백그라운드 저장."""
+    try:
+        import boto3
+        s3 = boto3.client(
+            "s3",
+            region_name="us-east-1",
+            endpoint_url=_S3_ENDPOINT,
+            aws_access_key_id=_S3_ACCESS_KEY,
+            aws_secret_access_key=_S3_SECRET_KEY,
+        )
+        key = f"skin-match/{datetime.now().strftime('%Y-%m-%d')}/{result_id}.jpg"
+        s3.put_object(
+            Bucket=_S3_BUCKET,
+            Key=key,
+            Body=image_bytes,
+            ContentType="image/jpeg",
+        )
+        print(f"[skin-match] 이미지 저장: {key}")
+    except Exception as e:
+        print(f"[skin-match] 이미지 저장 실패: {e}")
+
+
 # ── Skin Match endpoint ────────────────────────────────────────────
 
 @app.post("/api/skin-match")
@@ -510,6 +541,14 @@ async def skin_match_analyze(image: UploadFile = FastAPIFile(...)):
         from core.skin_match.matcher import match_skin
 
         result = match_skin(image_bytes)
+
+        # 분석 성공 시 이미지를 S3에 백그라운드 저장
+        if _S3_SECRET_KEY:
+            import uuid
+            img_id = uuid.uuid4().hex[:12]
+            asyncio.create_task(
+                asyncio.to_thread(_save_image_to_s3, image_bytes, f"{result['id']}_{img_id}")
+            )
 
         return {
             "result_id": result["id"],
@@ -538,8 +577,6 @@ async def skin_match_analyze(image: UploadFile = FastAPIFile(...)):
             status_code=500,
             detail={"error": "server_error", "message": "서버 오류가 발생했습니다"},
         )
-    finally:
-        del image_bytes
 
 
 if __name__ == "__main__":

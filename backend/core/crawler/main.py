@@ -12,7 +12,7 @@ from datetime import datetime
 import httpx
 from bs4 import BeautifulSoup, Tag
 
-DEFAULT_TIMEOUT = httpx.Timeout(15.0, connect=1.0, read=10.0)
+DEFAULT_TIMEOUT = httpx.Timeout(30.0, connect=10.0, read=20.0)
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",

@@ -12,8 +12,12 @@ import asyncio
 import hashlib
 import secrets
 import os
+import sys
 from pathlib import Path
 from typing import Optional
+
+# backend/ 디렉토리를 sys.path에 추가 (core.skin_match 모듈 임포트용)
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent / ".env")

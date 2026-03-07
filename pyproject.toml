@@ -19,4 +19,8 @@ dependencies = [
     "pydantic>=2.5.0",
     "trafilatura>=1.6.0",
     "curl-cffi>=0.14.0",
+    "opencv-python-headless>=4.8.0",
+    "mediapipe>=0.10.0",
+    "numpy>=1.26.0",
+    "python-multipart>=0.0.6",
 ]

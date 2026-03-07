@@ -180,6 +180,22 @@ function MBTIResultPage() {
         </button>
       </div>
 
+      {/* 피부 닮은꼴 테스트 유도 */}
+      <div className="max-w-2xl mx-auto mt-8">
+        <Link
+          to="/tests/skin-match"
+          className="block bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl shadow-md p-6 text-white hover:shadow-lg transform hover:-translate-y-0.5 transition-all"
+        >
+          <div className="flex items-center gap-4">
+            <span className="text-4xl">📸</span>
+            <div>
+              <h3 className="text-lg font-bold">{t('skinMatch.banner.title')}</h3>
+              <p className="text-white/80 text-sm mt-1">{t('skinMatch.banner.subtitle')}</p>
+            </div>
+          </div>
+        </Link>
+      </div>
+
       {/* 유머 게시글 섹션 */}
       {!loadingPosts && posts.length > 0 && (
         <div className="mt-12 max-w-2xl mx-auto">

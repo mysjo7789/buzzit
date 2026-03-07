@@ -186,5 +186,57 @@
         "quote": "Life should be fun!"
       }
     }
+  },
+  "skinMatch": {
+    "start": {
+      "title": "AI Skin Look-alike Test",
+      "subtitle": "Upload a selfie and we'll find the celebrity with skin most like yours",
+      "ai": "AI Analysis",
+      "duration": "1-2 sec",
+      "uploadButton": "Upload Photo",
+      "privacy": "Photos are not saved and are deleted immediately after analysis"
+    },
+    "preview": {
+      "title": "Analyze this photo?",
+      "analyze": "Start Analysis",
+      "reselect": "Choose Another Photo"
+    },
+    "loading": {
+      "title": "AI Skin Analysis...",
+      "subtitle": "Please wait a moment",
+      "step1": "Detecting face...",
+      "step2": "Analyzing skin area...",
+      "step3": "Matching look-alike..."
+    },
+    "error": {
+      "title": "Analysis Failed",
+      "noFace": "No face detected. Please use a front-facing photo.",
+      "tooDark": "Photo is too dark. Please retake in a brighter area.",
+      "tooBlurry": "Photo is blurry. Please use a clearer photo.",
+      "invalidFormat": "Unsupported file format.",
+      "tooLarge": "File is too large (max 10MB).",
+      "network": "Network error. Please try again.",
+      "retry": "Try Again"
+    },
+    "result": {
+      "retry": "Test Again",
+      "friendTest": "Share with Friends",
+      "otherTests": "Try other tests too!",
+      "mbtiLink": "MBTI Personality Test"
+    },
+    "share": {
+      "title": "Share Results",
+      "kakao": "KakaoTalk",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "copyLink": "Copy Link",
+      "linkCopied": "Link copied!",
+      "kakaoUnavailable": "KakaoTalk sharing is not available.",
+      "kakaoError": "Error sharing to KakaoTalk."
+    },
+    "banner": {
+      "title": "AI Skin Look-alike Test",
+      "subtitle": "Find your celebrity skin match with a selfie"
+    }
   }
 }

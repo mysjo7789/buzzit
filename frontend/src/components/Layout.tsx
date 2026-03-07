@@ -28,6 +28,12 @@ const Layout = ({ children }: LayoutProps) => {
             <div className="flex items-center gap-2">
               <LanguageSelector />
               <Link
+                to="/tests/skin-match"
+                className="px-3 py-1.5 text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg transition-all shadow-sm hover:shadow-md"
+              >
+                📸 피부
+              </Link>
+              <Link
                 to="/mbti"
                 className="px-3 py-1.5 text-sm font-semibold text-white bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 rounded-lg transition-all shadow-sm hover:shadow-md"
               >

@@ -9,6 +9,8 @@ import TermsPage from './pages/TermsPage'
 import MBTIStartPage from './pages/MBTIStartPage'
 import MBTITestPage from './pages/MBTITestPage'
 import MBTIResultPage from './pages/MBTIResultPage'
+import SkinMatchTest from './pages/SkinMatchTest'
+import SkinMatchResult from './pages/SkinMatchResult'
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/mbti" element={<MBTIStartPage />} />
         <Route path="/mbti/test" element={<MBTITestPage />} />
         <Route path="/mbti/result" element={<MBTIResultPage />} />
+        <Route path="/tests/skin-match" element={<SkinMatchTest />} />
+        <Route path="/tests/skin-match/result/:resultId" element={<SkinMatchResult />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Layout>

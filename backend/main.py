@@ -25,6 +25,7 @@ from sqlalchemy.sql import func
 from authlib.integrations.starlette_client import OAuth
 from jose import jwt as jose_jwt
 from pydantic import BaseModel, Field
+from fastapi import UploadFile, File as FastAPIFile
 import httpx
 
 # Import crawler
@@ -763,6 +764,61 @@ async def delete_comment(
     db.delete(comment)
     db.commit()
     return {"message": "댓글이 삭제되었습니다"}
+
+
+# ── Skin Match endpoint ────────────────────────────────────────────
+
+@app.post("/api/skin-match")
+async def skin_match_analyze(image: UploadFile = FastAPIFile(...)):
+    """AI 피부 닮은꼴 분석 API. 이미지를 분석하여 닮은 연예인을 반환한다."""
+    content_type = image.content_type or ""
+    if not content_type.startswith("image/"):
+        raise HTTPException(
+            status_code=400,
+            detail={"error": "invalid_format", "message": "지원하지 않는 파일 형식입니다"},
+        )
+
+    image_bytes = await image.read()
+    if len(image_bytes) > 10 * 1024 * 1024:
+        raise HTTPException(
+            status_code=400,
+            detail={"error": "invalid_format", "message": "파일이 너무 큽니다 (최대 10MB)"},
+        )
+
+    try:
+        from core.skin_match.matcher import match_skin
+
+        result = match_skin(image_bytes)
+
+        return {
+            "result_id": result["id"],
+            "name": result["name"],
+            "title": result["title"],
+            "type": result["type"],
+            "share_text": f"AI 피부 닮은꼴 테스트 결과 {result['name']} 타입",
+        }
+
+    except ValueError as e:
+        error_code = str(e)
+        error_messages = {
+            "no_face": "얼굴을 찾을 수 없습니다",
+            "too_dark": "사진이 너무 어둡습니다",
+            "too_blurry": "사진이 흐립니다",
+            "invalid_format": "지원하지 않는 파일 형식입니다",
+        }
+        message = error_messages.get(error_code, "분석 중 오류가 발생했습니다")
+        raise HTTPException(
+            status_code=400,
+            detail={"error": error_code, "message": message},
+        )
+    except Exception as e:
+        print(f"[skin-match] Unexpected error: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail={"error": "server_error", "message": "서버 오류가 발생했습니다"},
+        )
+    finally:
+        del image_bytes
 
 
 if __name__ == "__main__":

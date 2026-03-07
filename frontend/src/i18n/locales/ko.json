@@ -186,5 +186,57 @@
         "quote": "인생은 즐거워야지!"
       }
     }
+  },
+  "skinMatch": {
+    "start": {
+      "title": "AI 피부 닮은꼴 테스트",
+      "subtitle": "셀카 한 장으로 당신과 가장 닮은 피부의 연예인을 찾아드립니다",
+      "ai": "AI 분석",
+      "duration": "1~2초",
+      "uploadButton": "사진 업로드하기",
+      "privacy": "사진은 저장하지 않고 분석 후 즉시 삭제됩니다"
+    },
+    "preview": {
+      "title": "이 사진으로 분석할까요?",
+      "analyze": "분석 시작하기",
+      "reselect": "다른 사진 선택"
+    },
+    "loading": {
+      "title": "AI 피부 분석 중...",
+      "subtitle": "잠시만 기다려 주세요",
+      "step1": "얼굴 인식 중...",
+      "step2": "피부 영역 분석 중...",
+      "step3": "닮은꼴 매칭 중..."
+    },
+    "error": {
+      "title": "분석 실패",
+      "noFace": "얼굴을 찾을 수 없습니다. 정면 사진을 사용해 주세요.",
+      "tooDark": "사진이 너무 어둡습니다. 밝은 곳에서 다시 찍어주세요.",
+      "tooBlurry": "사진이 흐립니다. 선명한 사진을 사용해 주세요.",
+      "invalidFormat": "지원하지 않는 파일 형식입니다.",
+      "tooLarge": "파일이 너무 큽니다 (최대 10MB).",
+      "network": "네트워크 오류가 발생했습니다. 다시 시도해 주세요.",
+      "retry": "다시 시도하기"
+    },
+    "result": {
+      "retry": "다시 테스트하기",
+      "friendTest": "친구도 테스트하기",
+      "otherTests": "다른 테스트도 해보세요!",
+      "mbtiLink": "MBTI 성격 테스트"
+    },
+    "share": {
+      "title": "결과 공유하기",
+      "kakao": "카카오톡",
+      "twitter": "트위터",
+      "facebook": "페이스북",
+      "copyLink": "링크 복사",
+      "linkCopied": "링크가 복사되었습니다!",
+      "kakaoUnavailable": "카카오톡 공유 기능을 사용할 수 없습니다.",
+      "kakaoError": "카카오톡 공유 중 오류가 발생했습니다."
+    },
+    "banner": {
+      "title": "AI 피부 닮은꼴 테스트",
+      "subtitle": "셀카로 닮은꼴 피부를 찾아드립니다"
+    }
   }
 }

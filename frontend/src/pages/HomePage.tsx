@@ -262,6 +262,37 @@ const HomePage = () => {
         </div>
       </Link>
 
+      {/* 피부 닮은꼴 테스트 배너 */}
+      <Link
+        to="/tests/skin-match"
+        className="block bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-xl p-4 shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5"
+      >
+        <div className="flex items-center justify-between text-white">
+          <div className="flex items-center gap-3">
+            <span className="text-3xl">📸</span>
+            <div>
+              <div className="font-bold text-lg">{t('skinMatch.banner.title')}</div>
+              <div className="text-sm text-purple-100">{t('skinMatch.banner.subtitle')}</div>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </div>
+        </div>
+      </Link>
+
       {/* 상단 정보 바 */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">

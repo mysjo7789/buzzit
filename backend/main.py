@@ -490,9 +490,9 @@ async def delete_comment(
 # ── Object Storage (Leapcell S3) ───────────────────────────────────
 
 _S3_ENDPOINT = "https://objstorage.leapcell.io"
-_S3_BUCKET = os.getenv("LEAPCELL_S3_BUCKET", "os-wsp2030135531681386496-pdmi-azaa-thccjllm")
-_S3_ACCESS_KEY = os.getenv("LEAPCELL_S3_ACCESS_KEY", "5872241d993b4a878f96ad69a8968a79")
-_S3_SECRET_KEY = os.getenv("LEAPCELL_S3_SECRET_KEY", "")
+_S3_BUCKET = os.getenv("OBJ_S3_BUCKET", "os-wsp2030135531681386496-pdmi-azaa-thccjllm")
+_S3_ACCESS_KEY = os.getenv("OBJ_S3_ACCESS_KEY", "5872241d993b4a878f96ad69a8968a79")
+_S3_SECRET_KEY = os.getenv("OBJ_S3_SECRET_KEY", "")
 
 
 def _save_image_to_s3(image_bytes: bytes, result_id: str):

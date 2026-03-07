@@ -1492,17 +1492,28 @@ async def crawl_all() -> List[Dict[str, Any]]:
     return results
 
 def save_to_json(data: List[Dict[str, Any]], filename: str = "buzzit_posts.json"):
-    """크롤링 결과를 JSON 파일로 저장"""
-    with open(filename, 'w', encoding='utf-8') as f:
-        json.dump({
-            "metadata": {
-                "total_posts": len(data),
-                "collected_at": datetime.now().isoformat(),
-                "sites": list(set(post["site"] for post in data))
-            },
-            "posts": data
-        }, f, ensure_ascii=False, indent=2)
-    print(f"Results saved to {filename}")
+    """크롤링 결과를 JSON 파일로 저장 (read-only FS에서는 /tmp 사용)"""
+    import os
+    payload = {
+        "metadata": {
+            "total_posts": len(data),
+            "collected_at": datetime.now().isoformat(),
+            "sites": list(set(post["site"] for post in data))
+        },
+        "posts": data
+    }
+    try:
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        print(f"Results saved to {filename}")
+    except OSError:
+        try:
+            tmp_path = os.path.join("/tmp", filename)
+            with open(tmp_path, 'w', encoding='utf-8') as f:
+                json.dump(payload, f, ensure_ascii=False, indent=2)
+            print(f"Results saved to {tmp_path}")
+        except Exception as e:
+            print(f"[save_to_json] 파일 저장 스킵: {e}")
 
 if __name__ == "__main__":
     data = asyncio.run(crawl_all())

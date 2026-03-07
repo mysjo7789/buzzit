@@ -197,6 +197,7 @@ async def startup_event():
 # ── Basic endpoints ─────────────────────────────────────────────────
 
 @app.get("/kaithhealthcheck")
+@app.get("/kaithheathcheck")
 async def leapcell_health():
     """Leapcell 내부 헬스체크용."""
     return {"status": "ok"}

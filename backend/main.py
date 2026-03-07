@@ -172,7 +172,7 @@ class NicknameUpdate(BaseModel):
 
 CACHED_DATA: Dict[str, Any] = {}
 CACHE_TIMESTAMP: str = ""
-CRAWL_INTERVAL = 30 * 60  # 30분
+CRAWL_INTERVAL = 10 * 60  # 10분
 
 
 

@@ -311,10 +311,15 @@ app.add_middleware(SessionMiddleware, secret_key=JWT_SECRET)
 
 @app.on_event("startup")
 async def startup_event():
-    Base.metadata.create_all(bind=engine)
-    print("Database tables created/verified")
+    async def _init_db():
+        try:
+            await asyncio.to_thread(Base.metadata.create_all, bind=engine)
+            print("Database tables created/verified")
+        except Exception as e:
+            print(f"DB 초기화 실패 (나중에 재시도): {e}")
 
-    # 크롤링을 백그라운드로 실행 (콜드스타트 타임아웃 방지)
+    # 모든 초기화를 백그라운드로 (콜드스타트 9.8초 제한 대응)
+    asyncio.create_task(_init_db())
     asyncio.create_task(initialize_cache())
     asyncio.create_task(periodic_crawl())
 

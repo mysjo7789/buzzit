@@ -3,18 +3,17 @@
 
 from fastapi import FastAPI, HTTPException, Query, Depends, Cookie
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse, RedirectResponse, Response
+from fastapi.responses import JSONResponse, RedirectResponse
 from starlette.middleware.sessions import SessionMiddleware
 from starlette.requests import Request
 import uvicorn
 from datetime import datetime, timedelta
 import asyncio
-import json
 import hashlib
 import secrets
 import os
 from pathlib import Path
-from typing import Dict, List, Any, Optional
+from typing import Optional
 
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent / ".env")
@@ -27,16 +26,6 @@ from jose import jwt as jose_jwt
 from pydantic import BaseModel, Field
 from fastapi import UploadFile, File as FastAPIFile
 import httpx
-
-# Import crawler
-import sys
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-try:
-    from core.crawler.main import crawl_all, save_to_json, extract_thumbnail_from_page, DEFAULT_TIMEOUT, HEADERS as CRAWLER_HEADERS
-except ImportError:
-    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    from core.crawler.main import crawl_all, save_to_json, extract_thumbnail_from_page, DEFAULT_TIMEOUT, HEADERS as CRAWLER_HEADERS
 
 # ── Config ──────────────────────────────────────────────────────────
 
@@ -168,127 +157,11 @@ class NicknameUpdate(BaseModel):
     nickname: str = Field(..., min_length=2, max_length=20)
 
 
-# ── Crawl cache ─────────────────────────────────────────────────────
-
-CACHED_DATA: Dict[str, Any] = {}
-CACHE_TIMESTAMP: str = ""
-CRAWL_INTERVAL = 10 * 60  # 10분
-
-
-
-
-async def _crawl_and_fill_thumbnails() -> Dict[str, Any]:
-    """크롤링 + 썸네일 추출을 완료한 뒤 완성된 데이터를 반환."""
-    results = await crawl_all()
-    save_to_json(results)
-
-    new_data: Dict[str, Any] = {
-        "metadata": {
-            "total_posts": len(results),
-            "collected_at": datetime.now().isoformat(),
-            "sites": list(set(post["site"] for post in results))
-        },
-        "posts": results
-    }
-
-    print(f"크롤링 완료: {len(new_data['metadata']['sites'])}개 사이트에서 {len(results)}개 게시글 수집")
-
-    # 썸네일 채우기 (완료될 때까지 대기)
-    await _fill_thumbnails_for(new_data)
-
-    return new_data
-
-
-async def _fill_thumbnails_for(data: Dict[str, Any]):
-    """주어진 데이터의 썸네일을 채움 (CACHED_DATA를 건드리지 않음)."""
-    posts = data.get("posts", [])
-    no_thumb = [p for p in posts if not p.get("thumbnail")]
-    if not no_thumb:
-        print(f"[thumbnail] 모든 게시글에 썸네일이 있습니다")
-        return
-
-    by_site: Dict[str, list] = {}
-    for p in no_thumb:
-        site = p.get("site", "")
-        if site:
-            by_site.setdefault(site, []).append(p)
-
-    print(f"[thumbnail] 썸네일 없는 게시글 {len(no_thumb)}개 ({len(by_site)}개 사이트) 병렬 처리 시작...")
-    filled = 0
-
-    async def _process_site(site: str, site_posts: list) -> int:
-        count = 0
-        async with httpx.AsyncClient(timeout=DEFAULT_TIMEOUT) as client:
-            for post in site_posts:
-                url = post.get("url", "")
-                if not url:
-                    continue
-                try:
-                    thumb = await extract_thumbnail_from_page(client, url, site)
-                    if thumb:
-                        post["thumbnail"] = thumb
-                        count += 1
-                except Exception as e:
-                    print(f"[thumbnail] {site} error: {e}")
-                    continue
-        return count
-
-    tasks = [_process_site(site, sp) for site, sp in by_site.items()]
-    results = await asyncio.gather(*tasks, return_exceptions=True)
-    for r in results:
-        if isinstance(r, int):
-            filled += r
-
-    print(f"[thumbnail] 완료: {filled}/{len(no_thumb)}개 썸네일 추출")
-
-
-async def initialize_cache():
-    global CACHED_DATA, CACHE_TIMESTAMP
-
-    try:
-        print("서버 시작 시 크롤링 실행 중...")
-        new_data = await _crawl_and_fill_thumbnails()
-        CACHED_DATA = new_data
-        CACHE_TIMESTAMP = new_data["metadata"]["collected_at"]
-    except Exception as e:
-        print(f"초기 크롤링 실패: {e}")
-        json_path = Path("buzzit_posts.json")
-        if json_path.exists():
-            try:
-                with open(json_path, "r", encoding="utf-8") as f:
-                    CACHED_DATA = json.load(f)
-                    CACHE_TIMESTAMP = CACHED_DATA.get("metadata", {}).get("collected_at", "")
-                print("기존 JSON 파일에서 데이터 로드됨")
-            except Exception as load_error:
-                print(f"JSON 파일 로드 실패: {load_error}")
-
-
-async def periodic_crawl():
-    global CACHED_DATA, CACHE_TIMESTAMP
-
-    while True:
-        try:
-            await asyncio.sleep(CRAWL_INTERVAL)
-            print(f"주기적 크롤링 실행 중... ({datetime.now().strftime('%Y-%m-%d %H:%M:%S')})")
-
-            new_data = await _crawl_and_fill_thumbnails()
-
-            # 크롤 + 썸네일 모두 완료된 데이터로 한 번에 교체
-            CACHED_DATA = new_data
-            CACHE_TIMESTAMP = new_data["metadata"]["collected_at"]
-
-            print(f"주기적 크롤링 완료: 데이터 교체됨")
-
-        except Exception as e:
-            print(f"주기적 크롤링 실패: {e}")
-            continue
-
-
 # ── FastAPI app ─────────────────────────────────────────────────────
 
 app = FastAPI(
     title="Buzzit API",
-    description="실시간 트렌드/이슈 큐레이션 API",
+    description="피부 닮은꼴 분석 + 인증/댓글 API",
     version="1.0.0"
 )
 
@@ -318,10 +191,7 @@ async def startup_event():
         except Exception as e:
             print(f"DB 초기화 실패 (나중에 재시도): {e}")
 
-    # 모든 초기화를 백그라운드로 (콜드스타트 9.8초 제한 대응)
     asyncio.create_task(_init_db())
-    asyncio.create_task(initialize_cache())
-    asyncio.create_task(periodic_crawl())
 
 
 # ── Basic endpoints ─────────────────────────────────────────────────
@@ -346,176 +216,8 @@ async def health_check():
     return {
         "status": "healthy",
         "timestamp": datetime.now().isoformat(),
-        "cached_posts": len(CACHED_DATA.get("posts", [])) if CACHED_DATA else 0,
-        "cache_timestamp": CACHE_TIMESTAMP,
-        "next_crawl_in_minutes": CRAWL_INTERVAL // 60,
         "version": "1.0.0"
     }
-
-
-# ── 이미지 프록시 (Referer 인증이 필요한 CDN 우회) ────────────────
-
-# Referer 인증이 필요한 이미지 도메인 → 필요한 Referer 매핑
-_IMAGE_PROXY_REFERERS: Dict[str, str] = {
-    "simg.donga.com": "https://mlbpark.donga.com/",
-}
-
-@app.get("/api/image-proxy")
-async def image_proxy(url: str = Query(..., description="프록시할 이미지 URL")):
-    """Referer 인증이 필요한 이미지를 프록시."""
-    from urllib.parse import urlparse
-    parsed = urlparse(url)
-    hostname = parsed.hostname or ""
-
-    if hostname not in _IMAGE_PROXY_REFERERS:
-        raise HTTPException(status_code=403, detail="Proxy not allowed for this domain")
-
-    headers = {**CRAWLER_HEADERS, "Referer": _IMAGE_PROXY_REFERERS[hostname]}
-    try:
-        async with httpx.AsyncClient(timeout=10) as client:
-            resp = await client.get(url, headers=headers, follow_redirects=True)
-        if resp.status_code != 200:
-            raise HTTPException(status_code=resp.status_code, detail="Upstream error")
-        content_type = resp.headers.get("content-type", "image/jpeg")
-        return Response(
-            content=resp.content,
-            media_type=content_type,
-            headers={"Cache-Control": "public, max-age=86400"},
-        )
-    except HTTPException:
-        raise
-    except Exception:
-        raise HTTPException(status_code=502, detail="Failed to fetch image")
-
-
-@app.get("/api/posts")
-async def get_posts(
-    sort: Optional[str] = Query("latest", description="정렬: latest, views, likes, comments"),
-    site: Optional[str] = Query(None, description="사이트 필터"),
-    limit: Optional[int] = Query(None, description="결과 제한 수"),
-):
-    try:
-        if not CACHED_DATA:
-            return {"posts": [], "metadata": {"total_posts": 0, "collected_at": CACHE_TIMESTAMP}}
-
-        posts = list(CACHED_DATA.get("posts", []))
-
-        if site:
-            posts = [p for p in posts if p.get("site") == site]
-
-        if sort == "views":
-            posts.sort(key=lambda p: p.get("views") or 0, reverse=True)
-        elif sort == "likes":
-            posts.sort(key=lambda p: p.get("likes") or 0, reverse=True)
-        elif sort == "comments":
-            posts.sort(key=lambda p: p.get("comments") or 0, reverse=True)
-        else:
-            posts.sort(key=lambda p: p.get("collected_at", ""), reverse=True)
-
-        if limit:
-            posts = posts[:limit]
-
-        return {
-            "posts": posts,
-            "metadata": {
-                "total_posts": len(posts),
-                "collected_at": CACHE_TIMESTAMP,
-                "sites": list(set(p["site"] for p in CACHED_DATA.get("posts", [])))
-            }
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"데이터 조회 실패: {str(e)}")
-
-
-@app.get("/api/post/detail")
-async def get_post_detail(
-    url: str = Query(..., description="원본 게시글 URL"),
-    db: Session = Depends(get_db),
-):
-    post_data = None
-    if CACHED_DATA:
-        for p in CACHED_DATA.get("posts", []):
-            if p.get("url") == url:
-                post_data = p
-                break
-
-    if not post_data:
-        raise HTTPException(status_code=404, detail="게시글을 찾을 수 없습니다")
-
-    url_hash = get_post_url_hash(url)
-    comment_count = db.query(Comment).filter(Comment.post_url_hash == url_hash).count()
-
-    return {
-        "post": post_data,
-        "buzzit_comments": comment_count,
-    }
-
-
-@app.get("/api/posts/{site}")
-async def get_posts_by_site(site: str):
-    try:
-        if not CACHED_DATA:
-            return {"posts": [], "metadata": {"total_posts": 0, "collected_at": CACHE_TIMESTAMP}}
-
-        filtered_posts = [post for post in CACHED_DATA.get("posts", []) if post.get("site") == site]
-
-        return {
-            "posts": filtered_posts,
-            "metadata": {
-                "site": site,
-                "total_posts": len(filtered_posts),
-                "collected_at": CACHE_TIMESTAMP
-            }
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"데이터 조회 실패: {str(e)}")
-
-
-@app.post("/api/crawl")
-async def crawl_posts():
-    try:
-        global CACHED_DATA, CACHE_TIMESTAMP
-
-        print("수동 크롤링 실행 중...")
-        results = await crawl_all()
-        save_to_json(results)
-
-        CACHED_DATA = {
-            "metadata": {
-                "total_posts": len(results),
-                "collected_at": datetime.now().isoformat(),
-                "sites": list(set(post["site"] for post in results))
-            },
-            "posts": results
-        }
-        CACHE_TIMESTAMP = CACHED_DATA["metadata"]["collected_at"]
-
-        print(f"수동 크롤링 완료: {len(results)}개 게시글 수집")
-
-        return {
-            "message": "크롤링 완료",
-            "total_posts": len(results),
-            "collected_at": CACHE_TIMESTAMP,
-        }
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"크롤링 실패: {str(e)}")
-
-
-@app.get("/api/sites")
-async def get_sites():
-    sites = [
-        {"name": "웃긴대학", "code": "humoruniv", "url": "https://web.humoruniv.com/"},
-        {"name": "루리웹", "code": "ruliweb", "url": "https://bbs.ruliweb.com/"},
-        {"name": "이토랜드", "code": "etoland", "url": "https://www.etoland.co.kr/"},
-        {"name": "인벤", "code": "inven", "url": "https://www.inven.co.kr/"},
-        {"name": "클리앙", "code": "clien", "url": "https://www.clien.net/"},
-        {"name": "MLB파크", "code": "mlbpark", "url": "https://mlbpark.donga.com/"},
-        {"name": "딴지일보", "code": "ddanzi", "url": "https://www.ddanzi.com/"},
-        {"name": "보배드림", "code": "bobaedream", "url": "https://www.bobaedream.co.kr/"},
-        {"name": "뽐뿌", "code": "ppomppu", "url": "https://www.ppomppu.co.kr/"},
-    ]
-
-    return {"sites": sites}
 
 
 # ── Auth endpoints ──────────────────────────────────────────────────

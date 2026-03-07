@@ -1,7 +1,7 @@
 import { SkinMatchApiResponse, SkinMatchError } from '../types/skinMatch'
 import { resizeAndCompress } from './imageProcessor'
 
-const API_BASE = '/api'
+const API_BASE = `${import.meta.env.VITE_API_URL || ''}/api`
 const TIMEOUT_MS = 15000
 
 export async function analyzeSkin(file: File): Promise<SkinMatchApiResponse> {

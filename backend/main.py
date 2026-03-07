@@ -298,6 +298,8 @@ app.add_middleware(
         "http://localhost:3000",
         "http://localhost:5173",
         "https://buzzit.kr",
+        "https://bzibzi.com",
+        "https://www.bzibzi.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],

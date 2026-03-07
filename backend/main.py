@@ -314,7 +314,8 @@ async def startup_event():
     Base.metadata.create_all(bind=engine)
     print("Database tables created/verified")
 
-    await initialize_cache()
+    # 크롤링을 백그라운드로 실행 (콜드스타트 타임아웃 방지)
+    asyncio.create_task(initialize_cache())
     asyncio.create_task(periodic_crawl())
 
 
